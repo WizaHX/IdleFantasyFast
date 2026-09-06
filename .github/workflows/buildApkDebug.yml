@@ -17,11 +17,26 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      - name: Set debug application ID
+        run: |
+          sed -i '/applicationId = "com.tristinbaker.idlefantasyfast"/a\        applicationIdSuffix = ".debug"' app/build.gradle.kts
+
       - name: Build debug APK
         run: ./gradlew assembleDebug
+
+      - name: Get version
+        id: version
+        run: |
+          VERSION=$(grep 'versionName = ' app/build.gradle.kts | head -1 | sed 's/.*versionName = "\(.*\)"/\1/')
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Rename debug APK
+        run: |
+          mv app/build/outputs/apk/debug/app-debug.apk \
+             "app/build/outputs/apk/debug/IdleFantasyFast-v${{ steps.version.outputs.version }}-debug.apk"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: IdleFantasyFast-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: IdleFantasyFast-v${{ steps.version.outputs.version }}-debug
+          path: app/build/outputs/apk/debug/IdleFantasyFast-v${{ steps.version.outputs.version }}-debug.apk
