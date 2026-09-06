@@ -12,7 +12,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.tristinbaker.idlefantasy"
+        applicationId = "com.tristinbaker.idlefantasyfast"
         minSdk = 26
         targetSdk = 35
         versionCode = 149001
