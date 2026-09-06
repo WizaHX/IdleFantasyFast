@@ -355,7 +355,7 @@
           "mithril_nail": 12000
         },
         "bonuses": {
-          "player_session_speed_reduction": 0.06
+          "player_session_speed_reduction": 0.56
         }
       }
     ]
