@@ -78,7 +78,7 @@ android {
             if (this is com.android.build.gradle.internal.api.BaseVariantOutputImpl &&
                 buildType.name == "release"
             ) {
-                outputFileName = "IdleFantasy-v$vName.apk"
+                outputFileName = "IdleFantasyFast-v$vName.apk"
             }
         }
     }
