@@ -159,8 +159,8 @@ fun BestiaryTab(viewModel: BestiaryViewModel = hiltViewModel()) {
 
 @Composable
 private fun filterLabel(filter: BestiaryFilter): String = when (filter) {
-    BestiaryFilter.ALL             -> stringResource(R.string.bestiary_filter_all)
-    BestiaryFilter.NOT_ENCOUNTERED -> stringResource(R.string.bestiary_filter_not_encountered)
+    BestiaryFilter.ALL     -> stringResource(R.string.bestiary_filter_all)
+    BestiaryFilter.MISSING -> stringResource(R.string.bestiary_filter_missing)
 }
 
 @Composable

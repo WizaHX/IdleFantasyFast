@@ -18,7 +18,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 
-enum class BestiaryFilter { ALL, NOT_ENCOUNTERED }
+enum class BestiaryFilter { ALL, MISSING }
 enum class BestiarySort { ALPHABETICAL, BY_LOCATION }
 
 data class BestiaryEntry(
@@ -85,11 +85,11 @@ class BestiaryViewModel @Inject constructor(
         BestiaryUiState(
             enemies = when (filter) {
                 BestiaryFilter.ALL -> enemies
-                BestiaryFilter.NOT_ENCOUNTERED -> enemies.filter { !it.encountered }
+                BestiaryFilter.MISSING -> enemies.filter { !it.encountered }
             },
             bosses = when (filter) {
                 BestiaryFilter.ALL -> bosses
-                BestiaryFilter.NOT_ENCOUNTERED -> bosses.filter { !it.encountered }
+                BestiaryFilter.MISSING -> bosses.filter { !it.encountered }
             },
             filter = filter,
             sort = sort,
