@@ -8,7 +8,7 @@ The Carnival is a Town minigame hub where you earn Carnival Tickets and spend th
 
 {idle_table}
 
-**Active minigames** are played directly and reward more tickets on Hard difficulty. Each has its own 10-minute cooldown between attempts, so you can rotate between all of them back-to-back.
+**Active minigames** are played directly and reward more tickets on Hard difficulty. Each has its own cooldown between attempts — 10 minutes by default — so you can rotate between all of them back-to-back. Upgrading the Fairgrounds building shortens this: 7.5 minutes at tier 1, down to 5 minutes at tier 3.
 
 {active_table}
 

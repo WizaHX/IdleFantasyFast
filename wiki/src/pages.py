@@ -898,10 +898,10 @@ def gen_farming() -> str:
     # Ashes tables
     # Todo: Switch to avoid being hardcoded
     ash_rows = []
-    ash_amounts = [("ashes", 1.1), ("oak_ashes", 1.25), ("willow_ashes", 1.35), ("maple_ashes", 1.5), ("yew_ashes", 1.75),
+    ash_amounts = [("ashes", 1.1), ("oak_ashes", 1.2), ("willow_ashes", 1.35), ("maple_ashes", 1.5), ("yew_ashes", 1.75),
                    ("magic_ashes", 2), ("redwood_ashes", 2.5)]
     for ash, bonus in ash_amounts:
-        ash_rows.append([item_name(ash), f"+{int((bonus - 1) * 100)}%"])
+        ash_rows.append([item_name(ash), f"+{round((bonus - 1) * 100)}%"])
 
     magic_bean_note = (
         "Obtaining one requires patience. A lucky harvest may be all it takes. "
@@ -1198,19 +1198,28 @@ def gen_runecrafting() -> str:
 def gen_herblore() -> str:
     recipes = load("recipes/herblore.json")
     assert isinstance(recipes, dict)
+
+    def fmt_effects(effects: dict, enhanced: bool = False) -> str:
+        # Enhanced potions (brewed with an ash catalyst) double every bonus,
+        # floored at base + 1 -- mirrors GameDataRepository.potionEffects.
+        def val_for(v):
+            return max(int(v * 2), v + 1) if enhanced else v
+        return ", ".join(f"{stat.title()} +{val_for(val)}" for stat, val in effects.items())
+
     rows = sorted(
         [[
             item_name(k),
             r["level_required"],
             fmt_materials(r["materials"]),
-            ", ".join(f"{stat.title()} +{val}" for stat, val in r.get("effects", {}).items()),
+            fmt_effects(r.get("effects", {})),
+            fmt_effects(r.get("effects", {}), enhanced=True),
             r["xp_per_item"],
         ] for k, r in recipes.items()],
         key=lambda r: r[1]
     )
     return get_template("skills/crafting/herblore").format(
         icon=html_image(skill_icon_path("herblore"), "", "text"),
-        potion_table=table(['Potion','Level','Ingredients','Effect','XP'], rows),
+        potion_table=table(['Potion','Level','Ingredients','Effect','Enhanced Effect','XP'], rows),
     )
 
 
@@ -1259,8 +1268,40 @@ def gen_thieving() -> str:
     )
 
 
+# Todo: Switch to avoid being hardcoded (mirrors ChurchRepository.ALL_BLESSINGS
+# and ChurchRepository.boneCostFor, which live in Kotlin, not game data).
+_BLESSING_BONE_COST = {1: 10, 10: 20, 20: 35, 30: 55, 40: 80, 50: 110,
+                       60: 145, 70: 185, 80: 230, 90: 265, 99: 300}
+_BLESSINGS = {
+    "XP": [  # (name, prayer level, XP multiplier)
+        ("Blessed Focus", 1, 1.05), ("Blessed Focus II", 10, 1.10),
+        ("Blessed Focus III", 20, 1.15), ("Tithe Blessing", 30, 1.18),
+        ("Tithe Blessing II", 40, 1.20), ("Tithe Blessing III", 50, 1.25),
+        ("Divine Focus", 60, 1.28), ("Divine Focus II", 70, 1.32),
+        ("Divine Grace", 80, 1.37), ("Divine Grace II", 90, 1.43),
+        ("Sacred Grace", 99, 1.50),
+    ],
+    "DEFENSE": [  # (name, prayer level, flat defence)
+        ("Stone Skin", 1, 2), ("Stone Skin II", 10, 4), ("Stone Skin III", 20, 6),
+        ("Stone Skin IV", 30, 9), ("Iron Ward", 40, 12), ("Iron Ward II", 50, 15),
+        ("Diamond Skin", 60, 18), ("Diamond Skin II", 70, 22),
+        ("Holy Shield", 80, 26), ("Holy Shield II", 90, 30), ("Aegis", 99, 35),
+    ],
+    "COINS": [  # (name, prayer level, coin bonus fraction)
+        ("Fortune I", 30, 0.08), ("Fortune II", 40, 0.10), ("Fortune III", 50, 0.13),
+        ("Fortune IV", 60, 0.15), ("Fortune V", 70, 0.18), ("Abundance", 80, 0.20),
+        ("Abundance II", 90, 0.23), ("Abundance III", 99, 0.25),
+    ],
+}
+
+
+def _blessing_table(kind: str, effect_fmt) -> str:
+    rows = [[name, level, _BLESSING_BONE_COST[level], effect_fmt(mag)]
+            for name, level, mag in _BLESSINGS[kind]]
+    return table(["Name", "Prayer Level", "Cost (bones)", "Effect"], rows)
+
+
 def gen_prayer() -> str:
-    # Todo: Add info about bone altar
     bones = load("bones.json")
     assert isinstance(bones, dict)
     rows = sorted(
@@ -1271,6 +1312,9 @@ def gen_prayer() -> str:
     return get_template("skills/support/prayer").format(
         icon=html_image(skill_icon_path("prayer"), "", "text"),
         prayer_table=table(['Bone / Ash','XP Each'], rows),
+        blessing_xp_table=_blessing_table("XP", lambda m: f"+{round((m - 1) * 100)}% XP"),
+        blessing_defense_table=_blessing_table("DEFENSE", lambda m: f"+{m} Defence"),
+        blessing_coins_table=_blessing_table("COINS", lambda m: f"+{round(m * 100)}% coins"),
     )
 
 

@@ -28,13 +28,22 @@ Developing new features is a fun way to add to the game and see the changes you'
 
 If you want to develop a new feature you should follow the below steps:
 
-1. Create a new discussion topic in [discussions](https://github.com/tristinbaker/IdleFantasy/discussions). This ensures that the community is able to chip in and provide feedback before you start development. If this is a significant new feature, you could consider adding some example designs of what you're thinking to help provide more clarity.
+1. Create a new discussion topic in [discussions](https://github.com/tristinbaker/IdleFantasy/discussions). This ensures that the community is able to chip in and provide feedback before you start development. If this is a significant new feature, you could consider adding some example designs of what you're thinking to help provide more clarity. For a smaller feature, opening a GitHub issue (as the repository's `CONTRIBUTING.md` describes) is also fine.
 2. Create a new fork and start working on the project. If this is a large feature, consider updating the discussion with how you're progressing although we don't necessarily need a day-by-day update.
 3. Just like with squashing bugs, once you've finished working on your feature, you should sync your fork with the upstream branches and resolve any potential merge conflicts.
 4. Then, once all the merge conflicts have been sorted, you can test to ensure the feature still works properly.
 5. Finally, once you've tested and synced your fork, you can create a pull request, explaining what you've added and provide a reference to the relevant discussion.
 
 It's quite common while developing an idea that you come up with lots of additional changes and revisions. If these are large, you should consider updating the discussion topic so it properly reflects the idea in full.
+
+## Repository rules
+
+A few hard rules from the repository's [`CONTRIBUTING.md`](https://github.com/tristinbaker/IdleFantasy/blob/main/CONTRIBUTING.md) apply to every change, and a pull request that breaks one will need reworking:
+
+- **Localise user-visible strings.** If you add or change any string a player can read, propagate it to every locale file under `app/src/main/res/values-*/strings.xml`, not just the base `values/strings.xml`.
+- **No database migrations.** New player state belongs in the existing JSON blob columns (`flags`, `inventory`, and similar) with a default value for the new field, so old saves keep loading. Don't add Room migrations.
+- **No new dependencies without prior discussion.** Raise it first rather than adding a library in the PR.
+- **One feature or fix per pull request.**
 
 ## Building and compiling
 
