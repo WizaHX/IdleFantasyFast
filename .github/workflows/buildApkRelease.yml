@@ -43,11 +43,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          APK="app/build/outputs/apk/release/IdleFantasy-v${{ steps.version.outputs.version }}.apk"
+          APK="app/build/outputs/apk/release/IdleFantasyFast-v${{ steps.version.outputs.version }}.apk"
 
           gh release create "v${{ steps.version.outputs.version }}" \
             "$APK" \
-            --title "IdleFantasy v${{ steps.version.outputs.version }}" \
+            --title "IdleFantasyFast v${{ steps.version.outputs.version }}" \
             --generate-notes \
             --latest
             
