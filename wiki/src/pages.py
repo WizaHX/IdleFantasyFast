@@ -1200,8 +1200,6 @@ def gen_herblore() -> str:
     assert isinstance(recipes, dict)
 
     def fmt_effects(effects: dict, enhanced: bool = False) -> str:
-        # Enhanced potions (brewed with an ash catalyst) double every bonus,
-        # floored at base + 1 -- mirrors GameDataRepository.potionEffects.
         def val_for(v):
             return max(int(v * 2), v + 1) if enhanced else v
         return ", ".join(f"{stat.title()} +{val_for(val)}" for stat, val in effects.items())
@@ -1268,12 +1266,10 @@ def gen_thieving() -> str:
     )
 
 
-# Todo: Switch to avoid being hardcoded (mirrors ChurchRepository.ALL_BLESSINGS
-# and ChurchRepository.boneCostFor, which live in Kotlin, not game data).
 _BLESSING_BONE_COST = {1: 10, 10: 20, 20: 35, 30: 55, 40: 80, 50: 110,
                        60: 145, 70: 185, 80: 230, 90: 265, 99: 300}
 _BLESSINGS = {
-    "XP": [  # (name, prayer level, XP multiplier)
+    "XP": [
         ("Blessed Focus", 1, 1.05), ("Blessed Focus II", 10, 1.10),
         ("Blessed Focus III", 20, 1.15), ("Tithe Blessing", 30, 1.18),
         ("Tithe Blessing II", 40, 1.20), ("Tithe Blessing III", 50, 1.25),
@@ -1281,13 +1277,13 @@ _BLESSINGS = {
         ("Divine Grace", 80, 1.37), ("Divine Grace II", 90, 1.43),
         ("Sacred Grace", 99, 1.50),
     ],
-    "DEFENSE": [  # (name, prayer level, flat defence)
+    "DEFENSE": [
         ("Stone Skin", 1, 2), ("Stone Skin II", 10, 4), ("Stone Skin III", 20, 6),
         ("Stone Skin IV", 30, 9), ("Iron Ward", 40, 12), ("Iron Ward II", 50, 15),
         ("Diamond Skin", 60, 18), ("Diamond Skin II", 70, 22),
         ("Holy Shield", 80, 26), ("Holy Shield II", 90, 30), ("Aegis", 99, 35),
     ],
-    "COINS": [  # (name, prayer level, coin bonus fraction)
+    "COINS": [
         ("Fortune I", 30, 0.08), ("Fortune II", 40, 0.10), ("Fortune III", 50, 0.13),
         ("Fortune IV", 60, 0.15), ("Fortune V", 70, 0.18), ("Abundance", 80, 0.20),
         ("Abundance II", 90, 0.23), ("Abundance III", 99, 0.25),
