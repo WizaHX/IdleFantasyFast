@@ -99,6 +99,7 @@ data class SkillsUiState(
     val skillPrestige: Map<String, Int> = emptyMap(),
     /** Skills at 99+ where another prestige still earns points or an XP tier. */
     val prestigeReadySkills: Set<String> = emptySet(),
+    val prestigeMaxedSkills: Set<String> = emptySet(),
     val ironman: Boolean = false,
     val showPrestigeNotifications: Boolean = true,
     val inventory: Map<String, Int> = emptyMap(),
@@ -235,6 +236,9 @@ class SkillsViewModel @Inject constructor(
                 skillPrestige         = flags.skillPrestige,
                 prestigeReadySkills   = Skills.ALL.filterTo(mutableSetOf()) {
                     (levels[it] ?: 1) >= 99 && PrestigeBoosts.prestigeHasReward(gameData.prestigeTrees, flags, it)
+                },
+                prestigeMaxedSkills   = Skills.ALL.filterTo(mutableSetOf()) {
+                    !PrestigeBoosts.prestigeHasReward(gameData.prestigeTrees, flags, it)
                 },
                 ironman               = flags.ironman,
                 showPrestigeNotifications = flags.showPrestigeNotifications,

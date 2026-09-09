@@ -2254,6 +2254,7 @@
     <!-- Translator note: %1$d = current skill level -->
     <string name="prestige_requires_99">Atteignez le niveau 99 pour obtenir le prestige (actuellement %1$d).</string>
     <string name="prestige_maxed_cap">Prestige maximum atteint. Vous avez obtenu tous les points que cette aptitude peut rapporter.</string>
+    <string name="skills_prestige_max">★×%1$d (Max)</string> <!-- untranslated -->
     <!-- Translator note: %1$s = skill name, %2$d = points awarded -->
     <string name="prestige_confirm_message_points">Votre niveau %1$s sera réinitialisé à 1 et vous gagnerez %2$d points de prestige à dépenser dans l\'arbre d\'aptitude correspondant. L\'équipement qui ne répondra plus aux prérequis sera remplacé, et la progression non récupérée des quêtes quotidiennes de %1$s sera réinitialisée. Vous bénéficierez également de 2× l\'XP de %1$s pendant 48 heures pour accélérer votre remontée en niveau.</string>
     <string name="prestige_respec">Réinitialiser les points</string>

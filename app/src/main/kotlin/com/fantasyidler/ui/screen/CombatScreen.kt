@@ -291,6 +291,7 @@ fun CombatScreen(
                             totalDefenseBonus   = state.totalDefenseBonus,
                             skillPrestigeLevels = state.skillPrestigeLevels,
                             combatPrestigeBonus = state.combatPrestigeBonus,
+                            prestigeMaxedSkills = state.prestigeMaxedSkills,
                             onOpenPrestige      = onNavigateToPrestige,
                         )
                     }
@@ -383,6 +384,7 @@ fun CombatScreen(
                             totalDefenseBonus   = state.totalDefenseBonus,
                             skillPrestigeLevels = state.skillPrestigeLevels,
                             combatPrestigeBonus = state.combatPrestigeBonus,
+                            prestigeMaxedSkills = state.prestigeMaxedSkills,
                             onOpenPrestige      = onNavigateToPrestige,
                         )
                     }
@@ -835,6 +837,7 @@ private fun CombatSkillsTab(
     totalDefenseBonus: Int,
     skillPrestigeLevels: Map<String, Int> = emptyMap(),
     combatPrestigeBonus: Map<String, Int> = emptyMap(),
+    prestigeMaxedSkills: Set<String> = emptySet(),
     onOpenPrestige: (String) -> Unit = {},
 ) {
     val context = LocalContext.current
@@ -879,6 +882,7 @@ private fun CombatSkillsTab(
                 gearBonus     = gearBonus,
                 prestigeLevel = skillPrestigeLevels[key] ?: 0,
                 prestigeBonus = combatPrestigeBonus[key] ?: 0,
+                isPrestigeMaxed = key in prestigeMaxedSkills,
                 onOpenPrestige = onOpenPrestige.let { cb -> { cb(key) } },
                 onClick       = { tappedSkill = key },
             )
@@ -895,6 +899,7 @@ private fun CombatSkillRow(
     gearBonus: Int = 0,
     prestigeLevel: Int = 0,
     prestigeBonus: Int = 0,
+    isPrestigeMaxed: Boolean = false,
     onOpenPrestige: (() -> Unit)? = null,
     onClick: () -> Unit = {},
 ) {
@@ -998,7 +1003,8 @@ private fun CombatSkillRow(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Text(
-                        text  = "★×$prestigeLevel",
+                        text  = if (isPrestigeMaxed) stringResource(R.string.skills_prestige_max, prestigeLevel)
+                                else "★×$prestigeLevel",
                         style = MaterialTheme.typography.labelMedium,
                         color = MaterialTheme.colorScheme.primary,
                     )

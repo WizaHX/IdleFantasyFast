@@ -98,6 +98,7 @@ data class CombatUiState(
     val combatPrestigeBonus: Map<String, Int> = emptyMap(),
     /** Combat skills at 99+ where another prestige still earns points or an XP tier. */
     val prestigeReadySkills: Set<String> = emptySet(),
+    val prestigeMaxedSkills: Set<String> = emptySet(),
     val ironman: Boolean = false,
     val showPrestigeNotifications: Boolean = true,
     val towerHpBonus: Int = 0,
@@ -291,6 +292,9 @@ class CombatViewModel @Inject constructor(
                 },
                 prestigeReadySkills     = Skills.ALL.filterTo(mutableSetOf()) {
                     (levels[it] ?: 1) >= 99 && PrestigeBoosts.prestigeHasReward(gameData.prestigeTrees, flags, it)
+                },
+                prestigeMaxedSkills     = Skills.ALL.filterTo(mutableSetOf()) {
+                    !PrestigeBoosts.prestigeHasReward(gameData.prestigeTrees, flags, it)
                 },
                 ironman                 = flags.ironman,
                 showPrestigeNotifications = flags.showPrestigeNotifications,
