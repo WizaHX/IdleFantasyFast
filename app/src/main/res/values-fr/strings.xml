@@ -714,6 +714,9 @@
     <string name="shop_keep_one_toggle">Garder un objet de chaque</string>
     <string name="shop_search_hint">Chercher les objets</string>
     <string name="shop_filter_all">Tout</string>
+    <string name="shop_order_default">Default</string> <!-- untranslated -->
+    <string name="shop_order_highest_amount">Quantity</string> <!-- untranslated -->
+    <string name="shop_order_highest_price">Price</string> <!-- untranslated -->
     <string name="shop_sell_blocked_equipped">%1$s est équipé. Déséquipez-le d\'abord pour le vendre.</string>
     <string name="shop_sell_blocked_reserved">%1$s est réservé pour une tâche en attente.</string>
     <string name="shop_sell_blocked_keep_one">Gardez votre dernière %1$s (Garder un objet de chaque est activé).</string>

@@ -713,6 +713,9 @@
     <string name="shop_keep_one_toggle">每种物品保留一个</string>
     <string name="shop_search_hint">搜索物品</string>
     <string name="shop_filter_all">全部</string>
+    <string name="shop_order_default">Default</string> <!-- untranslated -->
+    <string name="shop_order_highest_amount">Quantity</string> <!-- untranslated -->
+    <string name="shop_order_highest_price">Price</string> <!-- untranslated -->
     <string name="shop_sell_blocked_equipped">%1$s 已装备，请先卸下再出售。</string>
     <string name="shop_sell_blocked_reserved">%1$s 被排队任务占用。</string>
     <string name="shop_sell_blocked_keep_one">保留最后一件 %1$s（每种保留一个已开启）。</string>
