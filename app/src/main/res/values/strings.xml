@@ -713,6 +713,9 @@
     <string name="shop_keep_one_toggle">Keep one of each item</string>
     <string name="shop_search_hint">Search items</string>
     <string name="shop_filter_all">All</string>
+    <string name="shop_order_default">Default</string>
+    <string name="shop_order_highest_amount">Quantity</string>
+    <string name="shop_order_highest_price">Price</string>
     <string name="shop_sell_blocked_equipped">%1$s is equipped. Unequip it first to sell.</string>
     <string name="shop_sell_blocked_reserved">%1$s is reserved for a queued task.</string>
     <string name="shop_sell_blocked_keep_one">Keeping your last %1$s (Keep one of each item is on).</string>
