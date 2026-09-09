@@ -66,6 +66,8 @@
     <string name="label_bosses">الزعماء</string>
     <string name="label_by_location">حسب الموقع</string>
     <string name="bestiary_not_encountered">لم يواجه بعد</string>
+    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
+    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
     <string name="bestiary_qty_header">كمية</string>
     <string name="bestiary_chance_header">احتمالية</string>
     <string name="label_completion_progress">%1$d / %2$d %3$s</string>
@@ -1690,6 +1692,7 @@
     <string name="armory_how_to_obtain">How to obtain</string> <!-- untranslated -->
     <string name="armory_no_stats">No stat bonuses.</string> <!-- untranslated -->
     <string name="armory_filter_all">All</string> <!-- untranslated -->
+    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
     <string name="armory_filter_weapons">Weapons</string> <!-- untranslated -->
     <string name="armory_filter_armor">Armor</string> <!-- untranslated -->
     <string name="armory_filter_accessories">Accessories</string> <!-- untranslated -->

@@ -66,6 +66,8 @@
     <string name="label_bosses">Bazen</string>
     <string name="label_by_location">Op locatie</string>
     <string name="bestiary_not_encountered">Nog niet tegengekomen</string>
+    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
+    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
     <string name="bestiary_qty_header">Qty</string> <!-- untranslated -->
     <string name="bestiary_chance_header">Chance</string> <!-- untranslated -->
     <string name="label_completion_progress">%1$d / %2$d %3$s</string>
@@ -1690,6 +1692,7 @@
     <string name="armory_how_to_obtain">Hoe te verkrijgen</string>
     <string name="armory_no_stats">Geen statbonussen.</string>
     <string name="armory_filter_all">Alles</string>
+    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
     <string name="armory_filter_weapons">Wapens</string>
     <string name="armory_filter_armor">Pantser</string>
     <string name="armory_filter_accessories">Accessoires</string>

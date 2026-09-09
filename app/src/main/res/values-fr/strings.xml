@@ -66,6 +66,8 @@
     <string name="label_bosses">Boss</string>
     <string name="label_by_location">Par lieu</string>
     <string name="bestiary_not_encountered">Pas encore rencontré</string>
+    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
+    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
     <string name="bestiary_qty_header">Qté</string>
     <string name="bestiary_chance_header">Chance</string>
     <string name="label_completion_progress">%1$d / %2$d %3$s</string>
@@ -1691,6 +1693,7 @@
     <string name="armory_how_to_obtain">Comment obtenir</string>
     <string name="armory_no_stats">Aucun bonus de statistiques.</string>
     <string name="armory_filter_all">Tous</string>
+    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
     <string name="armory_filter_weapons">Armes</string>
     <string name="armory_filter_armor">Armure</string>
     <string name="armory_filter_accessories">Accessoires</string>

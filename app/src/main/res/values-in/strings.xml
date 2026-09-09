@@ -66,6 +66,8 @@
     <string name="label_bosses">Bos</string>
     <string name="label_by_location">Dari Lokasi</string>
     <string name="bestiary_not_encountered">Belum pernah ditemui</string>
+    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
+    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
     <string name="bestiary_qty_header">Qty</string>
     <string name="bestiary_chance_header">Peluang</string>
     <string name="label_completion_progress">%1$d / %2$d %3$s</string>
@@ -1682,6 +1684,7 @@
     <string name="armory_how_to_obtain">Cara mendapatkan</string>
     <string name="armory_no_stats">Tidak ada bonus stat</string>
     <string name="armory_filter_all">Semua</string>
+    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
     <string name="armory_filter_weapons">Senjata</string>
     <string name="armory_filter_armor">Zirah</string>
     <string name="armory_filter_accessories">Aksesoris</string>

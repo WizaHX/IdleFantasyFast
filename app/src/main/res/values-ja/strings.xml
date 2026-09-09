@@ -66,6 +66,8 @@
     <string name="label_bosses">ボス</string>
     <string name="label_by_location">エリア別</string>
     <string name="bestiary_not_encountered">未遭遇</string>
+    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
+    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
     <string name="bestiary_qty_header">Qty</string> <!-- untranslated -->
     <string name="bestiary_chance_header">Chance</string> <!-- untranslated -->
     <string name="label_completion_progress">%3$s %1$d / %2$d</string>
@@ -1690,6 +1692,7 @@
     <string name="armory_how_to_obtain">入手方法</string>
     <string name="armory_no_stats">ステータスボーナスはありません。</string>
     <string name="armory_filter_all">すべて</string>
+    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
     <string name="armory_filter_weapons">武器</string>
     <string name="armory_filter_armor">防具</string>
     <string name="armory_filter_accessories">アクセサリー</string>
