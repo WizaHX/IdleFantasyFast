@@ -265,6 +265,9 @@ fun CombatScreen(
                             allEquipment   = invState.resolvedEquipment(inventoryVm.allEquipment),
                             heirloomXp     = invState.heirloomXp,
                             context        = context,
+                            totalAttack    = state.totalAttack,
+                            totalStrength  = state.totalStrength,
+                            totalDefense   = state.totalDefense,
                             activeWeaponSlot    = state.selectedWeaponSlot,
                             foodEatThresholdPct = invState.foodEatThresholdPct,
                             foodEatOrder        = invState.foodEatOrder,
@@ -357,6 +360,9 @@ fun CombatScreen(
                             allEquipment   = invState.resolvedEquipment(inventoryVm.allEquipment),
                             heirloomXp     = invState.heirloomXp,
                             context        = context,
+                            totalAttack    = state.totalAttack,
+                            totalStrength  = state.totalStrength,
+                            totalDefense   = state.totalDefense,
                             activeWeaponSlot    = state.selectedWeaponSlot,
                             foodEatThresholdPct = invState.foodEatThresholdPct,
                             foodEatOrder        = invState.foodEatOrder,
@@ -632,6 +638,9 @@ private fun CombatGearTab(
     allEquipment: Map<String, EquipmentData>,
     heirloomXp: Map<String, Long>,
     context: Context,
+    totalAttack: Int,
+    totalStrength: Int,
+    totalDefense: Int,
     activeWeaponSlot: String?,
     foodEatThresholdPct: Int,
     foodEatOrder: String,
@@ -693,6 +702,16 @@ private fun CombatGearTab(
                     )
                 }
             }
+        }
+        item {
+            Text(
+                text = "${stringResource(R.string.combat_atk)} $totalAttack  " +
+                    "${stringResource(R.string.combat_str)} $totalStrength  " +
+                    "${stringResource(R.string.combat_def)} $totalDefense",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+            )
         }
         // Only the active style's own weapon is shown/selectable here — never another
         // style's weapon, since each style has its own separate weapon slot.
