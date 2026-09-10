@@ -232,7 +232,7 @@
           "mithril_nail": 4000
         },
         "bonuses": {
-          "queue_slots": 23
+          "queue_slots": 25
         }
       }
     ]
@@ -355,7 +355,7 @@
           "mithril_nail": 12000
         },
         "bonuses": {
-          "player_session_speed_reduction": 0.56
+          "player_session_speed_reduction": 0.75
         }
       }
     ]
