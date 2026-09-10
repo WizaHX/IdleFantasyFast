@@ -1952,7 +1952,7 @@
     <string name="treasure_open_all">Tout ouvrir (%1$d)</string>
     <string name="treasure_open_result">%1$d révèle : +%2$s pièces</string>
     <string name="treasure_open_result_gems">%1$d révèle : +%2$s pièces et %3$d gemmes</string>
-    <string name="seasonal_expedition_token_hint">Chaque partie donne 1 jeton</string>
+    <string name="seasonal_expedition_token_hint">Chaque partie donne 1 jeton.</string>
     <string name="seasonal_boss_token_hint">Chaque tué donne 1 jeton, jusqu\'à %1$d par jour.</string>
     <string name="seasonal_minigame_hint">Touchez %1$d braises sur %2$d avant qu\'elles ne s\'éteignent !</string>
     <string name="seasonal_minigame_round">Manche %1$d / %2$d — Réussites : %3$d</string>
@@ -2004,7 +2004,7 @@
     <string name="seasonal_event_gloomharvest_2026_banner">A participé à la Sombre Moisson 2026</string>
     <string name="seasonal_minigame_lantern_lights_name">Lumières des Lanternes</string>
     <string name="seasonal_minigame_sequence_hint">Observez les lanternes puis répétez l\'ordre. Atteignez la manche %1$d sur %2$d pour gagner un jeton !</string>
-    <string name="seasonal_minigame_sequence_success">Bonne mémoire ! +1 token.</string>
+    <string name="seasonal_minigame_sequence_success">Bonne mémoire ! +1 jeton.</string>
     <string name="seasonal_minigame_sequence_round">Manche %1$d / %2$d</string>
     <string name="seasonal_minigame_watch">Observez bien !</string>
     <string name="seasonal_minigame_your_turn">À vous !</string>
