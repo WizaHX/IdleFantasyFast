@@ -2072,12 +2072,12 @@ def gen_carnival() -> str:
         ["Hammer Strike", "Time your swing for a strong hit", "1–2", "6–8"],
         ["Potion Sequence", "Repeat a growing memory sequence of potion colors", "2", "7"],
         ["Item Appraisal", "Pick the more valuable item", "2", "7"],
-        [f"Pick-a-Cup ({link("buildings", "Fairgrounds")} tier 1+)", "Track which cup hides the gem through a shuffle", "4", "7"],
-        [f"Higher or Lower ({link("buildings", "Fairgrounds")} tier 2+)", "Guess higher or lower over several rounds — more correct in a row pays more", "up to 5", "up to 8"],
+        [f"Pick-a-Cup ({link("buildings", "Fairgrounds", "fairgrounds")} tier 1+)", "Track which cup hides the gem through a shuffle", "4", "7"],
+        [f"Higher or Lower ({link("buildings", "Fairgrounds", "fairgrounds")} tier 2+)", "Guess higher or lower over several rounds — more correct in a row pays more", "up to 5", "up to 8"],
     ]
 
     return get_template("town/carnival").format(
-        fairgrounds_link=link("buildings", "Fairgrounds"),
+        fairgrounds_link=link("buildings", "Fairgrounds", "fairgrounds"),
         idle_table=table(["Minigame", "Skill Trained"], idle_rows),
         active_table=table(["Minigame", "How to play", "Normal", "Hard"], active_rows),
         prize_table=table(["Prize", "Ticket Cost", "Effect"], prize_rows),
