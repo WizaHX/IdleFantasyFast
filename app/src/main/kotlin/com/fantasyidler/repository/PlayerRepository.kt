@@ -587,7 +587,7 @@ class PlayerRepository @Inject constructor(
         val chronosReduction = flags.townBuildingTiers.entries.sumOf { (b, t) ->
             gameData.townBuildings[b]?.tiers?.getOrNull(t - 1)?.bonuses?.get("player_session_speed_reduction")?.toDouble() ?: 0.0
         }.toFloat()
-        val chronosMult = (1.0f - chronosReduction).coerceAtLeast(0.5f)
+        val chronosMult = (1.0f - chronosReduction).coerceAtLeast(0.1f)
         enqueueActionUnlocked(QueuedAction(
             skillName           = "combat",
             activityKey         = dungeonKey,
