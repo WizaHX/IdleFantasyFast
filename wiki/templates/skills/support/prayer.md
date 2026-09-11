@@ -8,7 +8,7 @@ Bury bones to earn Prayer XP. Higher-tier bones give more XP. Ashes from Firemak
 
 ## Blessings
 
-Blessings are temporary buffs activated at the **Church** building and paid for in bones. Only one blessing can be active at a time; activating another replaces it. The bone cost is fixed per tier and is paid in regular-bone equivalents (higher-tier bones count for more, and your most valuable bones are spent first).
+Blessings are temporary buffs activated at the {church_link} building and paid for in bones. Only one blessing can be active at a time; activating another replaces it. The bone cost is fixed per tier and is paid in regular-bone equivalents (higher-tier bones count for more, and your most valuable bones are spent first).
 
 A blessing lasts **24 hours** by default. But certain boosts you can apply to increase the blessing time. Re-activating a blessing that is still running adds to its remaining time instead of resetting it. 
 
@@ -28,8 +28,8 @@ Ironman accounts can only use the Defence blessings.
 
 ### Boosting blessings
 
-- **Wear the Prayer cape** - increases blessing strength (roughly 1.5× the listed effect).
-- **Upgrade the Church** - each tier adds to the base 24-hour duration: +6h at tier 1, +12h at tier 2, +24h at tier 3.
+- **Wear the Prayer cape** - increases blessing strength.
+- **Upgrade the {church_link}** - each tier adds to the base 24-hour duration: +6h at tier 1, +12h at tier 2, +24h at tier 3.
 - **Complete the Grand Monument** - tier 3 adds +6h to blessing duration, and its Touch action can extend an active blessing by a further 2h.
 - **Prayer Devotion prestige path** - blessings last up to 30% longer (up to 55% for elves, via the Forest Grace nodes).
 - **Gnome Trickster's Favor prestige path** - reduces the bone cost by up to 20%.

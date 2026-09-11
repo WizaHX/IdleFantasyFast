@@ -21,7 +21,7 @@ from wiki.src.game_data import STRINGS, load, title, item_name, house_item_name,
     trade_route_name, thieving_npc_name, quest_name, agility_course_name, town_building_name, quest_desc, title_name, \
     pet_name, boss_name, boss_desc, trade_route_desc, pet_desc, item_desc, dungeon_name, dungeon_desc, expedition_name, \
     expedition_desc, seasonal_event_name, seasonal_reward_desc, prestige_effect_desc, tree_name, merc_name, race_name, \
-    carnival_prize_name, carnival_prize_desc, slot_name
+    carnival_prize_name, carnival_prize_desc, slot_name, blessing_name
 from wiki.src.page_hierarchy import PageHierarchy
 from wiki.src.wiki_logs import LOGGER
 
@@ -1268,32 +1268,34 @@ def gen_thieving() -> str:
 
 _BLESSING_BONE_COST = {1: 10, 10: 20, 20: 35, 30: 55, 40: 80, 50: 110,
                        60: 145, 70: 185, 80: 230, 90: 265, 99: 300}
+# Todo: Move blessings from ChurchRepository.ALL_BLESSINGS into their own dedicated blessings.json file and reference in the game with gameData and here by loading the json file
+# Keyed by blessing id (matches ChurchRepository.ALL_BLESSINGS); display names come from strings.xml via blessing_name().
 _BLESSINGS = {
     "XP": [
-        ("Blessed Focus", 1, 1.05), ("Blessed Focus II", 10, 1.10),
-        ("Blessed Focus III", 20, 1.15), ("Tithe Blessing", 30, 1.18),
-        ("Tithe Blessing II", 40, 1.20), ("Tithe Blessing III", 50, 1.25),
-        ("Divine Focus", 60, 1.28), ("Divine Focus II", 70, 1.32),
-        ("Divine Grace", 80, 1.37), ("Divine Grace II", 90, 1.43),
-        ("Sacred Grace", 99, 1.50),
+        ("blessed_focus", 1, 1.05), ("blessed_focus_ii", 10, 1.10),
+        ("blessed_focus_iii", 20, 1.15), ("tithe_blessing", 30, 1.18),
+        ("tithe_blessing_ii", 40, 1.20), ("tithe_blessing_iii", 50, 1.25),
+        ("divine_focus", 60, 1.28), ("divine_focus_ii", 70, 1.32),
+        ("divine_grace", 80, 1.37), ("divine_grace_ii", 90, 1.43),
+        ("sacred_grace", 99, 1.50),
     ],
     "DEFENSE": [
-        ("Stone Skin", 1, 2), ("Stone Skin II", 10, 4), ("Stone Skin III", 20, 6),
-        ("Stone Skin IV", 30, 9), ("Iron Ward", 40, 12), ("Iron Ward II", 50, 15),
-        ("Diamond Skin", 60, 18), ("Diamond Skin II", 70, 22),
-        ("Holy Shield", 80, 26), ("Holy Shield II", 90, 30), ("Aegis", 99, 35),
+        ("stone_skin", 1, 2), ("stone_skin_ii", 10, 4), ("stone_skin_iii", 20, 6),
+        ("stone_skin_iv", 30, 9), ("iron_ward", 40, 12), ("iron_ward_ii", 50, 15),
+        ("diamond_skin", 60, 18), ("diamond_skin_ii", 70, 22),
+        ("holy_shield", 80, 26), ("holy_shield_ii", 90, 30), ("aegis", 99, 35),
     ],
     "COINS": [
-        ("Fortune I", 30, 0.08), ("Fortune II", 40, 0.10), ("Fortune III", 50, 0.13),
-        ("Fortune IV", 60, 0.15), ("Fortune V", 70, 0.18), ("Abundance", 80, 0.20),
-        ("Abundance II", 90, 0.23), ("Abundance III", 99, 0.25),
+        ("fortune_i", 30, 0.08), ("fortune_ii", 40, 0.10), ("fortune_iii", 50, 0.13),
+        ("fortune_iv", 60, 0.15), ("fortune_v", 70, 0.18), ("abundance", 80, 0.20),
+        ("abundance_ii", 90, 0.23), ("abundance_iii", 99, 0.25),
     ],
 }
 
 
 def _blessing_table(kind: str, effect_fmt) -> str:
-    rows = [[name, level, _BLESSING_BONE_COST[level], effect_fmt(mag)]
-            for name, level, mag in _BLESSINGS[kind]]
+    rows = [[blessing_name(bid), level, _BLESSING_BONE_COST[level], effect_fmt(mag)]
+            for bid, level, mag in _BLESSINGS[kind]]
     return table(["Name", "Prayer Level", "Cost (bones)", "Effect"], rows)
 
 
@@ -1307,6 +1309,7 @@ def gen_prayer() -> str:
     )
     return get_template("skills/support/prayer").format(
         icon=html_image(skill_icon_path("prayer"), "", "text"),
+        church_link=link("buildings", "Church", "church"),
         prayer_table=table(['Bone / Ash','XP Each'], rows),
         blessing_xp_table=_blessing_table("XP", lambda m: f"+{round((m - 1) * 100)}% XP"),
         blessing_defense_table=_blessing_table("DEFENSE", lambda m: f"+{m} Defence"),
@@ -1775,6 +1778,7 @@ def gen_spells() -> str:
     ], key=lambda r: r[1])
     return get_template("combat/spells").format(
         spell_table=table(["Spell", "Magic Level", "Rune", "Runes / Cast", "Max Hit"], rows),
+        void_staff_link=item_link("void_staff"),
         combat_footer=gen_combat_footer(),
     )
 
@@ -2073,6 +2077,7 @@ def gen_carnival() -> str:
     ]
 
     return get_template("town/carnival").format(
+        fairgrounds_link=link("buildings", "Fairgrounds"),
         idle_table=table(["Minigame", "Skill Trained"], idle_rows),
         active_table=table(["Minigame", "How to play", "Normal", "Hard"], active_rows),
         prize_table=table(["Prize", "Ticket Cost", "Effect"], prize_rows),
