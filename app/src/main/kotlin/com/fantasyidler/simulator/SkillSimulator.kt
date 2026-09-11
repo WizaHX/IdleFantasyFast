@@ -416,7 +416,7 @@ object SkillSimulator {
     fun sessionDurationMs(agilityLevel: Int, floorReductionMin: Double = 0.0, chronosMultiplier: Float = 1.0f): Long {
         val fraction = (agilityLevel - 1).coerceIn(0, 98) / 98.0
         val maxReduction = 20.0 + floorReductionMin.coerceIn(0.0, 10.0)
-        val minutes = (60.0 - maxReduction * fraction) * chronosMultiplier.coerceIn(0.5f, 1.0f)
+        val minutes = (60.0 - maxReduction * fraction) * chronosMultiplier.coerceIn(0.1f, 1.0f)
         // Millisecond precision: rounding to whole minutes swallowed the 2% Chronos Spire
         // reduction entirely at many agility levels (issue #1486).
         return (minutes * 60_000.0).roundToLong().coerceAtLeast(60_000L)
