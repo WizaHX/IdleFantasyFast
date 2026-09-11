@@ -2281,6 +2281,7 @@
     <!-- Translator note: %1$d = current skill level -->
     <string name="prestige_requires_99">Достигните 99-го уровня для увеличения престижа (сейчас %1$d).</string>
     <string name="prestige_maxed_cap">Достигнут максимальный уровень престижа. Каждое очко, которое может заработать этот навык, принадлежит вам.</string>
+    <string name="skills_prestige_max">★×%1$d (Max)</string> <!-- untranslated -->
     <!-- Translator note: %1$s = skill name, %2$d = points awarded -->
     <string name="prestige_confirm_message_points">Ваш уровень %1$s будет сброшен до 1, и вы заработаете %2$d очка престижа, которые можно потратить в дереве навыков. Снаряжение, которое больше не соответствует предъявляемым требованиям, будет заменено, а невостребованное ежедневное задание %1$s будет сброшено. Вы также получите 2x %1$s опыта на 48 часов, чтобы ускорить повышение.</string>
     <string name="prestige_respec">Сбросить очки</string>

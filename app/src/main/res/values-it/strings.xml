@@ -2259,6 +2259,7 @@
     <!-- Translator note: %1$d = current skill level -->
     <string name="prestige_requires_99">Raggiungi il livello 99 per onorare (al momento %1$d).</string>
     <string name="prestige_maxed_cap">Raggiunto il massimo onore. Hai ottenuto tutti i punti possibili.</string>
+    <string name="skills_prestige_max">★×%1$d (Max)</string> <!-- untranslated -->
     <!-- Translator note: %1$s = skill name, %2$d = points awarded -->
     <string name="prestige_confirm_message_points">Il livello di %1$s tornerà a 1 e otterrai %2$d punti onore da spendere in talenti. Non potrai più usare armamenti di livello superiore, e le missioni giornaliere di %1$s saranno reimpostate. Otterrai 2x %1$s XP per 48 ore.</string>
     <string name="prestige_respec">Reimposta punti</string>
