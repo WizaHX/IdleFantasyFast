@@ -486,6 +486,7 @@ class SkillsViewModel @Inject constructor(
                 qty                 = actualQty,
                 estimatedXpGain     = (actualQty.toLong() * logXp * xpQueueMult * toolEff).toLong(),
                 estimatedDurationMs = actualQty.toLong() * perLogMs,
+                xpBoostMultAtQueue  = xpQueueMult,
             )
 
             if (sessionRepo.getActiveSession() != null) {
@@ -549,6 +550,7 @@ class SkillsViewModel @Inject constructor(
                         qty                 = qty,
                         estimatedXpGain     = (qty.toLong() * (runeData.xpPerRune * mult).toLong() * xpQueueMult).toLong(),
                         estimatedDurationMs = qty.toLong() * perItemMs,
+                        xpBoostMultAtQueue  = xpQueueMult,
                         catalystKey         = catalystKey,
                         catalystQty         = consumedAshCost,
                     )
@@ -661,6 +663,7 @@ class SkillsViewModel @Inject constructor(
                         qty                 = qty,
                         estimatedXpGain     = (qty.toLong() * bone.xpPerBone.toLong() * xpQueueMult).toLong(),
                         estimatedDurationMs = qty.toLong() * perBoneMs,
+                        xpBoostMultAtQueue  = xpQueueMult,
                     )
                 )
                 if (enqueued) playerRepo.consumeItems(mapOf(boneKey to qty))
@@ -772,6 +775,7 @@ class SkillsViewModel @Inject constructor(
                         skillDisplayName    = "Thieving",
                         estimatedXpGain     = estimatedXpGain,
                         estimatedDurationMs = SkillSimulator.sessionDurationMs(agility, boostRepo.sessionFloorReductionMin(thievingFlags), townRepo.playerSessionDurationMultiplier(thievingFlags)),
+                        xpBoostMultAtQueue  = xpQueueMult,
                     )
                 )
                 if (enqueued) queuedSessionStarter.startNextQueued()
@@ -933,6 +937,7 @@ class SkillsViewModel @Inject constructor(
                         skillDisplayName    = displayName,
                         estimatedXpGain     = estimatedXpGain,
                         estimatedDurationMs = SkillSimulator.sessionDurationMs(agility, floorReductionMin, chronosMult),
+                        xpBoostMultAtQueue  = xpQueueMult,
                     )
                 )
                 if (!enqueued) break

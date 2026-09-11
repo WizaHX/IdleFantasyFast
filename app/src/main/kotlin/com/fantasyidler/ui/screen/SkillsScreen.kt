@@ -83,6 +83,7 @@ import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import com.fantasyidler.ui.screen.skills.AgilitySheet
+import com.fantasyidler.ui.screen.skills.rememberTapFriendlyFlingBehavior
 import com.fantasyidler.ui.screen.skills.ComingSoonSheet
 import com.fantasyidler.ui.screen.skills.CraftSkillSheet
 import com.fantasyidler.ui.screen.skills.FiremakingSheet
@@ -555,7 +556,7 @@ private fun GuildDailySheetBanner(
             onDismissRequest = { showDialog = false },
             title = { Text(stringResource(R.string.nav_quests)) },
             text = {
-                Column(Modifier.verticalScroll(rememberScrollState())) {
+                Column(Modifier.verticalScroll(rememberScrollState(), flingBehavior = rememberTapFriendlyFlingBehavior())) {
                     sections.forEachIndexed { sectionIndex, (labelRes, sectionQuests) ->
                         if (sectionIndex > 0) {
                             Spacer(Modifier.height(12.dp))
@@ -683,7 +684,7 @@ private fun SkillsTabContent(
     onNavigateToBoneAltar: () -> Unit = {},
     onNavigateToPrestige: (String) -> Unit = {},
 ) {
-    LazyColumn(state = listState, modifier = Modifier.fillMaxSize()) {
+    LazyColumn(state = listState, modifier = Modifier.fillMaxSize(), flingBehavior = rememberTapFriendlyFlingBehavior()) {
         state.activeSession?.let { session ->
             item(key = "active_session") {
                 ActiveSessionBanner(

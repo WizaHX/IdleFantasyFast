@@ -83,6 +83,7 @@ import com.fantasyidler.data.json.DungeonData
 import com.fantasyidler.data.json.EquipmentData
 import com.fantasyidler.data.json.SpellData
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.only
@@ -910,6 +911,7 @@ private fun CombatSkillsTab(
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun CombatSkillRow(
     skillKey: String,
@@ -973,29 +975,33 @@ private fun CombatSkillRow(
         }
         Spacer(Modifier.width(12.dp))
         Column(Modifier.weight(1f)) {
-            Row(
-                modifier              = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-            ) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
+            Row(modifier = Modifier.fillMaxWidth()) {
+                // FlowRow + weight(1f): long localised bonus labels wrap to the next line
+                // instead of being starved into a one-letter-per-line sliver that also
+                // pushed the XP value out of view (issue #1765).
+                FlowRow(
+                    modifier              = Modifier.weight(1f),
+                    horizontalArrangement = Arrangement.spacedBy(6.dp),
+                ) {
                     Text(name, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium)
                     if (gearBonus > 0) {
-                        Spacer(Modifier.width(6.dp))
                         Text(
-                            text  = stringResource(R.string.combat_gear_bonus, gearBonus),
-                            style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.primary,
+                            text     = stringResource(R.string.combat_gear_bonus, gearBonus),
+                            style    = MaterialTheme.typography.labelSmall,
+                            color    = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.align(Alignment.CenterVertically),
                         )
                     }
                     if (prestigeBonus > 0) {
-                        Spacer(Modifier.width(6.dp))
                         Text(
-                            text  = stringResource(R.string.combat_prestige_bonus, prestigeBonus),
-                            style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.primary,
+                            text     = stringResource(R.string.combat_prestige_bonus, prestigeBonus),
+                            style    = MaterialTheme.typography.labelSmall,
+                            color    = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.align(Alignment.CenterVertically),
                         )
                     }
                 }
+                Spacer(Modifier.width(8.dp))
                 Text(
                     text  = "${xp.formatXp()} ${stringResource(R.string.label_xp)}",
                     style = MaterialTheme.typography.bodySmall,
