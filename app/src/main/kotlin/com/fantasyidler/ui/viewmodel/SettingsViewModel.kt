@@ -47,7 +47,12 @@ class SettingsViewModel @Inject constructor(
     private val saveSlotRepo: SaveSlotRepository,
     private val themeRepo: ThemeRepository,
     private val json: Json,
+    private val gameData: com.fantasyidler.repository.GameDataRepository,
 ) : ViewModel() {
+
+    var sessionSpeedReductionPercent: Int?
+        get() = gameData.sessionSpeedReductionOverride?.let { kotlin.math.round(it * 100).toInt() }
+        set(value) { gameData.sessionSpeedReductionOverride = value?.div(100f) }
 
     val officialThemes: List<String> = themeRepo.getOfficialThemes()
 

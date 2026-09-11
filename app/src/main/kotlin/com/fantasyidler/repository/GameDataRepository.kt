@@ -61,6 +61,13 @@ class GameDataRepository @Inject constructor(
     @ApplicationContext private val context: Context,
     private val json: Json,
 ) {
+    var sessionSpeedReductionOverride: Float? = null
+
+    fun playerSessionSpeedReduction(building: String, tier: Int): Float {
+        val default = townBuildings[building]?.tiers?.getOrNull(tier - 1)?.bonuses
+            ?.get("player_session_speed_reduction")?.toFloat() ?: return 0f
+        return sessionSpeedReductionOverride ?: default
+    }
 
     // ------------------------------------------------------------------ helpers
 

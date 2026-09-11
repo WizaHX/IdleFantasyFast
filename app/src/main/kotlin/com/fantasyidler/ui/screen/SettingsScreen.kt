@@ -440,6 +440,20 @@ fun SettingsScreen(
 
             SectionHeader(title = stringResource(R.string.settings_general_header))
 
+            var speedPercent by remember { mutableStateOf(viewModel.sessionSpeedReductionPercent?.toString() ?: "") }
+            OutlinedTextField(
+                value = speedPercent,
+                onValueChange = {
+                    if (it.isEmpty() || it.toIntOrNull() in 1..100) {
+                        speedPercent = it
+                        viewModel.sessionSpeedReductionPercent = it.toIntOrNull()
+                    }
+                },
+                label = { Text("Session speed reduction (1–100%)") },
+                placeholder = { Text("Default from buildings.json") },
+                singleLine = true,
+            )
+
             SettingsRow(
                 title    = stringResource(R.string.settings_tutorial_title),
                 subtitle = stringResource(R.string.settings_tutorial_desc),
