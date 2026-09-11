@@ -715,6 +715,9 @@
     <string name="shop_keep_one_toggle">Eins von jedem Gegenstand behalten</string>
     <string name="shop_search_hint">Gegenstand suchen</string>
     <string name="shop_filter_all">Alles</string>
+    <string name="shop_order_default">Default</string> <!-- untranslated -->
+    <string name="shop_order_highest_amount">Quantity</string> <!-- untranslated -->
+    <string name="shop_order_highest_price">Price</string> <!-- untranslated -->
     <string name="shop_sell_blocked_equipped">%1$s ist ausgerüstet. Vor dem Verkauf muss es abgelegt werden.</string>
     <string name="shop_sell_blocked_reserved">%1$s ist für Auftrag in Warteschlange reserviert.</string>
     <string name="shop_sell_blocked_keep_one">Den letzten %1$s behalten (Eins von jedem Gegenstand behalten ist aktiv).</string>

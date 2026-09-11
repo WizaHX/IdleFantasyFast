@@ -731,6 +731,9 @@
     <string name="shop_keep_one_toggle">Zachowaj po jednym z każdego przedmiotu</string>
     <string name="shop_search_hint">Wyszukaj przedmioty</string>
     <string name="shop_filter_all">Wszystko</string>
+    <string name="shop_order_default">Default</string> <!-- untranslated -->
+    <string name="shop_order_highest_amount">Quantity</string> <!-- untranslated -->
+    <string name="shop_order_highest_price">Price</string> <!-- untranslated -->
     <string name="shop_sell_blocked_equipped">%1$s jest wyposażony. Najpierw go zdejmij, aby sprzedać.</string>
     <string name="shop_sell_blocked_reserved">%1$s jest zarezerwowany dla zadania w kolejce.</string>
     <string name="shop_sell_blocked_keep_one">Keeping your last %1$s (Keep one of each item is on).</string> <!-- untranslated -->

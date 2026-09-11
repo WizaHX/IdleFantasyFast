@@ -715,6 +715,9 @@
     <string name="shop_keep_one_toggle">Mantieni una copia per ogni oggetto</string>
     <string name="shop_search_hint">Cerca oggetti</string>
     <string name="shop_filter_all">Tutti</string>
+    <string name="shop_order_default">Default</string> <!-- untranslated -->
+    <string name="shop_order_highest_amount">Quantity</string> <!-- untranslated -->
+    <string name="shop_order_highest_price">Price</string> <!-- untranslated -->
     <string name="shop_sell_blocked_equipped">Stai usando %1$s. Non puoi venderlo finché non lo lasci.</string>
     <string name="shop_sell_blocked_reserved">%1$s è di riserva per un\'azione in coda.</string>
     <string name="shop_sell_blocked_keep_one">Una copia di %1$s è rimasta (L\'opzione è abilitata).</string>
