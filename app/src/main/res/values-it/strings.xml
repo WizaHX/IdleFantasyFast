@@ -66,8 +66,8 @@
     <string name="label_bosses">Boss</string>
     <string name="label_by_location">Per luogo</string>
     <string name="bestiary_not_encountered">Non ancora incontrato</string>
-    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
-    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
+    <string name="bestiary_filter_all">Tutto</string>
+    <string name="bestiary_filter_missing">Non Incontrati</string>
     <string name="bestiary_qty_header">Q.tà</string>
     <string name="bestiary_chance_header">Prob.tà</string>
     <string name="label_completion_progress">%1$d / %2$d %3$s</string>
@@ -715,9 +715,9 @@
     <string name="shop_keep_one_toggle">Mantieni una copia per ogni oggetto</string>
     <string name="shop_search_hint">Cerca oggetti</string>
     <string name="shop_filter_all">Tutti</string>
-    <string name="shop_order_default">Default</string> <!-- untranslated -->
-    <string name="shop_order_highest_amount">Quantity</string> <!-- untranslated -->
-    <string name="shop_order_highest_price">Price</string> <!-- untranslated -->
+    <string name="shop_order_default">Base</string>
+    <string name="shop_order_highest_amount">Quantità</string>
+    <string name="shop_order_highest_price">Prezzo</string>
     <string name="shop_sell_blocked_equipped">Stai usando %1$s. Non puoi venderlo finché non lo lasci.</string>
     <string name="shop_sell_blocked_reserved">%1$s è di riserva per un\'azione in coda.</string>
     <string name="shop_sell_blocked_keep_one">Una copia di %1$s è rimasta (L\'opzione è abilitata).</string>
@@ -1695,7 +1695,7 @@
     <string name="armory_how_to_obtain">Come ottenere</string>
     <string name="armory_no_stats">Nessun bonus alle statistiche.</string>
     <string name="armory_filter_all">Tutto</string>
-    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
+    <string name="armory_filter_missing">Mancante</string>
     <string name="armory_filter_weapons">Armi</string>
     <string name="armory_filter_armor">Armatura</string>
     <string name="armory_filter_accessories">Accessori</string>
