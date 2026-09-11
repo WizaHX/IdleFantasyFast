@@ -66,6 +66,8 @@
     <string name="label_bosses">Боссы</string>
     <string name="label_by_location">По месту</string>
     <string name="bestiary_not_encountered">Ещё не встречен</string>
+    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
+    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
     <string name="bestiary_qty_header">Количество</string>
     <string name="bestiary_chance_header">Шанс</string>
     <string name="label_completion_progress">%1$d / %2$d %3$s</string>
@@ -1712,6 +1714,7 @@
     <string name="armory_how_to_obtain">Как получить</string>
     <string name="armory_no_stats">Нет бонусов характеристик.</string>
     <string name="armory_filter_all">Все</string>
+    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
     <string name="armory_filter_weapons">Оружие</string>
     <string name="armory_filter_armor">Броня</string>
     <string name="armory_filter_accessories">Аксессуары</string>

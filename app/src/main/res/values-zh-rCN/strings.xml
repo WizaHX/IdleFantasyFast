@@ -66,6 +66,8 @@
     <string name="label_bosses">首领</string>
     <string name="label_by_location">按地点</string>
     <string name="bestiary_not_encountered">尚未遭遇</string>
+    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
+    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
     <string name="bestiary_qty_header">数量</string>
     <string name="bestiary_chance_header">几率</string>
     <string name="label_completion_progress">%3$s %1$d / %2$d</string>
@@ -1690,6 +1692,7 @@
     <string name="armory_how_to_obtain">获取途径</string>
     <string name="armory_no_stats">无属性加成。</string>
     <string name="armory_filter_all">全部</string>
+    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
     <string name="armory_filter_weapons">武器</string>
     <string name="armory_filter_armor">护甲</string>
     <string name="armory_filter_accessories">饰品</string>

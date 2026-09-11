@@ -66,6 +66,8 @@
     <string name="label_bosses">Ceannaisí</string>
     <string name="label_by_location">De Réir Áit</string>
     <string name="bestiary_not_encountered">Níor Casadh Fós</string>
+    <string name="bestiary_filter_all">All</string> <!-- untranslated -->
+    <string name="bestiary_filter_missing">Missing</string> <!-- untranslated -->
     <string name="bestiary_qty_header">Qty</string> <!-- untranslated -->
     <string name="bestiary_chance_header">Chance</string> <!-- untranslated -->
     <string name="label_completion_progress">%1$d / %2$d %3$s</string>
@@ -1724,6 +1726,7 @@
     <string name="armory_how_to_obtain">How to obtain</string> <!-- untranslated -->
     <string name="armory_no_stats">No stat bonuses.</string> <!-- untranslated -->
     <string name="armory_filter_all">All</string> <!-- untranslated -->
+    <string name="armory_filter_missing">Missing</string> <!-- untranslated -->
     <string name="armory_filter_weapons">Weapons</string> <!-- untranslated -->
     <string name="armory_filter_armor">Armor</string> <!-- untranslated -->
     <string name="armory_filter_accessories">Accessories</string> <!-- untranslated -->
