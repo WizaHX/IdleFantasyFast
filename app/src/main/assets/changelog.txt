@@ -1,3 +1,19 @@
+v1.14.14
+• The Runecrafting sheet now shows the total runes a session will produce and correctly factors the level and ash catalyst multipliers into the projected XP, so a redwood-ashes run no longer under-reports either
+• Rotating a piece of furniture in the house editor no longer treats it as a new purchase; rotation variants share ownership and storage with the base piece
+• The Herblore potion sheet now lists every ash tier the player owns, dimming ones that don't cover the current quantity with an "owned / needed" indicator, instead of hiding them entirely
+• Character save-slot switching is now crash-safe: switches are serialized, a switch interrupted mid-way is automatically completed on the next app start, and starting a session collect while a switch is running is blocked with a "please wait" message
+
+v1.14.13
+• Bannered Feast tokens no longer climb past the feast's token goal
+• Boss fight timers on the Home and Skills screens now match the Combat screen's full-length fight clock
+• Session complete dialogs and queue previews now include prestige XP bonuses, matching the XP actually paid out (no XP was ever lost)
+• Fixed the first tap after scrolling in a bottom sheet being swallowed; sheet content no longer drags the sheet itself, and flinging down from the top of a list still closes it
+• New: choose how many backup files to keep per character (1 to 30); older backups are only pruned after the new one is written and verified
+• Combat screen skill rows now show XP as current / next-level like the Skills screen, with gear and prestige bonuses on their own row
+• Skills within 100k XP of level 99 now show the remaining XP to 99
+• Czech and French translation updates
+
 v1.14.12
 • Fix: the app now removes unreadable oversized sessions written by old versions (e.g. burying thousands of bones before 1.8.6) on startup, ending the permanent crash loop on opening
 • Fix: XP previews on the Home screen queue and worker cards now update live when XP boosts, blessings, or prestige bonuses change, instead of showing the value frozen when the session was queued

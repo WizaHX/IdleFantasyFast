@@ -202,6 +202,8 @@
     <string name="format_level_xp">Poziom %1$d — %2$s XP</string>
     <!-- Translator note: %1$s = formatted XP amount, %2$d = target level number -->
     <string name="format_xp_to_next">%1$s XP do poziomu %2$d</string>
+    <!-- Translator note: %1$s = formatted XP amount remaining to reach the level cap (99) -->
+    <string name="xp_to_99">%1$s XP to 99</string> <!-- untranslated -->
     <!-- Translator note: %1$s = time string (e.g. "42m 10s") -->
     <string name="format_time_remaining">Pozostało: %1$s</string>
     <!-- Translator note: %1$s = relative time (e.g. "5m ago") -->
@@ -504,6 +506,7 @@
     <string name="settings_backup_no_folder">Nie wybrano folderu</string>
     <string name="settings_backup_choose">Wybierz</string>
     <string name="settings_backup_frequency">Częstotliwość</string>
+    <string name="settings_backup_count">Number of backups</string> <!-- untranslated -->
     <string name="settings_backup_off">Wyłączona</string>
     <string name="settings_backup_hourly">Co godzinę</string>
     <string name="settings_backup_daily">Codziennie</string>
@@ -1502,6 +1505,7 @@
     <string name="catalyst_enhanced_output">Produkuje wzmocnioną miksturę</string>
     <string name="catalyst_rune_bonus">%1$d run na esencję</string>
     <string name="catalyst_none">Brak katalizatora</string>
+    <string name="skills_rune_output">Produces %1$d runes</string> <!-- untranslated -->
 
     <!-- Construction skill -->
     <string name="skill_construction_name">Budownictwo</string>
@@ -2229,6 +2233,7 @@
     <string name="save_slot_delete_body">Trwale usunąć %1$s? Tej operacji nie można cofnąć.</string>
     <string name="save_slot_delete_btn">Usuń</string>
     <string name="save_slot_switch_failed">Nie udało się zmienić postaci.</string>
+    <string name="collect_blocked_switching">Character switch in progress. Please wait and try again.</string> <!-- untranslated -->
 
     <!-- Ironman mode -->
     <string name="character_ironman_title">Tryb Ironman</string>
@@ -2258,7 +2263,10 @@
     <string name="carnival_stat_atk">ATK +%1$d</string> <!-- untranslated -->
     <string name="carnival_stat_str">STR +%1$d</string> <!-- untranslated -->
     <string name="carnival_stat_def">DEF +%1$d</string> <!-- untranslated -->
-    <string name="carnival_stat_yield">Yield</string> <!-- untranslated -->
+    <!-- Translator note: %1$s = "${skill name} ", %2$d = percentage bonus -->
+    <string name="carnival_stat_xp">%1$sXP +%2$d%%</string> <!-- untranslated -->
+    <!-- Translator note: %1$s = "${skill name} ", %2$d = percentage bonus -->
+    <string name="carnival_stat_yield">%1$sYield +%2$d%%</string> <!-- untranslated -->
     <string name="carnival_potion_letter_green">G</string> <!-- untranslated -->
     <string name="carnival_potion_letter_blue">B</string> <!-- untranslated -->
     <string name="carnival_potion_letter_red">R</string> <!-- untranslated -->
