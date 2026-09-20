@@ -24,6 +24,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -59,6 +60,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.os.LocaleListCompat
@@ -444,13 +446,17 @@ fun SettingsScreen(
             OutlinedTextField(
                 value = speedPercent,
                 onValueChange = {
-                    if (it.isEmpty() || it.toIntOrNull() in 1..100) {
+                    val value = it.toFloatOrNull()
+                    if (it.isEmpty() || it == "." || (value != null && value in 0f..1f)) {
                         speedPercent = it
-                        viewModel.sessionSpeedReductionPercent = it.toIntOrNull()
+                        if (it.isEmpty() || value != null) {
+                            viewModel.sessionSpeedReductionPercent = value
+                        }
                     }
                 },
-                label = { Text("Session speed reduction (1–100%)") },
+                label = { Text("Session speed reduction (0–1, 0.50 = 50%)") },
                 placeholder = { Text("Default from buildings.json") },
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 singleLine = true,
             )
 
