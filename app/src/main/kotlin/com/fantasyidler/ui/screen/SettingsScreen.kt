@@ -444,39 +444,51 @@ fun SettingsScreen(
             SectionHeader(title = stringResource(R.string.settings_general_header))
 
             var speedPercent by remember { mutableStateOf(viewModel.sessionSpeedReductionPercent?.toString() ?: "") }
-            OutlinedTextField(
-                value = speedPercent,
-                onValueChange = {
-                    val value = it.toFloatOrNull()
-                    if (it.isEmpty() || it == "." || (value != null && value in 0f..1f)) {
-                        speedPercent = it
-                        if (it.isEmpty() || value != null) {
-                            viewModel.sessionSpeedReductionPercent = value
-                        }
-                    }
+            SettingsRow(
+                title = "Override speed reduction",
+                subtitle = "",
+                trailing = {
+                    OutlinedTextField(
+                        value = speedPercent,
+                        onValueChange = {
+                            val value = it.toFloatOrNull()
+                            if (it.isEmpty() || it == "." || (value != null && value in 0f..1f)) {
+                                speedPercent = it
+                                if (it.isEmpty() || value != null) {
+                                    viewModel.sessionSpeedReductionPercent = value
+                                }
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                        modifier = Modifier.width(150.dp),
+                        textStyle = MaterialTheme.typography.bodySmall,
+                        singleLine = true,
+                    )
                 },
-                label = { Text("Session speed reduction (0–1, 0.50 = 50%)") },
-                placeholder = { Text("Default from buildings.json") },
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
-                singleLine = true,
             )
 
             var blessingBoost by remember { mutableStateOf(viewModel.blessingBoost.toString()) }
-            OutlinedTextField(
-                value = blessingBoost,
-                onValueChange = {
-                    val value = it.toFloatOrNull()
-                    if (it.isEmpty() || it == "." || (value != null && value.isFinite() && value >= 0f)) {
-                        blessingBoost = it
-                        if (it.isEmpty() || value != null) {
-                            viewModel.blessingBoost = value ?: 0f
-                        }
-                    }
+            SettingsRow(
+                title = "Boost church blessing",
+                subtitle = "",
+                trailing = {
+                    OutlinedTextField(
+                        value = blessingBoost,
+                        onValueChange = {
+                            val value = it.toFloatOrNull()
+                            if (it.isEmpty() || it == "." || (value != null && value.isFinite() && value >= 0f)) {
+                                blessingBoost = it
+                                if (it.isEmpty() || value != null) {
+                                    viewModel.blessingBoost = value ?: 0f
+                                }
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                        modifier = Modifier.width(150.dp),
+                        textStyle = MaterialTheme.typography.bodySmall,
+                        singleLine = true,
+                    )
                 },
-                label = { Text("Blessing boost (1 = +100%, 2 = +200%)") },
-                placeholder = { Text("Default: 0") },
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
-                singleLine = true,
             )
 
             SettingsRow(
