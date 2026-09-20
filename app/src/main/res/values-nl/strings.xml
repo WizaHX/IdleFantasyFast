@@ -1489,6 +1489,7 @@
     <string name="catalyst_enhanced_output">Produceert verbeterd drankje</string>
     <string name="catalyst_rune_bonus">%1$d runen per essentie</string>
     <string name="catalyst_none">Geen katalysator</string>
+    <string name="skills_rune_output">Produces %1$d runes</string> <!-- untranslated -->
 
     <!-- Construction skill -->
     <string name="skill_construction_name">Constructie</string>
@@ -2212,6 +2213,7 @@
     <string name="save_slot_delete_body">%1$s definitief verwijderen? Dit kan niet ongedaan worden gemaakt.</string>
     <string name="save_slot_delete_btn">Verwijderen</string>
     <string name="save_slot_switch_failed">Kon niet van personage wisselen.</string>
+    <string name="collect_blocked_switching">Character switch in progress. Please wait and try again.</string> <!-- untranslated -->
 
     <!-- Ironman mode -->
     <string name="character_ironman_title">Ironman-modus</string>
@@ -2241,7 +2243,10 @@
     <string name="carnival_stat_atk">ATK +%1$d</string> <!-- untranslated -->
     <string name="carnival_stat_str">STR +%1$d</string> <!-- untranslated -->
     <string name="carnival_stat_def">DEF +%1$d</string> <!-- untranslated -->
-    <string name="carnival_stat_yield">Yield</string> <!-- untranslated -->
+    <!-- Translator note: %1$s = "${skill name} ", %2$d = percentage bonus -->
+    <string name="carnival_stat_xp">%1$sXP +%2$d%%</string> <!-- untranslated -->
+    <!-- Translator note: %1$s = "${skill name} ", %2$d = percentage bonus -->
+    <string name="carnival_stat_yield">%1$sYield +%2$d%%</string> <!-- untranslated -->
     <string name="carnival_potion_letter_green">G</string> <!-- untranslated -->
     <string name="carnival_potion_letter_blue">B</string> <!-- untranslated -->
     <string name="carnival_potion_letter_red">R</string> <!-- untranslated -->
