@@ -31,6 +31,9 @@ class ChurchRepository @Inject constructor(
         discountedBoneCost(blessing, boostRepo.blessingCostMultiplier(flags))
 
     companion object {
+        /** Temporary boost on top of blessing bonuses; resets when the app process restarts. */
+        var blessingBoost: Float = 0f
+
         fun activeBlessing(flags: PlayerFlags, blessings: List<BlessingData>): BlessingData? {
             if (flags.activeBlessingKey.isEmpty()) return null
             if (flags.activeBlessingExpiresAt <= System.currentTimeMillis()) return null
@@ -58,8 +61,8 @@ class ChurchRepository @Inject constructor(
          * so only the part above 1 grows; DEFENSE/COINS magnitudes are already pure bonuses.
          */
         fun effectiveMagnitude(b: BlessingData, prayerCapeMult: Float): Float = when (b.type) {
-            BlessingType.XP -> 1f + (b.magnitude - 1f) * prayerCapeMult
-            BlessingType.DEFENSE, BlessingType.COINS -> b.magnitude * prayerCapeMult
+            BlessingType.XP -> 1f + (b.magnitude - 1f) * prayerCapeMult * (1f + blessingBoost)
+            BlessingType.DEFENSE, BlessingType.COINS -> b.magnitude * prayerCapeMult * (1f + blessingBoost)
         }
 
         /** Pure variant for UI display; [costMult] from BoostRepository.blessingCostMultiplier. */
