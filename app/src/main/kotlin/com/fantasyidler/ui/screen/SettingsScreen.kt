@@ -24,6 +24,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -59,6 +60,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.os.LocaleListCompat
@@ -440,6 +442,54 @@ fun SettingsScreen(
             HorizontalDivider()
 
             SectionHeader(title = stringResource(R.string.settings_general_header))
+
+            var speedPercent by remember { mutableStateOf(viewModel.sessionSpeedReductionPercent?.toString() ?: "") }
+            SettingsRow(
+                title = "Override speed reduction",
+                subtitle = "",
+                trailing = {
+                    OutlinedTextField(
+                        value = speedPercent,
+                        onValueChange = {
+                            val value = it.toFloatOrNull()
+                            if (it.isEmpty() || it == "." || (value != null && value in 0f..1f)) {
+                                speedPercent = it
+                                if (it.isEmpty() || value != null) {
+                                    viewModel.sessionSpeedReductionPercent = value
+                                }
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                        modifier = Modifier.width(150.dp),
+                        textStyle = MaterialTheme.typography.bodySmall,
+                        singleLine = true,
+                    )
+                },
+            )
+
+            var blessingBoost by remember { mutableStateOf(viewModel.blessingBoost.toString()) }
+            SettingsRow(
+                title = "Boost church blessing",
+                subtitle = "",
+                trailing = {
+                    OutlinedTextField(
+                        value = blessingBoost,
+                        onValueChange = {
+                            val value = it.toFloatOrNull()
+                            if (it.isEmpty() || it == "." || (value != null && value.isFinite() && value >= 0f)) {
+                                blessingBoost = it
+                                if (it.isEmpty() || value != null) {
+                                    viewModel.blessingBoost = value ?: 0f
+                                }
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                        modifier = Modifier.width(150.dp),
+                        textStyle = MaterialTheme.typography.bodySmall,
+                        singleLine = true,
+                    )
+                },
+            )
 
             SettingsRow(
                 title    = stringResource(R.string.settings_tutorial_title),

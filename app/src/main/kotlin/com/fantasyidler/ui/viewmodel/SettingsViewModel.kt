@@ -47,7 +47,16 @@ class SettingsViewModel @Inject constructor(
     private val saveSlotRepo: SaveSlotRepository,
     private val themeRepo: ThemeRepository,
     private val json: Json,
+    private val gameData: com.fantasyidler.repository.GameDataRepository,
 ) : ViewModel() {
+
+    var sessionSpeedReductionPercent: Float?
+        get() = gameData.sessionSpeedReductionOverride
+        set(value) { gameData.sessionSpeedReductionOverride = value }
+
+    var blessingBoost: Float
+        get() = com.fantasyidler.repository.ChurchRepository.blessingBoost
+        set(value) { com.fantasyidler.repository.ChurchRepository.blessingBoost = value }
 
     val officialThemes: List<String> = themeRepo.getOfficialThemes()
 
