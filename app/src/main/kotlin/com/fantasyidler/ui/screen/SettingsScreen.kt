@@ -460,6 +460,24 @@ fun SettingsScreen(
                 singleLine = true,
             )
 
+            var blessingBoost by remember { mutableStateOf(viewModel.blessingBoost.toString()) }
+            OutlinedTextField(
+                value = blessingBoost,
+                onValueChange = {
+                    val value = it.toFloatOrNull()
+                    if (it.isEmpty() || it == "." || (value != null && value.isFinite() && value >= 0f)) {
+                        blessingBoost = it
+                        if (it.isEmpty() || value != null) {
+                            viewModel.blessingBoost = value ?: 0f
+                        }
+                    }
+                },
+                label = { Text("Blessing boost (1 = +100%, 2 = +200%)") },
+                placeholder = { Text("Default: 0") },
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                singleLine = true,
+            )
+
             SettingsRow(
                 title    = stringResource(R.string.settings_tutorial_title),
                 subtitle = stringResource(R.string.settings_tutorial_desc),
