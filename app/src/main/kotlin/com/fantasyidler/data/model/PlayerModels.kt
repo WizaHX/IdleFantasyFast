@@ -87,6 +87,9 @@ data class PlayerFlags(
     @SerialName("daily_quest_claimed") val dailyQuestClaimed: List<String> = emptyList(),
     /** Epoch ms when today's daily quests were generated (used to detect 6am rollover). */
     @SerialName("daily_quest_generated_at") val dailyQuestGeneratedAt: Long = 0L,
+    /** Epoch ms of the next daily reset, frozen at generation time so a later device-timezone
+     *  change can't shift it and trigger an early/instant reset. 0 = not yet set (always refresh). */
+    @SerialName("daily_quest_next_reset_at") val dailyQuestNextResetAt: Long = 0L,
 
     /** IDs of the 5 active weekly challenge template IDs. */
     @SerialName("weekly_quest_ids") val weeklyQuestIds: List<String> = emptyList(),
@@ -96,6 +99,8 @@ data class PlayerFlags(
     @SerialName("weekly_quest_claimed") val weeklyQuestClaimed: List<String> = emptyList(),
     /** Epoch ms when the current weekly set was generated (used to detect Monday 6am rollover). */
     @SerialName("weekly_quest_generated_at") val weeklyQuestGeneratedAt: Long = 0L,
+    /** Epoch ms of the next weekly reset, frozen at generation time; see [dailyQuestNextResetAt]. */
+    @SerialName("weekly_quest_next_reset_at") val weeklyQuestNextResetAt: Long = 0L,
     /** True if the full weekly bonus chest has been claimed this week. */
     @SerialName("weekly_bonus_claimed") val weeklyBonusClaimed: Boolean = false,
     /** Consecutive weekly bonus claims without a Divine gear drop; resets to 0 on a drop. */
@@ -129,6 +134,8 @@ data class PlayerFlags(
     @SerialName("guild_daily_claimed") val guildDailyClaimed: List<String> = emptyList(),
     /** Epoch ms when today's guild dailies were generated (used to detect 6am rollover). */
     @SerialName("guild_daily_generated_at") val guildDailyGeneratedAt: Long = 0L,
+    /** Epoch ms of the next guild daily reset, frozen at generation time; see [dailyQuestNextResetAt]. */
+    @SerialName("guild_daily_next_reset_at") val guildDailyNextResetAt: Long = 0L,
     /** Tracks the highest guild level whose quest-progress has been reset on tier-up. guild key → level. */
     @SerialName("guild_quest_reset_levels") val guildQuestResetLevels: Map<String, Int> = emptyMap(),
     /** Notes found per skilling dungeon key (e.g. "copper_caverns" -> 3). */
@@ -267,6 +274,8 @@ data class PlayerFlags(
     @SerialName("seasonal_bounty_slot_cooldown") val seasonalBountySlotCooldownUntil: Map<String, Long> = emptyMap(),
     /** When the bounty board last did its 6am daily rotation of untouched slots. */
     @SerialName("seasonal_bounty_daily_stamp") val seasonalBountyDailyStamp: Long = 0L,
+    /** Epoch ms of the next bounty board daily rotation, frozen at rotation time; see [dailyQuestNextResetAt]. */
+    @SerialName("seasonal_bounty_next_reset_at") val seasonalBountyNextResetAt: Long = 0L,
     /** Seasonal Events: epoch ms when the minigame cooldown expires; 0 = not on cooldown. */
     @SerialName("seasonal_minigame_cooldown_at") val seasonalMinigameCooldownAt: Long = 0L,
     /** Seasonal Events: persistent player choice — longer reaction window, longer cooldown. */
@@ -306,6 +315,32 @@ data class PlayerFlags(
     @SerialName("house_draft") val houseDraft: HouseDraft? = null,
     /** Saved house layouts, at most one per slot (slots 0..2). */
     @SerialName("house_blueprints") val houseBlueprints: List<HouseBlueprint> = emptyList(),
+    /** True once the Sea Serpent has been defeated at least once (voyage climax). */
+    @SerialName("sea_serpent_defeated") val seaSerpentDefeated: Boolean = false,
+    /** True once all Voyage requirements are met and the isle is reachable. */
+    @SerialName("elder_isle_unlocked") val elderIsleUnlocked: Boolean = false,
+    /** True when the player is currently on the Elder Isle; false = on mainland. All bottom-nav
+     *  tabs render their isle variant while this is true. Toggled by the Set Sail / Return to
+     *  Mainland buttons on the Home tab. Blocked while any session is running. */
+    @SerialName("on_elder_isle") val onElderIsle: Boolean = false,
+    /** Elder skill levels (mirrors mainland Skills.ALL minus prayer/agility/construction, so 16
+     *  keys — see ElderSkills.ALL). Absent key = level 1. Persists through mainland prestige. */
+    @SerialName("elder_skill_levels") val elderSkillLevels: Map<String, Int> = emptyMap(),
+    /** Elder skill XP totals, parallel to elderSkillLevels. Absent key = 0 XP. */
+    @SerialName("elder_skill_xp") val elderSkillXp: Map<String, Long> = emptyMap(),
+    /** Elder Armor Master craft queue: piece keys in the order they'll auto-craft as
+     *  materials become available. Capped at 3, matching the mainland action queue. */
+    @SerialName("elder_craft_queue") val elderCraftQueue: List<String> = emptyList(),
+    /** Sigil Embedder state: Elder armor piece key to the sigil stone item key embedded
+     *  in its socket. Absent piece = empty socket. One stone per piece for now. */
+    @SerialName("embedded_sigils") val embeddedSigils: Map<String, String> = emptyMap(),
+    /** Isle main-quest completion set. A quest is added when its predicate is first
+     *  met and stays here permanently — so consuming quest mats afterwards doesn't
+     *  un-complete it. Lore fragments in the Lore Master unlock from this set. */
+    @SerialName("elder_quests_completed") val elderQuestsCompleted: Set<String> = emptySet(),
+    /** True once the first-arrival welcome splash has been shown on Elder Isle. Stops
+     *  the splash from popping every time you sail back after that first landing. */
+    @SerialName("elder_isle_welcomed") val elderIsleWelcomed: Boolean = false,
 )
 
 /** One completed bulk sell: what was sold and what it paid. */
@@ -457,6 +492,15 @@ data class QueuedAction(
      * 0 = legacy entry with an unknown baked-in multiplier — shown as stored.
      */
     @SerialName("xp_boost_mult_at_queue") val xpBoostMultAtQueue: Double = 0.0,
+    /**
+     * Stamped from `flags.onElderIsle` at enqueue time so the isle context stays attached
+     * to the action, even if the player sails back to the mainland before this queued
+     * session actually starts. Without it, a queued isle session that fired after the
+     * player returned to mainland would route XP into the wrong pool (issue: reporter
+     * queued Coastal Run on isle, sailed back, then found the XP had landed on mainland
+     * Agility instead of elder Agility).
+     */
+    @SerialName("is_elder_session") val isElderSession: Boolean = false,
 )
 
 // ---------------------------------------------------------------------------
@@ -612,6 +656,10 @@ object EquipSlot {
     const val NECKLACE = "necklace"
     const val SHIELD   = "shield"
 
+    /** Elder Isle: Ancient Signet slot. Hidden from the gear picker until the signet drops
+     *  (checked via `flags.seenItemKeys.contains("ancient_signet")`). */
+    const val SIGNET = "signet"
+
     // Gathering tools
     const val PICKAXE     = "pickaxe"
     const val AXE         = "axe"
@@ -626,7 +674,7 @@ object EquipSlot {
     const val LOCKPICK       = "lockpick"
 
     val WEAPON_SLOTS = listOf(WEAPON_ATK, WEAPON_STR, WEAPON_RANGED, WEAPON_MAGIC)
-    val ARMOR_SLOTS  = listOf(HEAD, BODY, LEGS, BOOTS, CAPE, RING, NECKLACE, SHIELD)
+    val ARMOR_SLOTS  = listOf(HEAD, BODY, LEGS, BOOTS, CAPE, RING, NECKLACE, SHIELD, SIGNET)
     val COMBAT_SLOTS = WEAPON_SLOTS + ARMOR_SLOTS
     val TOOL_SLOTS   = listOf(PICKAXE, AXE, FISHING_ROD, HOE, HAMMER, TINDERBOX, GRAPPLING_HOOK, FRYING_PAN, LOCKPICK)
     val ALL          = COMBAT_SLOTS + TOOL_SLOTS
