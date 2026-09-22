@@ -191,7 +191,7 @@ class TownRepository @Inject constructor(
         flags.townBuildingTiers.forEach { buildingName, tier ->
             reduction += playerSessionSpeedReduction(buildingName, tier)
         }
-        return (1.0f - reduction).coerceAtLeast(0.1f)
+        return (1.0f - reduction).coerceAtLeast(0.01f)
     }
 
     // -------------------------------------------------------------------------
