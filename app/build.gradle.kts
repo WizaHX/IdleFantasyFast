@@ -12,7 +12,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.tristinbaker.idlefantasy"
+        applicationId = "com.tristinbaker.idlefantasyfast"
         minSdk = 26
         targetSdk = 35
         versionCode = 154000
@@ -48,6 +48,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix = ".debug"
+        }
         release {
             isMinifyEnabled = true
             signingConfig   = signingConfigs.getByName("release")
@@ -78,7 +81,7 @@ android {
             if (this is com.android.build.gradle.internal.api.BaseVariantOutputImpl &&
                 buildType.name == "release"
             ) {
-                outputFileName = "IdleFantasy-v$vName.apk"
+                outputFileName = "IdleFantasyFast-v$vName.apk"
             }
         }
     }
