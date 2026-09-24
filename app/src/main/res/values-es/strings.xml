@@ -46,9 +46,9 @@
 
     <!-- ===== Common labels ===== -->
     <string name="label_level">Nivel</string>
-    <string name="label_xp">XP</string> <!-- untranslated -->
+    <string name="label_xp">XP</string>
     <string name="label_coins">Monedas</string>
-    <string name="label_hp">PS</string>
+    <string name="label_hp">HP</string>
     <string name="label_attack">Ataque</string>
     <string name="label_strength">Fuerza</string>
     <string name="label_defense">Defensa</string>
@@ -58,22 +58,22 @@
     <string name="label_hitpoints">Vida</string>
     <string name="label_inventory">Inventario</string>
     <string name="label_equipment">Equipamiento</string>
-    <string name="label_combat_equipment">Equipamiento</string>
+    <string name="label_combat_equipment">Equipo</string>
     <string name="label_pets">Mascotas</string>
     <string name="label_achievements">Logros</string>
-    <string name="label_locations">Locations</string> <!-- untranslated -->
+    <string name="label_locations">Ubicaciones</string>
     <string name="label_bestiary">Bestiario</string>
     <string name="label_enemies">Enemigos</string>
     <string name="label_bosses">Jefes</string>
     <string name="label_by_location">Por Lugar</string>
     <string name="bestiary_not_encountered">Aún no encontrado</string>
     <string name="bestiary_filter_all">Todos</string>
-    <string name="bestiary_filter_missing">Sin descubrir</string>
-    <string name="bestiary_qty_header">Cantidad</string>
-    <string name="bestiary_chance_header">Probabilidad</string>
+    <string name="bestiary_filter_missing">Faltante</string>
+    <string name="bestiary_qty_header">Cant.</string>
+    <string name="bestiary_chance_header">Prob.</string>
     <string name="label_completion_progress">%1$d / %2$d %3$s</string>
     <string name="achievements_progress_bar">obtenidos</string>
-    <string name="bestiary_progress_bar">Descubiertos</string>
+    <string name="bestiary_progress_bar">encontrados</string>
     <string name="bestiary_always_drops">Siempre cae</string>
     <string name="bestiary_rare_drops">Objetos raros</string>
     <string name="bestiary_common_loot">Botín común</string>
@@ -94,11 +94,11 @@
     <string name="home_expedition_complete_title">%1$s Expedición completada</string>
     <string name="home_skill_session_complete_title">%1$s Sesión completada</string>
     <string name="home_bones_buried_row">%1$s enterrado</string>
-    <string name="worker_sessions_complete_title">Trabajador: %1$d Sesiones completadas!</string>
-    <string name="worker_boss_defeated_title">Trabajador: Derrotado %1$s!</string>
-    <string name="worker_dungeon_died_title">Trabajador: %1$s — Muerto</string>
-    <string name="worker_dungeon_complete_title">Trabajador: %1$s Completado!</string>
-    <string name="worker_skill_complete_title">Trabajador: %1$s Completado</string>
+    <string name="worker_sessions_complete_title">¡Trabajador: %1$d Sesiones Completas!</string>
+    <string name="worker_boss_defeated_title">¡Trabajador: Derrotó a %1$s!</string>
+    <string name="worker_dungeon_died_title">Trabajador: %1$s — Murió</string>
+    <string name="worker_dungeon_complete_title">¡Trabajador: %1$s Completo!</string>
+    <string name="worker_skill_complete_title">Trabajador: %1$s Completo</string>
     <string name="label_training">Entrenamiento</string>
     <string name="label_gathering_skills">Recolección</string>
     <string name="label_crafting_skills">Habilidades de Artesanía</string>
@@ -117,12 +117,12 @@
     <string name="label_session_results">Resultados de la Sesión</string>
     <string name="label_xp_gained">XP obtenida</string>
     <string name="label_items_collected">Artículos recogidos</string>
-    <string name="label_level_ups">Level ups</string> <!-- untranslated -->
+    <string name="label_level_ups">Subidas de Nivel</string>
     <string name="label_requirements">Requisitos</string>
     <string name="label_rewards">Recompensas</string>
     <string name="label_your_level">Tu nivel</string>
     <string name="label_xp_to_next">XP para el siguiente nivel</string>
-    <string name="label_total_xp">Exp Total</string>
+    <string name="label_total_xp">XP Total</string>
     <string name="label_quantity">Cantidad</string>
     <string name="label_price">Precio</string>
     <string name="label_available">Disponible</string>
@@ -166,7 +166,7 @@
     <string name="label_inactive">Inactivo</string>
     <string name="label_boost">Impulso</string>
     <string name="label_xp_boost">XP Impulso</string>
-    <string name="label_prestige_xp_boost">Prestige XP Boost</string> <!-- untranslated -->
+    <string name="label_prestige_xp_boost">Potenciador de XP de Prestigio</string>
     <string name="label_weapon">Arma</string>
     <string name="label_armour">Armadura</string>
     <string name="label_food">Comida</string>
@@ -178,7 +178,7 @@
     <string name="label_runes">Runas</string>
     <string name="label_spell">Hechizo</string>
     <string name="label_none">Ninguno</string>
-    <string name="label_melee">Melee</string> <!-- untranslated -->
+    <string name="label_melee">Cuerpo a Cuerpo</string>
     <string name="label_ranged_style">Arquería</string>
     <string name="label_magic_style">Magia</string>
     <string name="label_gathering">Reunión</string>
@@ -188,7 +188,7 @@
     <string name="label_recipe">Receta</string>
     <string name="label_recipes">Recetas</string>
     <string name="label_ingredients">Ingredientes</string>
-    <string name="label_output">Salida</string>
+    <string name="label_output">Producción</string>
     <string name="label_xp_per_action">XP por acción</string>
     <string name="label_unlocked_at">Desbloqueado en el nivel</string>
     <string name="label_kills">Muertes</string>
@@ -196,6 +196,7 @@
     <string name="label_daily_dig">Excavación diaria</string>
     <string name="label_dig_depth">Profundidad del agujero</string>
     <string name="label_version">Versión</string>
+    <string name="label_open_source" translatable="false">Open Source</string>
 
 
     <!-- ===== Format strings — all use positional args for Weblate ===== -->
@@ -299,7 +300,7 @@
     <string name="settings_battery_optimization_btn">Ajustar configuración</string>
     <string name="settings_language">Idioma</string>
     <string name="settings_about">Acerca de</string>
-    <string name="settings_open_source_licenses">Open Source Licenses</string> <!-- untranslated -->
+    <string name="settings_open_source_licenses">Licencias de Código Abierto</string>
 
     <!-- ===== HomeScreen ===== -->
     <string name="label_player_stats">Estadísticas del jugador</string>
@@ -315,7 +316,7 @@
     <string name="settings_quest_dots_desc">Muestra un punto dorado en las habilidades que tienen una misión abierta.</string>
     <string name="settings_prestige_notifications">Insignias de prestigio</string>
     <string name="settings_prestige_notifications_desc">Muestra una insignia en la navegación cuando una habilidad esté lista para el prestigio.</string>
-    <string name="label_switch_character">Cambiar personaje</string>
+    <string name="label_switch_character">Cambiar de Personaje</string>
     <string name="settings_daily_reset_time">Hora de reinicio diario</string>
     <string name="settings_daily_reset_time_desc">Hora local en la que se renuevan las misiones diarias, las diarias del gremio y las semanales. Cambiarla nunca otorga un reinicio adicional.</string>
     <string name="settings_compact_numbers">Números abreviados</string>
@@ -353,16 +354,16 @@
     <string name="label_claim_reward">Reclama tu recompensa</string>
     <string name="label_daily">Diaria</string>
     <string name="label_weekly">Semanal</string>
-    <string name="label_daily_quests">Misiones diarias</string>
-    <string name="label_daily_reset">Reinicia a las %1$s</string>
-    <string name="label_weekly_reset">Reinicia el lunes a las %1$s</string>
+    <string name="label_daily_quests">Misiones Diarias</string>
+    <string name="label_daily_reset">Se reinicia a las %1$s</string>
+    <string name="label_weekly_reset">Se reinicia el lunes a las %1$s</string>
     <string name="weekly_bonus_title">Bonus semanal!</string>
     <string name="weekly_bonus_claim">Reclamar bonus semanal</string>
-    <string name="label_daily_info_pity">Each daily quest rewards coins. Every quest also has a 1 in %1$d chance to drop a piece of Dwarven gear you don\'t own yet. Each claim without a drop improves the odds; a drop resets them to 1 in 100.</string> <!-- untranslated -->
-    <string name="label_daily_info_complete">Each daily quest rewards coins. You already own every piece of Dwarven gear!</string> <!-- untranslated -->
-    <string name="label_weekly_info">Each weekly challenge rewards coins based on its level requirement. Complete all 5 to earn a bonus: 100,000 coins, or a %1$s chance at a piece of Divine gear.</string> <!-- untranslated -->
-    <string name="label_weekly_info_complete">Each weekly challenge rewards coins based on its level requirement. Complete all 5 to earn a bonus: 100,000 coins. You already own every piece of Divine gear!</string> <!-- untranslated -->
-    <string name="label_daily_reward_pity">2.000 monedas (1/%1$d: Equipo enano)</string>
+    <string name="label_daily_info_pity">Cada misión diaria recompensa monedas. Cada misión además tiene 1 posibilidad entre %1$d de soltar una pieza de equipo Enano que aún no tengas. Cada reclamo sin botín mejora las probabilidades; un botín las reinicia a 1 entre 100.</string>
+    <string name="label_daily_info_complete">Cada misión diaria recompensa monedas. ¡Ya tienes cada pieza de equipo Enano!</string>
+    <string name="label_weekly_info">Cada desafío semanal recompensa monedas según su requisito de nivel. Completa los 5 para un bonus: 100.000 monedas, o una probabilidad de %1$s de una pieza de equipo Divino.</string>
+    <string name="label_weekly_info_complete">Cada desafío semanal recompensa monedas según su requisito de nivel. Completa los 5 para un bonus: 100.000 monedas. ¡Ya tienes cada pieza de equipo Divino!</string>
+    <string name="label_daily_reward_pity">2.000 monedas (1/%1$d: equipo Enano)</string>
     <string name="label_daily_reward_complete">2.000 monedas</string>
     <string name="msg_daily_claimed_coins">Misión diaria completada! +2.000 monedas.</string>
     <string name="msg_daily_claimed_dwarven">Misión diaria compleda! Has encontrado %1$s!</string>
@@ -451,6 +452,26 @@
     <string name="theme_editor_saved_ok">Tema guardado y aplicado</string>
     <string name="theme_editor_exported_ok">Tema exportado.</string>
     <string name="settings_language_desc">Cambia el idioma de la aplicación.</string>
+    <string name="settings_lang_english" translatable="false">English</string>
+    <string name="settings_lang_deutsch" translatable="false">Deutsch</string>
+    <string name="settings_lang_français" translatable="false">Français</string>
+    <string name="settings_lang_dutch" translatable="false">Nederlands</string>
+    <string name="settings_lang_español" translatable="false">Español</string>
+    <string name="settings_lang_español_españa" translatable="false">Español (España)</string>
+    <string name="settings_lang_turkish" translatable="false">Türkçe</string>
+    <string name="settings_lang_italiano" translatable="false">Italiano</string>
+    <string name="settings_lang_russian" translatable="false">Русский</string>
+    <string name="settings_lang_indonesian" translatable="false">Bahasa Indonesia</string>
+    <string name="settings_lang_portugues_brasil" translatable="false">Português (Brasil)</string>
+    <string name="settings_lang_japanese" translatable="false">日本語</string>
+    <string name="settings_lang_irish" translatable="false">Gaeilge</string>
+    <string name="settings_lang_czech" translatable="false">Čeština</string>
+    <string name="settings_lang_chinese_simplified" translatable="false">中文（简体）</string>
+    <string name="settings_lang_polish" translatable="false">Polski</string>
+    <string name="settings_lang_lithuanian" translatable="false">Lietuvių</string>
+    <string name="settings_lang_hebrew" translatable="false">עברית</string>
+    <string name="settings_lang_arabic" translatable="false">العربية</string>
+    <string name="settings_lang_catalan" translatable="false">Català</string>
 
 
 
@@ -480,11 +501,14 @@
     <string name="settings_import_desc">Restaura tu progreso desde un archivo.</string>
     <string name="settings_import_btn">Importar</string>
     <string name="settings_source_code">Código fuente</string>
+    <string name="settings_source_url" translatable="false">github.com/tristinbaker/IdleFantasy</string>
 
     <string name="settings_source_open">Abrir</string>
     <string name="settings_wiki">Wiki</string>
+    <string name="settings_wiki_url" translatable="false">idlefantasy.tristinbaker.xyz</string>
 
     <string name="settings_discord">Discord</string>
+    <string name="settings_discord_url" translatable="false">discord.gg/vRxtXsBwQU</string>
 
     <string name="settings_exported_ok">Partida exportada.</string>
     <string name="settings_imported_ok">Partida importada correctamente.</string>
@@ -871,27 +895,27 @@
     <string name="inn_hire">Hire</string> <!-- untranslated -->
     <string name="inn_worker_active">Worker hired</string>
     <string name="inn_hire_cost">%1$s monedas</string>
-    <string name="worker_long_laborer">Long Laborer</string> <!-- untranslated -->
-    <string name="worker_apprentice">Apprentice</string> <!-- untranslated -->
-    <string name="worker_journeyman">Journeyman</string> <!-- untranslated -->
-    <string name="worker_master">Master</string> <!-- untranslated -->
+    <string name="worker_long_laborer">Peón</string>
+    <string name="worker_apprentice">Aprendiz</string>
+    <string name="worker_journeyman">Oficial</string>
+    <string name="worker_master">Maestro</string>
     <string name="inn_long_laborer_desc">One job per hire, dismissed after collecting. 8h gathering, 0.5x efficiency, unlimited crafting qty. He\'s slow, but he\'ll do anything.</string> <!-- untranslated -->
     <string name="inn_apprentice_desc">Un trabajo por contratación, despedido después de recoger. 8h de recolección, eficiencia 1x. Artesanía, oración y runecraft limitados a 480 objetos por sesión.</string>
     <string name="inn_journeyman_desc">Un trabajo por contratación, despedido después de recoger. 6h de recolección, eficiencia 1.5x. Artesanía, oración y runecraft limitados a 540 objetos por sesión.</string>
     <string name="inn_master_desc">Un trabajo por contratación, despedido después de recoger. 4h de recolección, eficiencia 2.5x. Artesanía, oración y runecraft limitados a 600 objetos por sesión.</string>
     <string name="inn_gathering_note">Gathering: session hours x efficiency multiplier applied to loot and XP</string> <!-- untranslated -->
     <string name="inn_crafting_note">Crafting/prayer/runecrafting: quantity capped per tier; Long Laborer has no cap</string> <!-- untranslated -->
-    <string name="worker_skills_title">Worker: %1$s</string> <!-- untranslated -->
-    <string name="worker_session_active">Worker Session Active</string> <!-- untranslated -->
-    <string name="worker_session_complete">Worker Session Complete</string> <!-- untranslated -->
-    <string name="worker_manage_from_home">Collect from the Home screen</string> <!-- untranslated -->
+    <string name="worker_skills_title">Trabajador: %1$s</string>
+    <string name="worker_session_active">Sesión de Trabajador Activa</string>
+    <string name="worker_session_complete">Sesión de Trabajador Completa</string>
+    <string name="worker_manage_from_home">Recoge desde la pantalla de inicio</string>
     <string name="worker_session_assigned">Asignado: %1$s %2$s</string>
-    <string name="worker_card_title">Worker</string> <!-- untranslated -->
-    <string name="worker_idle">Worker is idle — queued sessions start automatically</string> <!-- untranslated -->
-    <string name="worker_collect_btn">Collect Worker Session</string> <!-- untranslated -->
-    <string name="worker_dismiss_btn">Dismiss Worker</string> <!-- untranslated -->
-    <string name="worker_dismiss_confirm_title">Dismiss Worker?</string> <!-- untranslated -->
-    <string name="worker_dismiss_confirm_body">The active session and queue will be cancelled. Your hire fee and any queued materials will be returned.</string> <!-- untranslated -->
+    <string name="worker_card_title">Trabajador</string>
+    <string name="worker_idle">El trabajador está libre: las sesiones en cola empiezan solas.</string>
+    <string name="worker_collect_btn">Recoger Sesión de Trabajador</string>
+    <string name="worker_dismiss_btn">Despedir Trabajador</string>
+    <string name="worker_dismiss_confirm_title">¿Despedir al Trabajador?</string>
+    <string name="worker_dismiss_confirm_body">La sesión activa y la cola se cancelarán. Se devolverán tu tarifa de contratación y los materiales en cola.</string>
     <string name="inn_daily_menu">Daily Menu</string> <!-- untranslated -->
     <string name="inn_laborers_header">Laborers</string> <!-- untranslated -->
     <string name="inn_slot1_header">Long Laborer</string> <!-- untranslated -->
@@ -966,10 +990,10 @@
     <string name="inn_buy_qty">Cuandidad</string>
     <string name="inn_buy_total">Total: %1$s</string> <!-- untranslated -->
     <string name="inn_card_desc">Workers and daily food</string>
-    <string name="worker_no_active_session">Worker is idle — no sessions queued</string> <!-- untranslated -->
-    <string name="worker_add_sessions">Add Sessions</string> <!-- untranslated -->
+    <string name="worker_no_active_session">El trabajador está libre: sin sesiones en cola</string>
+    <string name="worker_add_sessions">Añadir Sesiones</string>
     <string name="inn_worker_tier">%1$s worker</string> <!-- untranslated -->
-    <string name="worker_skills_title_nav">Worker Skills</string> <!-- untranslated -->
+    <string name="worker_skills_title_nav">Habilidades de Trabajador</string>
 
     <!-- Guild Hall -->
     <string name="guild_hall_title">Sede del Gremio</string>
@@ -1522,8 +1546,8 @@
 
     <!-- Town building upgrade UI -->
     <string name="town_upgrade_section_title">Edificio del Pueblo</string>
-    <string name="town_building_inn_name">Inn</string> <!-- untranslated -->
-    <string name="town_building_guild_hall_name">Guild Hall</string> <!-- untranslated -->
+    <string name="town_building_inn_name">Posada</string>
+    <string name="town_building_guild_hall_name">Sala del Gremio</string>
     <string name="town_building_church_name">Iglesia</string>
     <string name="town_building_current_tier">Nivel %1$d / %2$d</string>
     <string name="town_building_maxed_label">Totalmente Mejorado</string>
@@ -1544,10 +1568,10 @@
     <string name="town_church_active_bonus">Bendiciones duran %1$dh (por defecto: 24h)</string>
     <string name="town_church_no_bonus">Mejora para extender la duración de bendiciones</string>
     <string name="town_building_fairgrounds_name">Feria</string>
-    <string name="town_fairgrounds_no_bonus">4 active minigames available, 10-minute cooldowns</string> <!-- untranslated -->
-    <string name="town_fairgrounds_t1_bonus" formatted="false">Unlocks Pick-a-Cup, cooldowns reduced to 7.5 minutes, +5% idle ticket chance</string> <!-- untranslated -->
-    <string name="town_fairgrounds_t2_bonus" formatted="false">Unlocks Higher or Lower, +10% idle ticket chance</string> <!-- untranslated -->
-    <string name="town_fairgrounds_t3_bonus" formatted="false">Cooldowns reduced to 5 minutes, +15% idle ticket chance</string> <!-- untranslated -->
+    <string name="town_fairgrounds_no_bonus">4 minijuegos activos disponibles, enfriamientos de 10 minutos</string>
+    <string name="town_fairgrounds_t1_bonus" formatted="false">Desbloquea Elige el Vaso, enfriamientos reducidos a 7,5 minutos, +5% de probabilidad de entradas pasivas</string>
+    <string name="town_fairgrounds_t2_bonus" formatted="false">Desbloquea Mayor o Menor, +10% de probabilidad de entradas pasivas</string>
+    <string name="town_fairgrounds_t3_bonus" formatted="false">Enfriamientos reducidos a 5 minutos, +15% de probabilidad de entradas pasivas</string>
     <string name="town_building_garden_name">Jardín</string>
     <plurals name="town_garden_bonus">
         <item quantity="zero">Todavía no hay parcelas de cultivo extra</item>
@@ -1560,16 +1584,16 @@
         <item quantity="one">+%1$d espacio de cola extra</item>
         <item quantity="other">+%1$d espacios de cola extra</item>
     </plurals>
-    <string name="town_building_cape_rack_name">Cape Rack</string> <!-- untranslated -->
-    <string name="town_cape_rack_no_bonus">Upgrade to passively apply owned skill/guild cape yield and XP bonuses</string> <!-- untranslated -->
-    <string name="town_cape_rack_t1_bonus">Passive bonuses from Tier 1 (Gathering) capes are active</string> <!-- untranslated -->
-    <string name="town_cape_rack_t2_bonus">Passive bonuses from Tier 1 &amp; 2 (Gathering, Artisan) capes are active</string> <!-- untranslated -->
-    <string name="town_cape_rack_t3_bonus">Passive bonuses from all owned capes (Gathering, Artisan, Combat &amp; Guild) are active</string> <!-- untranslated -->
-    <string name="town_building_artisans_workshop_name">"Artisan's Workshop"</string> <!-- untranslated -->
-    <string name="town_artisans_workshop_no_bonus">Upgrade to grant a chance to preserve secondary crafting materials</string> <!-- untranslated -->
-    <string name="town_artisans_workshop_active_bonus">%1$d%% chance to preserve secondary crafting materials</string> <!-- untranslated -->
-    <string name="town_building_chronos_spire_name">Chronos Spire</string> <!-- untranslated -->
-    <string name="town_building_dock_name">Dock</string> <!-- untranslated -->
+    <string name="town_building_cape_rack_name">Perchero de Capas</string>
+    <string name="town_cape_rack_no_bonus">Mejora para aplicar de forma pasiva los bonus de rendimiento y XP de capas de habilidad y gremio que tengas</string>
+    <string name="town_cape_rack_t1_bonus">Bonus pasivos de capas Nivel 1 (Recolección) activos</string>
+    <string name="town_cape_rack_t2_bonus">Bonus pasivos de capas Nivel 1 y 2 (Recolección, Artesanía) activos</string>
+    <string name="town_cape_rack_t3_bonus">Bonus pasivos de todas las capas que tengas (Recolección, Artesanía, Combate y Gremio) activos</string>
+    <string name="town_building_artisans_workshop_name">Taller del Artesano</string>
+    <string name="town_artisans_workshop_no_bonus">Mejora para dar probabilidad de conservar materiales secundarios de fabricación</string>
+    <string name="town_artisans_workshop_active_bonus">%1$d%% de probabilidad de conservar materiales secundarios de fabricación</string>
+    <string name="town_building_chronos_spire_name">Chapitel de Chronos</string>
+    <string name="town_building_dock_name">Muelle</string>
     <string name="elder_isle_title">Elder Isle</string> <!-- untranslated -->
     <string name="elder_isle_sail_title">Sail to Elder Isle</string> <!-- untranslated -->
     <string name="elder_isle_zone_beach">Beach &amp; Cliffs</string> <!-- untranslated -->
@@ -1711,8 +1735,8 @@
     <string name="item_abyssal_ore_desc">Mineral oscuro de la isla con vetas agrietadas por la presión. Se funde en barras abisales para el equipo de la gama Bosque.</string>
     <string name="item_voidsteel_ore_desc">Mineral de la isla que zumba débilmente bajo presión. Se funde en barras de voidsteel para el equipo de la gama Volcánica.</string>
     <string name="item_starforged_ore_desc">El mineral más raro de la isla, se dice que se desprende del propio sello. Se funde en barras estelares para el conjunto del Anciano.</string>
-    <string name="town_chronos_spire_no_bonus">Upgrade to reduce player session durations</string> <!-- untranslated -->
-    <string name="town_chronos_spire_active_bonus">%1$d%% reduction to player session durations</string> <!-- untranslated -->
+    <string name="town_chronos_spire_no_bonus">Mejora para reducir la duración de tus sesiones</string>
+    <string name="town_chronos_spire_active_bonus">%1$d%% de reducción a la duración de tus sesiones</string>
 
     <!-- Town achievements -->
     <string name="achievement_town_first_upgrade_name">Primera Renovación</string>
@@ -2276,12 +2300,14 @@
     <string name="settings_credit_banners_title">Estandartes de temporada</string>
     <string name="settings_credit_banners_subtitle">Arte de Wenrexa</string>
     <string name="settings_credit_skill_icons_title">Iconos de Habilidades</string>
+    <string name="settings_credit_skill_icons_subtitle" translatable="false">Shikashi\'s Fantasy Icons Pack</string>
 
-    <string name="settings_credit_characters_title">Character Sprites</string> <!-- untranslated -->
-    <string name="settings_credit_characters_subtitle">Art by Pixylac</string> <!-- untranslated -->
-    <string name="settings_credit_bosses_title">Boss Sprites</string> <!-- untranslated -->
-    <string name="settings_credit_bosses_subtitle">Art by Meg</string> <!-- untranslated -->
-    <string name="settings_credit_house_title">House Interiors</string> <!-- untranslated -->
+    <string name="settings_credit_characters_title">Sprites de Personajes</string>
+    <string name="settings_credit_characters_subtitle">Arte de Pixylac</string>
+    <string name="settings_credit_bosses_title">Sprites de Jefes</string>
+    <string name="settings_credit_bosses_subtitle">Arte de Meg</string>
+    <string name="settings_credit_house_title">Interiores de Casas</string>
+    <string name="settings_credit_house_subtitle" translatable="false">Rogue Adventure Interior Tileset by Elv Games (modified)</string>
 
     <string name="title_seasonal_champion_of">Campeón de %1$s</string>
     <string name="title_seasonal_requirement">Completa el Evento de Temporada %1$s</string>
@@ -2394,21 +2420,21 @@
     <string name="ironman_badge">Ironman</string> <!-- untranslated -->
     <string name="settings_imported_demoted">Partida importada. Se modificó fuera del juego, así que se eliminó el estado Ironman.</string>
     <string name="shop_xp_boost_name">2× XP Boost (48h)</string> <!-- untranslated -->
-    <string name="bestiary_stat_hp">HP</string> <!-- untranslated -->
-    <string name="bestiary_stat_attack">Attack</string> <!-- untranslated -->
-    <string name="bestiary_stat_strength">Strength</string> <!-- untranslated -->
-    <string name="bestiary_stat_defense">Defense</string> <!-- untranslated -->
-    <string name="bestiary_stat_atk_defense">Atk Defense</string> <!-- untranslated -->
-    <string name="bestiary_stat_str_defense">Str Defense</string> <!-- untranslated -->
-    <string name="bestiary_stat_rng_defense">Rng Defense</string> <!-- untranslated -->
-    <string name="bestiary_stat_mag_defense">Mag Defense</string> <!-- untranslated -->
-    <string name="bestiary_stat_xp">XP</string> <!-- untranslated -->
-    <string name="bestiary_stat_required_level">Required Level</string> <!-- untranslated -->
-    <string name="bestiary_stat_xp_reward">XP Reward</string> <!-- untranslated -->
+    <string name="bestiary_stat_hp">HP</string>
+    <string name="bestiary_stat_attack">Ataque</string>
+    <string name="bestiary_stat_strength">Fuerza</string>
+    <string name="bestiary_stat_defense">Defensa</string>
+    <string name="bestiary_stat_atk_defense">Defensa Atk</string>
+    <string name="bestiary_stat_str_defense">Defensa Fue</string>
+    <string name="bestiary_stat_rng_defense">Defensa Dis</string>
+    <string name="bestiary_stat_mag_defense">Defensa Mag</string>
+    <string name="bestiary_stat_xp">XP</string>
+    <string name="bestiary_stat_required_level">Nivel Requerido</string>
+    <string name="bestiary_stat_xp_reward">Recompensa de XP</string>
     <string name="bestiary_stat_duration">Duración</string>
-    <string name="bestiary_stat_duration_min">%1$d min</string> <!-- untranslated -->
-    <string name="bestiary_kill_count">%1$d kills</string> <!-- untranslated -->
-    <string name="bestiary_location_other">Other</string> <!-- untranslated -->
+    <string name="bestiary_stat_duration_min">%1$d min</string>
+    <string name="bestiary_kill_count">%1$d muertes</string>
+    <string name="bestiary_location_other">Otro</string>
     <string name="carnival_stat_atk">ATK +%1$d</string> <!-- untranslated -->
     <string name="carnival_stat_str">STR +%1$d</string> <!-- untranslated -->
     <string name="carnival_stat_def">DEF +%1$d</string> <!-- untranslated -->
