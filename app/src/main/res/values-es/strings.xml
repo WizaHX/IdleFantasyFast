@@ -86,14 +86,14 @@
     <string name="label_session_active">Sesión Activa</string>
     <string name="label_no_active_session">Sin Sesión Activa</string>
     <string name="label_session_complete">Sesión Completa!</string>
-    <string name="home_sessions_complete_title">%1$d Sesiones completadas!</string>
-    <string name="home_boss_defeated_title">Derrotado %1$s!</string>
+    <string name="home_sessions_complete_title">¡%1$d Sesiones Completas!</string>
+    <string name="home_boss_defeated_title">¡Derrotaste a %1$s!</string>
     <string name="home_boss_defeated_by_title">Derrotado por %1$s.</string>
-    <string name="home_dungeon_died_title">%1$s — Has muerto</string>
-    <string name="home_dungeon_complete_title">%1$s Completado!</string>
-    <string name="home_expedition_complete_title">%1$s Expedición completada</string>
-    <string name="home_skill_session_complete_title">%1$s Sesión completada</string>
-    <string name="home_bones_buried_row">%1$s enterrado</string>
+    <string name="home_dungeon_died_title">%1$s — Moriste</string>
+    <string name="home_dungeon_complete_title">¡%1$s Completo!</string>
+    <string name="home_expedition_complete_title">Expedición de %1$s Completa</string>
+    <string name="home_skill_session_complete_title">Sesión de %1$s Completa</string>
+    <string name="home_bones_buried_row">%1$s enterrados</string>
     <string name="worker_sessions_complete_title">Trabajador: %1$d Sesiones completadas!</string>
     <string name="worker_boss_defeated_title">Trabajador: Derrotado %1$s!</string>
     <string name="worker_dungeon_died_title">Trabajador: %1$s — Muerto</string>
@@ -106,14 +106,14 @@
     <string name="label_coming_soon">Próximamente</string>
     <string name="label_time_remaining">Tiempo restante</string>
     <!-- Translator note: compact duration units; English puts the letter(s) right after the number -->
-    <string name="duration_years">%1$da</string>
-    <string name="duration_months">%1$dm</string>
-    <string name="duration_weeks">%1$ds</string>
-    <string name="duration_days">%1$dd</string> <!-- untranslated -->
-    <string name="duration_hours">%1$dh</string> <!-- untranslated -->
-    <string name="duration_minutes">%1$dmin</string>
-    <string name="duration_seconds">%1$dseg</string>
-    <string name="duration_complete">Completado</string>
+    <string name="duration_years">%1$d a</string>
+    <string name="duration_months">%1$d m</string>
+    <string name="duration_weeks">%1$d sem.</string>
+    <string name="duration_days">%1$d d</string>
+    <string name="duration_hours">%1$d h</string>
+    <string name="duration_minutes">%1$d min</string>
+    <string name="duration_seconds">%1$d s</string>
+    <string name="duration_complete">Completo</string>
     <string name="label_session_results">Resultados de la Sesión</string>
     <string name="label_xp_gained">XP obtenida</string>
     <string name="label_items_collected">Artículos recogidos</string>
@@ -521,8 +521,8 @@
     <string name="guild_progress_dailies_only">Completa %1$d/%2$d solicitudes diarias para avanzar</string>
     <string name="home_died_message">Moriste y perdiste la mayor parte de tus ganancias.</string>
     <string name="home_xp_boost_was_active">2× All skills XP was active</string> <!-- untranslated -->
-    <string name="home_xp_boost_active">2× All skills XP - %1$s</string> <!-- untranslated -->
-    <string name="home_prestige_xp_boost_active">2× %1$s XP - %2$s</string> <!-- untranslated -->
+    <string name="home_xp_boost_active">2× XP de todas las habilidades - %1$s</string>
+    <string name="home_prestige_xp_boost_active">2× XP de %1$s - %2$s</string>
     <string name="boosts_show_more">+%1$d more boosts (tap to show)</string> <!-- untranslated -->
     <string name="boosts_show_less">Mostrar menos</string>
     <string name="home_loot">Botín</string>
@@ -535,7 +535,7 @@
     <!-- Translator note: %1$d = current queue size, %2$d = max queue size (base 3, +1 per Queue Master tier) -->
     <string name="home_up_next">A continuación (%1$d/%2$d)</string>
     <!-- Translator note: %1$s = formatted duration string (e.g. "2h 15m") -->
-    <string name="home_queue_ends_in">La cola finaliza en %1$s</string>
+    <string name="home_queue_ends_in">La cola termina en %1$s</string>
     <!-- Translator note: %1$d = item quantity (e.g. ×40) -->
 
     <string name="queue_item_qty_with_output">×%1$d → %2$d objetos</string>
@@ -636,27 +636,27 @@
     <string name="profile_equip_best_tools">Equipa las mejores herramientas</string>
     <string name="profile_weapons">Armas</string>
     <string name="profile_combat_gear">Equipo de combate</string>
-    <string name="profile_view_combat_gear">View Combat Gear</string> <!-- untranslated -->
+    <string name="profile_view_combat_gear">Ver Equipo de Combate</string>
     <string name="profile_gathering_tools">Herramientas de recolección</string>
     <string name="profile_food_dungeon">Alimento (Dungeon)</string>
     <string name="profile_no_food">No hay alimentos cocinados en el inventario.</string>
     <string name="profile_food_threshold">Empezar a comer al</string>
-    <string name="profile_food_order">Eating order</string> <!-- untranslated -->
+    <string name="profile_food_order">Orden de comida</string>
     <string name="food_order_descending">Highest Heal Value First</string> <!-- untranslated -->
     <string name="food_order_ascending">Lowest Heal Value First</string> <!-- untranslated -->
     <string name="food_order_least_quantity">Least Quantity First</string> <!-- untranslated -->
     <string name="profile_combat_style">Estilo de combate</string>
     <!-- Translator note: %1$d = quantity, %2$d = heal value -->
-    <string name="profile_food_desc">×%1$d  •  heals %2$d HP</string> <!-- untranslated -->
+    <string name="profile_food_desc">×%1$d  •  cura %2$d HP</string>
     <!-- Translator note: %1$s = slot display name (e.g. "Weapon") -->
     <string name="profile_choose_slot">Elegir %1$s</string>
     <string name="profile_no_items">No hay artículos elegibles en el inventario.</string>
-    <string name="profile_stat_atk">Atk</string> <!-- untranslated -->
-    <string name="profile_stat_str">Str</string> <!-- untranslated -->
+    <string name="profile_stat_atk">Atk</string>
+    <string name="profile_stat_str">Str</string>
     <string name="profile_stat_ranged">A distancia</string>
     <string name="profile_stat_magic">Magia</string>
     <string name="profile_stat_mining">Minería</string>
-    <string name="profile_stat_wc">WC</string> <!-- untranslated -->
+    <string name="profile_stat_wc">WC</string>
     <string name="profile_stat_fishing">Pesca</string>
     <string name="profile_stat_farming">Agricultura</string>
     <string name="profile_stat_smithing">Herrería</string>
@@ -664,8 +664,8 @@
     <string name="profile_stat_agility">Agilidad</string>
     <string name="profile_stat_cooking">Cocina</string>
     <string name="profile_stat_thieving">Robo</string>
-    <string name="profile_stat_def">Def</string> <!-- untranslated -->
-    <string name="profile_req_lv">Req lv.</string> <!-- untranslated -->
+    <string name="profile_stat_def">Def</string>
+    <string name="profile_req_lv">Nv. req.</string>
 
     <!-- ===== SkillsScreen ===== -->
     <!-- Translator note: %1$d = session duration in minutes -->
@@ -679,10 +679,10 @@
     <!-- Translator note: %1$d = level required, %2$s = XP per action -->
     <string name="skills_level_req_xp">Lv. %1$d  •  %2$s XP/mineral</string>
     <!-- Translator note: %1$s = formatted multiplier (e.g. "1.15") -->
-    <string name="skills_tool_bonus">×%1$s tool bonus</string> <!-- untranslated -->
-    <string name="skills_pet_bonus">+%1$d%% XP (pet)</string> <!-- untranslated -->
+    <string name="skills_tool_bonus">bonus de herramienta ×%1$s</string>
+    <string name="skills_pet_bonus">+%1$d%% de XP (mascota)</string>
     <!-- Translator note: %1$d = fishing level -->
-    <string name="skills_fishing_desc">Level %1$d  •  Level-appropriate catches</string> <!-- untranslated -->
+    <string name="skills_fishing_desc">Nivel %1$d  •  Capturas acordes al nivel</string>
     <!-- Translator note: %1$d = prayer level -->
     <string name="skills_prayer_desc">Level %1$d  •  Entierra huesos o esparce cenizas para la oración. XP</string>
     <string name="skills_no_bones">No hay huesos ni cenizas en el inventario.</string>
@@ -690,7 +690,7 @@
     <!-- Translator note: %1$d = XP per bone, %2$d = quantity available -->
     <string name="skills_bone_selected">%1$d XP cada  •  %2$d disponible</string>
     <!-- Translator note: %1$d = total XP -->
-    <string name="skills_xp_total">+%1$d XP total</string> <!-- untranslated -->
+    <string name="skills_xp_total">+%1$d de XP total</string>
     <string name="skills_no_essence">No hay esencia rúnica en el inventario - primero extrae un poco.</string>
     <string name="skills_no_runes">Aún no se han desbloqueado tipos de runas.</string>
     <!-- Translator note: %1$d = essence quantity -->
@@ -700,33 +700,33 @@
     <!-- Translator note: %1$d = XP per rune, %2$d = essence available -->
     <string name="skills_rune_selected">%1$d XP/runa  •  %2$d esencia disponible</string>
     <!-- Translator note: %1$d = level reached -->
-    <string name="skills_level_reached">Level %1$d reached!</string> <!-- untranslated -->
-    <string name="skills_no_logs">No logs in inventory</string> <!-- untranslated -->
+    <string name="skills_level_reached">¡Nivel %1$d alcanzado!</string>
+    <string name="skills_no_logs">Sin troncos en el inventario</string>
     <!-- Translator note: %1$d = level required, %2$s = XP per log -->
     <string name="skills_log_desc">Lv. %1$d  •  %2$s XP/tronco</string>
     <!-- Translator note: %1$d = level required, %2$s = XP per catch -->
-    <string name="skills_fish_desc">Lv. %1$d  •  %2$s XP/catch</string> <!-- untranslated -->
+    <string name="skills_fish_desc">Nv. %1$d  •  %2$s XP/captura</string>
     <!-- Translator note: %1$d = required level, %2$s = skill name, %3$d = player level, %4$s = skill name again -->
     <string name="skills_req_with_have">Requiere %1$d %2$s (Tienes %3$d %4$s)</string>
     <!-- Translator note: %1$d = owned quantity -->
-    <string name="crafting_owned">Owned: %1$d</string> <!-- untranslated -->
-    <string name="crafting_owned_detail">Owned in inventory: %1$d</string> <!-- untranslated -->
+    <string name="crafting_owned">En propiedad: %1$d</string>
+    <string name="crafting_owned_detail">En el inventario: %1$d</string>
     <string name="firemaking_ashes_owned">Ashes owned: %1$d</string> <!-- untranslated -->
 
 
     <!-- ===== ShopScreen ===== -->
     <string name="shop_active">ACTIVO</string>
     <string name="shop_sell_junk">Vender chatarra</string>
-    <string name="shop_keep_one_toggle">Keep one of each item</string> <!-- untranslated -->
-    <string name="shop_search_hint">Search items</string> <!-- untranslated -->
+    <string name="shop_keep_one_toggle">Conservar uno de cada objeto</string>
+    <string name="shop_search_hint">Buscar objetos</string>
     <string name="shop_filter_all">Todos</string>
-    <string name="shop_order_default">Default</string> <!-- untranslated -->
+    <string name="shop_order_default">Predeterminado</string>
     <string name="shop_order_highest_amount">Cuantidad</string>
     <string name="shop_order_highest_price">Precio</string>
-    <string name="shop_sell_blocked_equipped">%1$s is equipped. Unequip it first to sell.</string> <!-- untranslated -->
-    <string name="shop_sell_blocked_reserved">%1$s is reserved for a queued task.</string> <!-- untranslated -->
-    <string name="shop_sell_blocked_keep_one">Keeping your last %1$s (Keep one of each item is on).</string> <!-- untranslated -->
-    <string name="shop_sell_blocked_none">Nothing to sell.</string> <!-- untranslated -->
+    <string name="shop_sell_blocked_equipped">%1$s está equipado. Desequípalo para venderlo.</string>
+    <string name="shop_sell_blocked_reserved">%1$s está reservado para una tarea en cola.</string>
+    <string name="shop_sell_blocked_keep_one">Conservando tu último %1$s (Conservar uno de cada objeto activado).</string>
+    <string name="shop_sell_blocked_none">Nada que vender.</string>
     <string name="shop_sell_old_gear">Vende equipo</string>
     <string name="shop_equipped_label">(equipado)</string>
     <string name="shop_item_locked">%1$s está bloqueado. Mantén pulsado para desbloquear.</string>
@@ -758,16 +758,16 @@
     <!-- ===== CraftingScreen ===== -->
     <string name="crafting_no_mats">No hay materiales</string>
     <!-- Translator note: %1$d = total quantity, %2$s = item name -->
-    <string name="crafting_produces">= %1$d %2$s</string> <!-- untranslated -->
+    <string name="crafting_produces">= %1$d %2$s</string>
     <string name="crafting_effects">Efectos</string>
     <!-- Translator note: %1$d = total XP -->
-    <string name="crafting_xp_total">+%1$d XP total</string> <!-- untranslated -->
+    <string name="crafting_xp_total">+%1$d de XP total</string>
     <string name="crafting_decrease">Disminuir</string>
     <string name="crafting_increase">Aumentar</string>
     <!-- Translator note: %1$d = needed, %2$d = have -->
-    <string name="crafting_needed_have">%1$d (have %2$d)</string> <!-- untranslated -->
+    <string name="crafting_needed_have">%1$d (tienes %2$d)</string>
     <!-- Translator note: %1$d = quantity in inventory -->
-    <string name="crafting_in_inventory">In inventory: ×%1$d</string> <!-- untranslated -->
+    <string name="crafting_in_inventory">En inventario: ×%1$d</string>
     <string name="crafting_quest_targets">Objetivos de misión</string>
     <string name="quest_fill_daily">Diaria</string>
     <string name="quest_fill_weekly">Semanal</string>
@@ -777,21 +777,21 @@
     <!-- Translator note: %1$s = crop name -->
     <string name="farming_harvested">Cosechado %1$s</string>
     <!-- Translator note: %1$d = farming level -->
-    <string name="farming_title">Farming — Level %1$d</string> <!-- untranslated -->
+    <string name="farming_title">Agricultura — Nivel %1$d</string>
     <!-- Translator note: %1$d = patch count -->
     <string name="farming_patches">%1$d Parcelas desbloqueadas</string>
     <string name="farming_clear_patch">Limpiar parcela</string>
     <!-- Translator note: %1$s = crop name -->
-    <string name="farming_clear_desc_named">Remove the %1$s without any reward?</string> <!-- untranslated -->
-    <string name="farming_clear_desc_bean">Remove the Magic Bean? It will be returned to your inventory.</string> <!-- untranslated -->
-    <string name="farming_harvest_and_plant">Harvest and Plant All</string> <!-- untranslated -->
+    <string name="farming_clear_desc_named">¿Quitar %1$s sin recompensa?</string>
+    <string name="farming_clear_desc_bean">¿Quitar la Haba Mágica? Volverá a tu inventario.</string>
+    <string name="farming_harvest_and_plant">Cosechar y Plantar Todo</string>
     <string name="farming_harvest_all_complete">¡Todas las parcelas cosechadas!</string>
-    <string name="farming_no_crops_ready">No crops ready to harvest</string> <!-- untranslated -->
-    <string name="farming_no_empty_patches">No empty patches available</string> <!-- untranslated -->
+    <string name="farming_no_crops_ready">Sin cultivos listos para cosechar</string>
+    <string name="farming_no_empty_patches">Sin parcelas vacías disponibles</string>
     <!-- Translator note: %1$s = seed name -->
-    <string name="farming_no_seeds_inventory">Not enough %1$s in inventory</string> <!-- untranslated -->
+    <string name="farming_no_seeds_inventory">%1$s insuficientes en el inventario</string>
     <!-- Translator note: %1$d = count, %2$s = seed name -->
-    <string name="farming_planted">Planted %1$d %2$s</string> <!-- untranslated -->
+    <string name="farming_planted">Plantados %1$d %2$s</string>
 
     <!-- ===== QuestsScreen ===== -->
     <string name="quests_none_in_category">No hay misiones en esta categoría..</string>
@@ -800,19 +800,19 @@
     <string name="character_create_title">Crea tu personaje</string>
     <string name="character_edit_title">Editar personaje</string>
     <string name="character_name_label">Nombre del personaje</string>
-    <string name="character_name_too_long">Only the first %1$d characters will be used.</string> <!-- untranslated -->
+    <string name="character_name_too_long">Solo se usarán los primeros %1$d caracteres.</string>
     <string name="character_gender">Género</string>
-    <string name="character_gender_male">Male</string> <!-- untranslated -->
+    <string name="character_gender_male">Hombre</string>
     <string name="character_gender_female">Femenino</string>
     <string name="character_gender_other">Otro</string>
     <string name="character_gender_custom_hint">Describe tu género</string>
     <string name="character_race">Raza</string>
-    <string name="character_race_human">Human</string> <!-- untranslated -->
-    <string name="character_race_elf">Elf</string> <!-- untranslated -->
-    <string name="character_race_dwarf">Dwarf</string> <!-- untranslated -->
-    <string name="character_race_orc">Orc</string> <!-- untranslated -->
-    <string name="character_race_halfling">Halfling</string> <!-- untranslated -->
-    <string name="character_race_gnome">Gnome</string> <!-- untranslated -->
+    <string name="character_race_human">Humano</string>
+    <string name="character_race_elf">Elfo</string>
+    <string name="character_race_dwarf">Enano</string>
+    <string name="character_race_orc">Orco</string>
+    <string name="character_race_halfling">Mediano</string>
+    <string name="character_race_gnome">Gnomo</string>
 
     <!-- ===== CharacterCustomizationSheet ===== -->
     <string name="appearance_title">Personalizar apariencia</string>
@@ -865,22 +865,22 @@
         <item>Yara</item>
     </string-array> <!-- untranslated -->
     <string name="inn_title">Posada</string>
-    <string name="inn_desc">Hire a worker to train skills for you, or buy food from the daily menu. Workers do not count toward your quests.</string> <!-- untranslated -->
-    <string name="inn_worker_already_hired">A worker is already hired.</string> <!-- untranslated -->
-    <string name="inn_not_enough_coins">Not enough coins.</string> <!-- untranslated -->
-    <string name="inn_hire">Hire</string> <!-- untranslated -->
+    <string name="inn_desc">Contrata un trabajador para que entrene habilidades por ti, o compra comida del menú diario. Los trabajadores no cuentan para tus misiones.</string>
+    <string name="inn_worker_already_hired">Ya hay un trabajador contratado.</string>
+    <string name="inn_not_enough_coins">No hay suficientes monedas.</string>
+    <string name="inn_hire">Contratar</string>
     <string name="inn_worker_active">Worker hired</string>
     <string name="inn_hire_cost">%1$s monedas</string>
     <string name="worker_long_laborer">Long Laborer</string> <!-- untranslated -->
     <string name="worker_apprentice">Apprentice</string> <!-- untranslated -->
     <string name="worker_journeyman">Journeyman</string> <!-- untranslated -->
     <string name="worker_master">Master</string> <!-- untranslated -->
-    <string name="inn_long_laborer_desc">One job per hire, dismissed after collecting. 8h gathering, 0.5x efficiency, unlimited crafting qty. He\'s slow, but he\'ll do anything.</string> <!-- untranslated -->
+    <string name="inn_long_laborer_desc">Un trabajo por contratación, despedido al recoger. 8h de recolección, eficiencia 0,5x, cantidad de fabricación ilimitada. Es lento, pero hace de todo.</string>
     <string name="inn_apprentice_desc">Un trabajo por contratación, despedido después de recoger. 8h de recolección, eficiencia 1x. Artesanía, oración y runecraft limitados a 480 objetos por sesión.</string>
     <string name="inn_journeyman_desc">Un trabajo por contratación, despedido después de recoger. 6h de recolección, eficiencia 1.5x. Artesanía, oración y runecraft limitados a 540 objetos por sesión.</string>
     <string name="inn_master_desc">Un trabajo por contratación, despedido después de recoger. 4h de recolección, eficiencia 2.5x. Artesanía, oración y runecraft limitados a 600 objetos por sesión.</string>
-    <string name="inn_gathering_note">Gathering: session hours x efficiency multiplier applied to loot and XP</string> <!-- untranslated -->
-    <string name="inn_crafting_note">Crafting/prayer/runecrafting: quantity capped per tier; Long Laborer has no cap</string> <!-- untranslated -->
+    <string name="inn_gathering_note">Recolección: horas de sesión x multiplicador de eficiencia aplicado al botín y la XP</string>
+    <string name="inn_crafting_note">Artesanía, plegarias y creación de runas: cantidad limitada por nivel; el Peón no tiene límite</string>
     <string name="worker_skills_title">Worker: %1$s</string> <!-- untranslated -->
     <string name="worker_session_active">Worker Session Active</string> <!-- untranslated -->
     <string name="worker_session_complete">Worker Session Complete</string> <!-- untranslated -->
@@ -892,10 +892,10 @@
     <string name="worker_dismiss_btn">Dismiss Worker</string> <!-- untranslated -->
     <string name="worker_dismiss_confirm_title">Dismiss Worker?</string> <!-- untranslated -->
     <string name="worker_dismiss_confirm_body">The active session and queue will be cancelled. Your hire fee and any queued materials will be returned.</string> <!-- untranslated -->
-    <string name="inn_daily_menu">Daily Menu</string> <!-- untranslated -->
-    <string name="inn_laborers_header">Laborers</string> <!-- untranslated -->
-    <string name="inn_slot1_header">Long Laborer</string> <!-- untranslated -->
-    <string name="inn_slot2_header">Skilled Worker</string> <!-- untranslated -->
+    <string name="inn_daily_menu">Menú Diario</string>
+    <string name="inn_laborers_header">Trabajadores</string>
+    <string name="inn_slot1_header">Peón</string>
+    <string name="inn_slot2_header">Trabajador Calificado</string>
 
     <!-- ===== Combat difficulty ratings ===== -->
     <string name="combat_difficulty_likely">You\'ve got this</string> <!-- untranslated -->
@@ -960,15 +960,15 @@
     <string name="quest_kbd_slayer_1_name">King Black Dragon Slayer I</string> <!-- untranslated -->
     <string name="quest_kbd_slayer_2_name">King Black Dragon Slayer II</string> <!-- untranslated -->
     <string name="quest_kbd_slayer_3_name">King Black Dragon Slayer III</string> <!-- untranslated -->
-    <string name="inn_daily_resets">Refreshes daily at %1$s</string> <!-- untranslated -->
-    <string name="inn_food_heal">+%1$d HP</string> <!-- untranslated -->
-    <string name="inn_food_purchased">Food purchased.</string> <!-- untranslated -->
+    <string name="inn_daily_resets">Se actualiza a diario a las %1$s</string>
+    <string name="inn_food_heal">+%1$d HP</string>
+    <string name="inn_food_purchased">Comida comprada.</string>
     <string name="inn_buy_qty">Cuandidad</string>
-    <string name="inn_buy_total">Total: %1$s</string> <!-- untranslated -->
+    <string name="inn_buy_total">Total: %1$s</string>
     <string name="inn_card_desc">Workers and daily food</string>
     <string name="worker_no_active_session">Worker is idle — no sessions queued</string> <!-- untranslated -->
     <string name="worker_add_sessions">Add Sessions</string> <!-- untranslated -->
-    <string name="inn_worker_tier">%1$s worker</string> <!-- untranslated -->
+    <string name="inn_worker_tier">trabajador %1$s</string>
     <string name="worker_skills_title_nav">Worker Skills</string> <!-- untranslated -->
 
     <!-- Guild Hall -->
@@ -1041,26 +1041,26 @@
     <!-- Church -->
     <string name="church_title">Iglesia</string>
     <string name="church_desc">Prayer blessings</string>
-    <string name="church_no_active_blessing">No active blessing — visit the Church to pray.</string> <!-- untranslated -->
-    <string name="church_active_label">Active Blessing</string> <!-- untranslated -->
-    <string name="church_expires_in">Expires in %1$s</string> <!-- untranslated -->
-    <string name="church_blessing_active_fmt">%1$s • %2$s left</string> <!-- untranslated -->
-    <string name="church_section_xp">XP Blessings</string> <!-- untranslated -->
-    <string name="church_section_defense">Defense Blessings</string> <!-- untranslated -->
-    <string name="church_section_coins">Coin Blessings</string> <!-- untranslated -->
-    <string name="church_locked_level">Requires Prayer level %1$d</string> <!-- untranslated -->
+    <string name="church_no_active_blessing">Sin bendición activa: visita la Iglesia para rezar.</string>
+    <string name="church_active_label">Bendición Activa</string>
+    <string name="church_expires_in">Vence en %1$s</string>
+    <string name="church_blessing_active_fmt">%1$s • quedan %2$s</string>
+    <string name="church_section_xp">Bendiciones de XP</string>
+    <string name="church_section_defense">Bendiciones de Defensa</string>
+    <string name="church_section_coins">Bendiciones de Monedas</string>
+    <string name="church_locked_level">Requiere nivel %1$d de Plegarias</string>
     <string name="church_active_chip">Activo</string>
     <string name="church_activate">Activar</string>
-    <string name="church_blessing_bonus">+%1$s from blessing</string> <!-- untranslated -->
-    <string name="church_blessing_suffix">from blessing</string> <!-- untranslated -->
-    <string name="church_effect_xp">×%1$.2f XP for %2$d hours</string> <!-- untranslated -->
-    <string name="church_effect_def">+%1$d Defense for %2$d hours</string> <!-- untranslated -->
-    <string name="church_effect_coins">+%1$d%% coin drops for %2$d hours</string> <!-- untranslated -->
-    <string name="church_cost_bones">Costs %1$d bones</string> <!-- untranslated -->
-    <string name="church_confirm_title">Activate Blessing?</string> <!-- untranslated -->
+    <string name="church_blessing_bonus">+%1$s de bendición</string>
+    <string name="church_blessing_suffix">de bendición</string>
+    <string name="church_effect_xp">×%1$.2f de XP por %2$d horas</string>
+    <string name="church_effect_def">+%1$d de Defensa por %2$d horas</string>
+    <string name="church_effect_coins">+%1$d%% de monedas por %2$d horas</string>
+    <string name="church_cost_bones">Cuesta %1$d huesos</string>
+    <string name="church_confirm_title">¿Activar bendición?</string>
     <string name="church_bones_available">Tienes %1$d huesos (de todos los tipos), equivalentes a %2$d para las bendiciones (los huesos más grandes valen más)</string>
-    <string name="church_not_enough_bones">Not enough bones (need %1$d)</string> <!-- untranslated -->
-    <string name="church_already_active">A blessing is already active</string> <!-- untranslated -->
+    <string name="church_not_enough_bones">Huesos insuficientes (necesitas %1$d)</string>
+    <string name="church_already_active">Ya hay una bendición activa</string>
     <string name="church_confirm_deactivate_title">¿Desactivar bendición?</string>
     <string name="church_confirm_deactivate_body">¿Estás seguro de que quieres desactivar tu bendición activa? No recuperarás tus huesos.</string>
 
@@ -1459,7 +1459,7 @@
     <string name="crafting_tier_iron">Hierro</string>
     <string name="crafting_tier_magic">Mágico</string>
     <string name="crafting_tier_maple">Arce</string>
-    <string name="crafting_tier_mithril">Mithril</string> <!-- untranslated -->
+    <string name="crafting_tier_mithril">Mithril</string>
     <string name="crafting_tier_oak">Roble</string>
     <string name="crafting_tier_plank">Tablón</string>
     <string name="crafting_tier_platinum">Platino</string>
@@ -1496,7 +1496,7 @@
     <string name="catalyst_enhanced_output">Produce poción mejorada</string>
     <string name="catalyst_rune_bonus">%1$d runas por esencia</string>
     <string name="catalyst_none">Sin catalizador</string>
-    <string name="skills_rune_output">Produces %1$d runes</string> <!-- untranslated -->
+    <string name="skills_rune_output">Produce %1$d runas</string>
 
     <!-- Construction skill -->
     <string name="skill_construction_name">Construcción</string>
@@ -1832,9 +1832,9 @@
     <string name="farming_bean_ready">La planta llega más allá de las nubes. ¿Listo para trepar?</string>
     <string name="farming_bean_climb">Trepar</string>
     <string name="farming_bean_climbed">Has trepado la planta de frijol. Algo te aguarda…</string>
-    <string name="farming_bean_climbed_title">Beanstalk Climbed!</string> <!-- untranslated -->
-    <string name="farming_bean_unlock_hint">New dungeon unlocked: %1$s. Find it under Combat, in the Dungeons list.</string> <!-- untranslated -->
-    <string name="farming_bean_cleared">The Magic Bean was returned to your inventory.</string> <!-- untranslated -->
+    <string name="farming_bean_climbed_title">¡Tallo Escalado!</string>
+    <string name="farming_bean_unlock_hint">Mazmorra nueva desbloqueada: %1$s. Búscala en Combate, en la lista de Mazmorras.</string>
+    <string name="farming_bean_cleared">La Haba Mágica volvió a tu inventario.</string>
 
     <string name="farming_magic_bean_one_plot">Los frijoles mágicos solo pueden plantarse en un único campo</string>
 
@@ -1909,10 +1909,10 @@
     <string name="shop_sold_junk">Trastos vendidos por %1$s monedas</string>
     <string name="shop_no_old_equipment">No hay equipo antiguo que vender</string>
     <string name="shop_sold_old_equipment">Equipo antiguo vendido por %1$s monedas</string>
-    <string name="shop_bulk_sell_total">Total</string> <!-- untranslated -->
+    <string name="shop_bulk_sell_total">Total</string>
     <string name="shop_bulk_sell_confirm">Vender todo</string>
-    <string name="shop_recent_bulk_sales">Recent bulk sales</string> <!-- untranslated -->
-    <string name="shop_recent_bulk_sales_empty">No bulk sales recorded yet.</string> <!-- untranslated -->
+    <string name="shop_recent_bulk_sales">Ventas masivas recientes</string>
+    <string name="shop_recent_bulk_sales_empty">Aún no hay ventas masivas registradas.</string>
     <string name="shop_xp_boost_activated">¡Potenciador de XP 2× activado durante %1$dh!</string>
     <string name="shop_xp_boost_already_active">Ya hay un potenciador de XP 2× activo.</string>
     <string name="shop_xp_boost_weekly_limit">Límite de un potenciador de XP 2× por semana. Disponible de nuevo tras el reinicio semanal.</string>
@@ -2286,7 +2286,7 @@
     <string name="title_seasonal_champion_of">Campeón de %1$s</string>
     <string name="title_seasonal_requirement">Completa el Evento de Temporada %1$s</string>
     <string name="home_welcome_greeting">Bienvenido de nuevo,</string>
-    <string name="home_welcome_name">%1$s!</string> <!-- untranslated -->
+    <string name="home_welcome_name">%1$s!</string>
     <string name="home_welcome_title">El %1$s!</string>
 
     <!-- Pet names and descriptions -->
@@ -2393,7 +2393,7 @@
     <string name="ironman_bonuses_notice">Ironman: los impulsos de XP, rendimiento y monedas están desactivados para este personaje.</string>
     <string name="ironman_badge">Ironman</string> <!-- untranslated -->
     <string name="settings_imported_demoted">Partida importada. Se modificó fuera del juego, así que se eliminó el estado Ironman.</string>
-    <string name="shop_xp_boost_name">2× XP Boost (48h)</string> <!-- untranslated -->
+    <string name="shop_xp_boost_name">Potenciador de XP 2× (48h)</string>
     <string name="bestiary_stat_hp">HP</string> <!-- untranslated -->
     <string name="bestiary_stat_attack">Attack</string> <!-- untranslated -->
     <string name="bestiary_stat_strength">Strength</string> <!-- untranslated -->
@@ -2422,8 +2422,8 @@
     <string name="carnival_potion_letter_purple">P</string>
     <string name="carnival_potion_letter_orange">O</string>
     <string name="carnival_potion_letter_cyan">C</string>
-    <string name="farming_crop_picker_stats">Lv. %1$d  •  %2$s  •  %3$d XP/crop</string> <!-- untranslated -->
-    <string name="farming_seeds_owned">Seeds: %1$d  •  Owned: %2$d</string> <!-- untranslated -->
+    <string name="farming_crop_picker_stats">Nv. %1$d  •  %2$s  •  %3$d XP/cultivo</string>
+    <string name="farming_seeds_owned">Semillas: %1$d  •  En propiedad: %2$d</string>
     <!-- ============ Prestige overhaul (v1.14.0) ============ -->
     <string name="prestige_title">Prestige</string> <!-- untranslated -->
     <string name="prestige_open_tree">View tree</string> <!-- untranslated -->
@@ -2436,7 +2436,7 @@
     <!-- Translator note: %1$d = current skill level -->
     <string name="prestige_requires_99">Reach level 99 to prestige (currently %1$d).</string> <!-- untranslated -->
     <string name="prestige_maxed_cap">Maximum prestige reached. Every point this skill can earn is yours.</string> <!-- untranslated -->
-    <string name="skills_prestige_max">★×%1$d (Max)</string> <!-- untranslated -->
+    <string name="skills_prestige_max">★×%1$d (Máx.)</string>
     <!-- Translator note: %1$s = skill name, %2$d = points awarded -->
     <string name="prestige_confirm_message_points">Your %1$s level will reset to 1 and you\'ll earn %2$d prestige points to spend in this skill\'s tree. Equipment that no longer meets its requirements will be swapped out, and unclaimed %1$s daily quest progress resets. You\'ll also gain 2x %1$s XP for 48 hours to speed the climb back up.</string> <!-- untranslated -->
     <string name="prestige_respec">Reset points</string> <!-- untranslated -->
@@ -2462,7 +2462,7 @@
     <string name="prestige_node_race_locked_desc">Only %1$s characters can learn this upgrade.</string> <!-- untranslated -->
     <string name="prestige_node_prereq_locked">Requires the previous tier in this path.</string> <!-- untranslated -->
     <string name="prestige_node_hidden">Unlock the previous upgrade first.</string> <!-- untranslated -->
-    <string name="character_race_edit_hint">Race changes are made in the appearance editor.</string> <!-- untranslated -->
+    <string name="character_race_edit_hint">Los cambios de raza se hacen en el editor de apariencia.</string>
     <string name="prestige_node_not_enough">Not enough points</string> <!-- untranslated -->
     <!-- Translator note: %1$s = node name -->
     <string name="prestige_node_purchased">%1$s purchased!</string> <!-- untranslated -->
@@ -2565,21 +2565,21 @@
     <string name="prestige_path_hitpoints_race_orc">Thick Hide</string> <!-- untranslated -->
 
     <!-- Race change -->
-    <string name="race_change_confirm_title">Change race?</string> <!-- untranslated -->
+    <string name="race_change_confirm_title">¿Cambiar de raza?</string>
     <string name="item_race_change_token_name">Race Change Token</string> <!-- untranslated -->
     <string name="item_race_change_token_desc">A rare boss drop that lets you change your character\'s race once.</string> <!-- untranslated -->
     <!-- Translator note: %1$d = number of tokens owned -->
-    <string name="race_change_pay_token">Use Race Change Token (%1$d)</string> <!-- untranslated -->
+    <string name="race_change_pay_token">Usar Ficha de Cambio de Raza (%1$d)</string>
     <string name="race_change_pay_coins">Paga 10,000,000 monedas</string>
-    <string name="race_change_cannot_afford">You need a Race Change Token (rare boss drop) or 10,000,000 coins to change race.</string> <!-- untranslated -->
-    <string name="race_change_ironman_locked">Ironman characters cannot change their race.</string> <!-- untranslated -->
-    <string name="race_change_cooldown_wait">You can change race again in %1$s.</string> <!-- untranslated -->
-    <string name="race_change_ironman_once">As an ironman, this is your one and only race change. Afterwards your race is locked forever.</string> <!-- untranslated -->
+    <string name="race_change_cannot_afford">Necesitas una Ficha de Cambio de Raza (botín raro de jefes) o 10.000.000 monedas para cambiar de raza.</string>
+    <string name="race_change_ironman_locked">Los personajes Ironman no pueden cambiar de raza.</string>
+    <string name="race_change_cooldown_wait">Podrás cambiar de raza de nuevo en %1$s.</string>
+    <string name="race_change_ironman_once">Como ironman, este es tu único cambio de raza. Después tu raza queda bloqueada para siempre.</string>
     <string name="ironman_race_permanent_note">Ironman characters cannot change their race later. Choose carefully!</string> <!-- untranslated -->
     <!-- Translator note: %1$s = comma-separated list of skill names -->
-    <string name="race_proficiency_label">Racial skill trees: %1$s</string> <!-- untranslated -->
-    <string name="race_proficiency_human">Racial bonus: an exclusive XP mastery tier in every skill</string> <!-- untranslated -->
-    <string name="race_change_confirm_message">Your race grants race-locked prestige upgrades. Changing race refunds any points spent in other races\' branches, and you can only change race once every 24 hours.</string> <!-- untranslated -->
+    <string name="race_proficiency_label">Árboles de habilidad raciales: %1$s</string>
+    <string name="race_proficiency_human">Bonus racial: un nivel de maestría de XP exclusivo en cada habilidad</string>
+    <string name="race_change_confirm_message">Tu raza otorga mejoras de prestigio bloqueadas por raza. Cambiar de raza reembolsa los puntos gastados en ramas de otras razas, y solo puedes cambiar de raza una vez cada 24 horas.</string>
     <!-- Heirloom items (raid boss rare drops that level up with use) -->
     <string name="item_heirloom_pickaxe_name">Pico Heredado</string>
     <string name="item_heirloom_pickaxe_desc">Un pico familiar transmitido de generación en generación. Recuerda cada mineral que alguna vez rompieron sus portadores.</string>
@@ -2614,7 +2614,7 @@
     <string name="heirloom_level_label">Heirloom Lv. %1$d</string> <!-- untranslated -->
     <!-- Translator note: %1$s = a skill name, used twice -->
     <string name="heirloom_desc">Grows with %1$s XP up to Lv. 99. Its power also scales with your %1$s level, reaching full effect at level 85. Stats shown are its full potential.</string> <!-- untranslated -->
-    <string name="shop_sell_blocked_heirloom">%1$s is an heirloom and cannot be sold.</string> <!-- untranslated -->
+    <string name="shop_sell_blocked_heirloom">%1$s es una reliquia y no se puede vender.</string>
     <!-- Translator note: %1$s = a dungeon or boss name -->
     <string name="repeat_blocked_level">Your combat level is too low to repeat %1$s.</string> <!-- untranslated -->
 </resources>
