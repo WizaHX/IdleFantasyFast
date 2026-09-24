@@ -546,18 +546,18 @@
     </plurals>
 
     <!-- ===== CombatScreen ===== -->
-    <string name="combat_level_label">Nivel de combate</string>
-    <string name="combat_log_label">Historial de combate</string>
-    <string name="combat_solo_bosses">Jefes individuales</string>
+    <string name="combat_level_label">Nv. Combate</string>
+    <string name="combat_log_label">Diario de combate</string>
+    <string name="combat_solo_bosses">Jefes en Solitario</string>
     <!-- Translator note: %1$d = number of completed dungeon runs -->
-    <string name="combat_dungeon_runs">%1$d sesiones</string>
+    <string name="combat_dungeon_runs">%1$d partidas</string>
     <!-- Translator note: %1$d = kills, %2$d = food consumed -->
     <string name="combat_last_run">Última: %1$d kills, %2$d comida</string>
     <!-- Translator note: %1$d = kills -->
     <string name="combat_last_run_died">Última: muerto (%1$d kills)</string>
-    <string name="combat_atk">ATQ</string>
-    <string name="combat_str">FUE</string>
-    <string name="combat_def">DEF</string> <!-- untranslated -->
+    <string name="combat_atk">ATK</string>
+    <string name="combat_str">STR</string>
+    <string name="combat_def">DEF</string>
     <!-- Translator note: %1$d = HP healed -->
     <string name="combat_heals_hp">recupera %1$d HP</string>
     <string name="combat_defeated_so_far">derrotados hasta ahora.</string>
@@ -569,34 +569,34 @@
     <string name="combat_log_you_missed">Has fallado</string>
     <string name="combat_log_kill">☠ %1$s derrotado</string>
     <string name="combat_log_player_hit">→ Has golpeado %1$s: %2$d daño</string>
-    <string name="combat_log_player_double_hit">→ Double hit! You strike %1$s twice: %2$d dmg</string> <!-- untranslated -->
+    <string name="combat_log_player_double_hit">→ ¡Golpe doble! Golpeas a %1$s dos veces: %2$d de daño</string>
     <string name="combat_log_player_miss">→ Has fallado a %1$s</string>
     <string name="combat_log_enemy_hit">← %1$s te golpea: %2$d daño</string>
     <string name="combat_log_enemy_miss">← %1$s fallo</string>
-    <string name="combat_log_ally_hit">→ Your mercenaries hit %1$s: %2$d dmg</string> <!-- untranslated -->
-    <string name="combat_log_heal">✚ You eat: +%1$d HP</string> <!-- untranslated -->
-    <string name="combat_eat_threshold_warning">Risky: at a low threshold a hard hit can drop you to 0 HP before your character eats.</string> <!-- untranslated -->
+    <string name="combat_log_ally_hit">→ Tus mercenarios golpean a %1$s: %2$d de daño</string>
+    <string name="combat_log_heal">✚ Comes: +%1$d HP</string>
+    <string name="combat_eat_threshold_warning">Riesgoso: con un umbral bajo, un golpe duro puede dejarte en 0 HP antes de que tu personaje coma.</string>
     <string name="combat_rec_level">Nivel de combate recomendado</string>
     <string name="combat_your_level">Tu nivel de combate</string>
     <string name="combat_no_strength_bonus">Ninguno (sin bonificación de fuerza)</string>
     <string name="combat_best_arrow">Mejor flecha</string>
     <string name="combat_arrow_auto">Auto (mejor disponible)</string>
-    <string name="combat_label_arrow">Fecha</string>
-    <string name="combat_arrow_ranged_str">+%1$d Ranged Strength</string> <!-- untranslated -->
+    <string name="combat_label_arrow">Flecha</string>
+    <string name="combat_arrow_ranged_str">+%1$d de Fuerza a Distancia</string>
     <string name="combat_select_loadout">Seleccionar equipamiento</string>
     <string name="combat_enemies">Enemigos</string>
     <string name="combat_no_spells">No tienes hechizos disponibles con tu nivel de magia.</string>
-    <string name="combat_only_castable">Only Castable</string> <!-- untranslated -->
-    <string name="combat_max_hit">max hit</string> <!-- untranslated -->
+    <string name="combat_only_castable">Solo Lanzable</string>
+    <string name="combat_max_hit">daño máx.</string>
     <string name="combat_you_have_runes">(tienes %1$d %2$s)</string>
     <string name="combat_infinite_runes">(infinito %1$s)</string>
-    <string name="combat_spell_locked">Requires Magic level %1$d</string> <!-- untranslated -->
-    <string name="combat_spell_level_met">Magic level %1$d</string> <!-- untranslated -->
+    <string name="combat_spell_locked">Requiere nivel %1$d de Magia</string>
+    <string name="combat_spell_level_met">Nivel de Magia %1$d</string>
     <string name="combat_no_potion">Sin poción</string>
     <string name="combat_req_level">Nivel de combate requerido</string>
     <string name="combat_duration">Duracion</string>
     <!-- Translator note: %1$d = minutes -->
-    <string name="combat_duration_min">%1$d min</string> <!-- untranslated -->
+    <string name="combat_duration_min">%1$d min</string>
     <string name="combat_fight_count_label">Número de combates</string>
     <!-- Translator note: %1$d = number of queued repeat fights, e.g. "×100 fights" -->
     <string name="combat_fight_count_suffix">×%1$d combates</string>
@@ -604,14 +604,14 @@
     <string name="combat_fight_progress">Combate %1$d/%2$d</string>
     <string name="combat_run_count_label">Número de runs</string>
     <!-- Translator note: %1$d = number of queued repeat dungeon runs, e.g. "×24 runs" -->
-    <string name="combat_run_count_suffix">×%1$d runs</string> <!-- untranslated -->
+    <string name="combat_run_count_suffix">×%1$d partidas</string>
     <!-- Translator note: %1$d = current run number, %2$d = total runs requested, e.g. "Run 12/24" -->
-    <string name="combat_run_progress">Run %1$d/%2$d</string> <!-- untranslated -->
-    <string name="combat_xp_on_victory">XP on victory</string> <!-- untranslated -->
+    <string name="combat_run_progress">Partida %1$d/%2$d</string>
+    <string name="combat_xp_on_victory">XP por victoria</string>
     <string name="combat_you_died">Has muerto!</string>
     <string name="combat_died_reward" formatted="false">Recibiste el 10% de las recompensas.</string>
     <!-- Translator note: %1$d = gear bonus value -->
-    <string name="combat_gear_bonus">+%1$d gear</string> <!-- untranslated -->
+    <string name="combat_gear_bonus">+%1$d de equipo</string>
     <!-- Translator note: %1$d = permanent prestige stat bonus value -->
     <string name="combat_prestige_bonus">+%1$d prestigio</string>
 
@@ -898,9 +898,9 @@
     <string name="inn_slot2_header">Skilled Worker</string> <!-- untranslated -->
 
     <!-- ===== Combat difficulty ratings ===== -->
-    <string name="combat_difficulty_likely">You\'ve got this</string> <!-- untranslated -->
-    <string name="combat_difficulty_risky">Risky with current setup</string> <!-- untranslated -->
-    <string name="combat_difficulty_unlikely">Likely to die</string> <!-- untranslated -->
+    <string name="combat_difficulty_likely">Puedes con esto</string>
+    <string name="combat_difficulty_risky">Riesgoso con el equipo actual</string>
+    <string name="combat_difficulty_unlikely">Probablemente mueras</string>
 
     <!-- ===== Achievements ===== -->
     <string name="achievement_group_levelling">Levelling</string> <!-- untranslated -->
@@ -1739,10 +1739,10 @@
     <!-- ===== Carnival ===== -->
     <string name="carnival_title">Carnaval</string>
     <string name="carnival_desc">¡Juegos, premios y diversión!</string>
-    <string name="carnival_prize_xp_lamp_small_name">Small XP Lamp</string> <!-- untranslated -->
-    <string name="carnival_prize_xp_lamp_small_desc">Grants 10,000 XP to a chosen skill.</string> <!-- untranslated -->
-    <string name="carnival_prize_xp_lamp_large_name">Large XP Lamp</string> <!-- untranslated -->
-    <string name="carnival_prize_xp_lamp_large_desc">Grants 50,000 XP to a chosen skill.</string> <!-- untranslated -->
+    <string name="carnival_prize_xp_lamp_small_name">Lámpara de XP Pequeña</string>
+    <string name="carnival_prize_xp_lamp_small_desc">Otorga 10.000 XP a la habilidad elegida.</string>
+    <string name="carnival_prize_xp_lamp_large_name">Lámpara de XP Grande</string>
+    <string name="carnival_prize_xp_lamp_large_desc">Otorga 50.000 XP a la habilidad elegida.</string>
     <string name="carnival_ticket_balance">Entradas: %1$d</string>
     <string name="carnival_idle_tab">Juegos en cola</string>
     <string name="carnival_active_tab">Juegos activos</string>
@@ -1795,29 +1795,29 @@
     <string name="carnival_redeemed">¡Canjeado: %1$s!</string>
     <string name="carnival_not_enough_tickets">No hay suficientes entradas.</string>
     <string name="carnival_lamp_redeemed">+%1$s XP en %2$s!</string>
-    <string name="carnival_shell_game">Pick-a-Cup</string> <!-- untranslated -->
-    <string name="carnival_active_shell_desc">Watch which cup hides the gem, then pick it after the shuffle!</string> <!-- untranslated -->
-    <string name="carnival_shell_showing">Watch carefully — gem is under cup %1$d</string> <!-- untranslated -->
-    <string name="carnival_shell_watch">Watch closely…</string> <!-- untranslated -->
-    <string name="carnival_shell_pick">Which cup is it under?</string> <!-- untranslated -->
-    <string name="carnival_shell_won">Correct! +%1$d tickets</string> <!-- untranslated -->
-    <string name="carnival_shell_missed">Wrong! The gem was under cup %1$d.</string> <!-- untranslated -->
-    <string name="carnival_shell_locked">Upgrade the Fairgrounds to Tier 1 to unlock</string> <!-- untranslated -->
-    <string name="carnival_higher_lower">Higher or Lower</string> <!-- untranslated -->
-    <string name="carnival_active_higher_desc">Guess whether the next number will be higher or lower than the current one.</string> <!-- untranslated -->
+    <string name="carnival_shell_game">Elige el Vaso</string>
+    <string name="carnival_active_shell_desc">¡Mira qué vaso esconde la gema y elígelo tras mezclar!</string>
+    <string name="carnival_shell_showing">Mira con atención: la gema está bajo el vaso %1$d</string>
+    <string name="carnival_shell_watch">Mira con atención…</string>
+    <string name="carnival_shell_pick">¿Bajo qué vaso está?</string>
+    <string name="carnival_shell_won">¡Correcto! +%1$d entradas</string>
+    <string name="carnival_shell_missed">¡Fallaste! La gema estaba bajo el vaso %1$d.</string>
+    <string name="carnival_shell_locked">Mejora la Feria a Nivel 1 para desbloquear</string>
+    <string name="carnival_higher_lower">Mayor o Menor</string>
+    <string name="carnival_active_higher_desc">Adivina si el próximo número será mayor o menor que el actual.</string>
 
-    <string name="carnival_higher_lower_score">%1$d correct (%2$d played)</string> <!-- untranslated -->
-    <string name="carnival_higher_lower_round">Round %1$d of %2$d</string> <!-- untranslated -->
-    <string name="carnival_higher_lower_btn_higher">Higher</string> <!-- untranslated -->
-    <string name="carnival_higher_lower_btn_lower">Lower</string> <!-- untranslated -->
-    <string name="carnival_higher_lower_result">%1$d/%2$d correct — +%3$d tickets</string> <!-- untranslated -->
-    <string name="carnival_higher_lower_locked">Upgrade the Fairgrounds to Tier 2 to unlock</string> <!-- untranslated -->
-    <string name="carnival_higher_lower_last_card">Last card: %1$d</string> <!-- untranslated -->
+    <string name="carnival_higher_lower_score">%1$d aciertos (%2$d jugadas)</string>
+    <string name="carnival_higher_lower_round">Ronda %1$d de %2$d</string>
+    <string name="carnival_higher_lower_btn_higher">Mayor</string>
+    <string name="carnival_higher_lower_btn_lower">Menor</string>
+    <string name="carnival_higher_lower_result">%1$d/%2$d aciertos — +%3$d entradas</string>
+    <string name="carnival_higher_lower_locked">Mejora la Feria a Nivel 2 para desbloquear</string>
+    <string name="carnival_higher_lower_last_card">Última carta: %1$d</string>
     <string name="carnival_higher_lower_continue">Continuar</string>
-    <string name="carnival_difficulty_label">Difficulty</string> <!-- untranslated -->
+    <string name="carnival_difficulty_label">Dificultad</string>
     <string name="carnival_difficulty_normal">Normal</string>
-    <string name="carnival_difficulty_hard">Hard</string> <!-- untranslated -->
-    <string name="carnival_ring_hard_hint" formatted="false">Hard: 52%–57% target, 7 tickets</string> <!-- untranslated -->
+    <string name="carnival_difficulty_hard">Difícil</string>
+    <string name="carnival_ring_hard_hint" formatted="false">Difícil: objetivo 52%–57%, 7 entradas</string>
 
 
     <!-- ===== Magic Bean / Farming ===== -->
@@ -1962,8 +1962,8 @@
     <string name="combat_start_failed">No se pudo iniciar: %1$s</string>
     <string name="skill_session_voided_prestige">Tu nivel de %1$s ya no cumple con el requisito de esta sesión (probablemente por prestigiar) — sus recompensas fueron anuladas y los materiales usados fueron reembolsados.</string>
     <string name="combat_session_voided_prestige">Tu nivel bajó tras el prestige, así que la XP de esta sesión se perdió. Las demás recompensas sí se otorgaron.</string>
-    <string name="combat_select_spell">Select a spell before entering.</string> <!-- untranslated -->
-    <string name="combat_spell_level_required">Need Magic %1$d for %2$s.</string> <!-- untranslated -->
+    <string name="combat_select_spell">Elige un hechizo antes de entrar.</string>
+    <string name="combat_spell_level_required">Necesitas Magia %1$d para %2$s.</string>
     <string name="guild_daily_reward_claimed">Daily reward claimed!</string> <!-- untranslated -->
     <string name="reward_part_coins">+%1$s monedas</string>
     <string name="reward_part_coins_plain">%1$s monedas</string>
@@ -2030,73 +2030,73 @@
     <string name="raid_party_title">Raid Party</string> <!-- untranslated -->
     <string name="raid_solo_warning">Raid bosses cannot be beaten alone, even with the best gear. Hire mercenaries before attempting.</string> <!-- untranslated -->
     <string name="raid_no_mercs">No mercenaries under contract.</string> <!-- untranslated -->
-    <string name="merc_camp_open">Hire Mercenaries</string> <!-- untranslated -->
-    <string name="merc_camp_title">Mercenary Camp</string> <!-- untranslated -->
-    <string name="merc_camp_desc">Contracts last for 24 hours after hiring. A new pool of mercenaries arrives each day.</string> <!-- untranslated -->
-    <string name="merc_hire">Hire</string> <!-- untranslated -->
-    <string name="merc_dismiss">Dismiss</string> <!-- untranslated -->
-    <string name="merc_hired">%1$s joins your party for 24 hours.</string> <!-- untranslated -->
-    <string name="merc_party_full">Your party is full.</string> <!-- untranslated -->
-    <string name="merc_already_hired">%1$s is already under contract.</string> <!-- untranslated -->
-    <string name="merc_not_enough_coins">Not enough coins to hire %1$s.</string> <!-- untranslated -->
-    <string name="merc_not_available">%1$s is not available today.</string> <!-- untranslated -->
-    <string name="merc_contract_remaining">Contract: %1$s left</string> <!-- untranslated -->
+    <string name="merc_camp_open">Contratar Mercenarios</string>
+    <string name="merc_camp_title">Campamento de Mercenarios</string>
+    <string name="merc_camp_desc">Los contratos duran 24 horas tras la contratación. Cada día llega un nuevo grupo de mercenarios.</string>
+    <string name="merc_hire">Contratar</string>
+    <string name="merc_dismiss">Despedir</string>
+    <string name="merc_hired">%1$s se une a tu grupo por 24 horas.</string>
+    <string name="merc_party_full">Tu grupo está lleno.</string>
+    <string name="merc_already_hired">%1$s ya está contratado.</string>
+    <string name="merc_not_enough_coins">Monedas insuficientes para contratar a %1$s.</string>
+    <string name="merc_not_available">%1$s no está disponible hoy.</string>
+    <string name="merc_contract_remaining">Contrato: queda %1$s</string>
     <string name="raid_allies_down">Mercenaries down: %1$d</string> <!-- untranslated -->
-    <string name="merc_tier_cheap">Sellsword</string> <!-- untranslated -->
-    <string name="merc_tier_seasoned">Veteran</string> <!-- untranslated -->
-    <string name="merc_tier_elite">Champion</string> <!-- untranslated -->
-    <string name="merc_stats">Atk %1$d  Str %2$d  Def %3$d  HP %4$d</string> <!-- untranslated -->
-    <string name="merc_cost_per_day">%1$s coins</string> <!-- untranslated -->
-    <string name="merc_bran_the_sellsword_name">Bran the Sellsword</string> <!-- untranslated -->
-    <string name="merc_wren_the_stray_name">Wren the Stray</string> <!-- untranslated -->
-    <string name="merc_tam_the_grey_name">Tam the Grey</string> <!-- untranslated -->
-    <string name="merc_nix_the_cutpurse_name">Nix the Cutpurse</string> <!-- untranslated -->
-    <string name="merc_sera_ironsong_name">Sera Ironsong</string> <!-- untranslated -->
-    <string name="merc_kael_emberhand_name">Kael Emberhand</string> <!-- untranslated -->
-    <string name="merc_dorn_shieldbreaker_name">Dorn Shieldbreaker</string> <!-- untranslated -->
-    <string name="merc_fenna_swiftarrow_name">Fenna Swiftarrow</string> <!-- untranslated -->
-    <string name="merc_grimjaw_the_colossus_name">Grimjaw the Colossus</string> <!-- untranslated -->
-    <string name="merc_sylvara_trueshot_name">Sylvara Trueshot</string> <!-- untranslated -->
-    <string name="merc_vex_the_undying_name">Vex the Undying</string> <!-- untranslated -->
-    <string name="merc_thane_dawnbringer_name">Thane Dawnbringer</string> <!-- untranslated -->
+    <string name="merc_tier_cheap">Mercenario</string>
+    <string name="merc_tier_seasoned">Veterano</string>
+    <string name="merc_tier_elite">Campeón</string>
+    <string name="merc_stats">Atk %1$d  Str %2$d  Def %3$d  HP %4$d</string>
+    <string name="merc_cost_per_day">%1$s monedas</string>
+    <string name="merc_bran_the_sellsword_name">Bran el Mercenario</string>
+    <string name="merc_wren_the_stray_name">Wren la Vagabunda</string>
+    <string name="merc_tam_the_grey_name">Tam el Gris</string>
+    <string name="merc_nix_the_cutpurse_name">Nix el Carterista</string>
+    <string name="merc_sera_ironsong_name">Sera Canto de Hierro</string>
+    <string name="merc_kael_emberhand_name">Kael Mano de Brasas</string>
+    <string name="merc_dorn_shieldbreaker_name">Dorn Rompeescudos</string>
+    <string name="merc_fenna_swiftarrow_name">Fenna Flecha Veloz</string>
+    <string name="merc_grimjaw_the_colossus_name">Fauces el Coloso</string>
+    <string name="merc_sylvara_trueshot_name">Sylvara Tiro Certero</string>
+    <string name="merc_vex_the_undying_name">Vex el Imperecedero</string>
+    <string name="merc_thane_dawnbringer_name">Thane Portador del Alba</string>
 
-    <string name="tower_title">Infinite Tower</string> <!-- untranslated -->
-    <string name="tower_floor_label" formatted="false">Floor %d</string> <!-- untranslated -->
-    <string name="tower_floor_desc">Infinite Tower floor %1$d</string> <!-- untranslated -->
-    <string name="tower_best_floor" formatted="false">Best: Floor %d</string> <!-- untranslated -->
-    <string name="tower_start_btn" formatted="false">Attempt Floor %d</string> <!-- untranslated -->
-    <string name="tower_milestones">Milestones</string> <!-- untranslated -->
-    <string name="tower_floor_cleared" formatted="false">Floor %d cleared!</string> <!-- untranslated -->
-    <string name="tower_new_best" formatted="false">New best: Floor %d!</string> <!-- untranslated -->
+    <string name="tower_title">Torre Infinita</string>
+    <string name="tower_floor_label" formatted="false">Piso %d</string>
+    <string name="tower_floor_desc">Piso %1$d de la Torre Infinita</string>
+    <string name="tower_best_floor" formatted="false">Récord: Piso %d</string>
+    <string name="tower_start_btn" formatted="false">Intentar Piso %d</string>
+    <string name="tower_milestones">Hitos</string>
+    <string name="tower_floor_cleared" formatted="false">¡Piso %d superado!</string>
+    <string name="tower_new_best" formatted="false">¡Nuevo récord: Piso %d!</string>
     <!-- Translator note: %1$d = floor died on, %2$d = floor resuming from (last checkpoint + 1) -->
     <string name="tower_death_reset">Caíste en el piso %1$d. Volviendo al piso %2$d.</string>
     <string name="tower_not_enough_runes">No hay suficientes %1$s para el número máximo de ataques posibles.</string>
-    <string name="tower_milestone_claim">Claim</string> <!-- untranslated -->
-    <string name="tower_milestone_claimed">Claimed</string> <!-- untranslated -->
+    <string name="tower_milestone_claim">Reclamar</string>
+    <string name="tower_milestone_claimed">Reclamado</string>
     <!-- Tower milestone reward descriptions; %s placeholders are item display names -->
-    <string name="tower_milestone_ring">%1$s (attack +6, strength +6)</string> <!-- untranslated -->
-    <string name="tower_milestone_xp_1pct" formatted="false">+1% tower XP all skills</string> <!-- untranslated -->
+    <string name="tower_milestone_ring">%1$s (ataque +6, fuerza +6)</string>
+    <string name="tower_milestone_xp_1pct" formatted="false">+1% de XP de torre en todas las habilidades</string>
     <string name="tower_milestone_coins_5k">5,000 monedas</string>
-    <string name="tower_milestone_shield">%1$s (defense +80)</string> <!-- untranslated -->
-    <string name="tower_milestone_amulet">%1$s (attack +15, strength +15, defense +10, all styles)</string> <!-- untranslated -->
-    <string name="tower_milestone_hp_50">+50 max HP</string> <!-- untranslated -->
-    <string name="tower_milestone_xp_2pct" formatted="false">+2% tower XP all skills</string> <!-- untranslated -->
+    <string name="tower_milestone_shield">%1$s (defensa +80)</string>
+    <string name="tower_milestone_amulet">%1$s (ataque +15, fuerza +15, defensa +10, todos los estilos)</string>
+    <string name="tower_milestone_hp_50">+50 HP máx.</string>
+    <string name="tower_milestone_xp_2pct" formatted="false">+2% de XP de torre en todas las habilidades</string>
     <string name="tower_milestone_coins_25k">25,000 monedas</string>
-    <string name="tower_milestone_helm">%1$s (defense +82, strength +8)</string> <!-- untranslated -->
-    <string name="tower_milestone_pet" formatted="false">Tower Pet (5% combat XP)</string> <!-- untranslated -->
-    <string name="tower_milestone_coin_drops_1pct" formatted="false">+1% tower coin drops</string> <!-- untranslated -->
-    <string name="tower_milestone_plate">%1$s (defense +132)</string> <!-- untranslated -->
+    <string name="tower_milestone_helm">%1$s (defensa +82, fuerza +8)</string>
+    <string name="tower_milestone_pet" formatted="false">Mascota de la Torre (5% de XP de combate)</string>
+    <string name="tower_milestone_coin_drops_1pct" formatted="false">+1% de monedas de torre</string>
+    <string name="tower_milestone_plate">%1$s (defensa +132)</string>
     <string name="tower_milestone_coins_100k">100,000 monedas</string>
-    <string name="tower_milestone_legs_set">%1$s (defense +125) + %2$s (defense +58) + %3$s (defense +125)</string> <!-- untranslated -->
-    <string name="tower_milestone_sword">%1$s (attack +72, strength +75)</string> <!-- untranslated -->
-    <string name="tower_milestone_cape">%1$s (attack/str/def +14, ranged/magic +12) + 500,000 coins</string> <!-- untranslated -->
-    <string name="tower_milestone_crossbow">%1$s (ranged attack +78, ranged strength +52)</string> <!-- untranslated -->
-    <string name="tower_milestone_staff">%1$s (magic attack +68, magic damage +18, infinite runes) + 1,000,000 coins</string> <!-- untranslated -->
+    <string name="tower_milestone_legs_set">%1$s (defensa +125) + %2$s (defensa +58) + %3$s (defensa +125)</string>
+    <string name="tower_milestone_sword">%1$s (ataque +72, fuerza +75)</string>
+    <string name="tower_milestone_cape">%1$s (ataque, fuerza y defensa +14; distancia y magia +12) + 500.000 monedas</string>
+    <string name="tower_milestone_crossbow">%1$s (ataque a distancia +78, fuerza a distancia +52)</string>
+    <string name="tower_milestone_staff">%1$s (ataque mágico +68, daño mágico +18, runas infinitas) + 1.000.000 monedas</string>
     <string name="tower_enemies_this_floor">Enemigos</string>
-    <string name="tower_enemy_strength">Enemy strength: %1$s%%</string> <!-- untranslated -->
-    <string name="tower_entry_card_desc">Endless floors. How far can you climb?</string> <!-- untranslated -->
-    <string name="tower_collect_prompt">Collect your tower run</string> <!-- untranslated -->
-    <string name="tower_home_collect_hint">Open the Tower screen to collect this run</string> <!-- untranslated -->
+    <string name="tower_enemy_strength">Fuerza enemiga: %1$s%%</string>
+    <string name="tower_entry_card_desc">Pisos infinitos. ¿Hasta dónde subirás?</string>
+    <string name="tower_collect_prompt">Recoge tu partida de torre</string>
+    <string name="tower_home_collect_hint">Abre la pantalla de la Torre para recoger esta partida</string>
 
     <!-- ===== Seasonal Events ===== -->
     <string name="seasonal_event_title">Evento de Temporada</string>
@@ -2409,13 +2409,13 @@
     <string name="bestiary_stat_duration_min">%1$d min</string> <!-- untranslated -->
     <string name="bestiary_kill_count">%1$d kills</string> <!-- untranslated -->
     <string name="bestiary_location_other">Other</string> <!-- untranslated -->
-    <string name="carnival_stat_atk">ATK +%1$d</string> <!-- untranslated -->
-    <string name="carnival_stat_str">STR +%1$d</string> <!-- untranslated -->
-    <string name="carnival_stat_def">DEF +%1$d</string> <!-- untranslated -->
+    <string name="carnival_stat_atk">ATK +%1$d</string>
+    <string name="carnival_stat_str">STR +%1$d</string>
+    <string name="carnival_stat_def">DEF +%1$d</string>
     <!-- Translator note: %1$s = "${skill name} ", %2$d = percentage bonus -->
-    <string name="carnival_stat_xp">%1$sXP +%2$d%%</string> <!-- untranslated -->
+    <string name="carnival_stat_xp">%1$sXP +%2$d%%</string>
     <!-- Translator note: %1$s = "${skill name} ", %2$d = percentage bonus -->
-    <string name="carnival_stat_yield">%1$sYield +%2$d%%</string> <!-- untranslated -->
+    <string name="carnival_stat_yield">%1$sYield +%2$d%%</string>
     <string name="carnival_potion_letter_green">G</string>
     <string name="carnival_potion_letter_blue">B</string>
     <string name="carnival_potion_letter_red">R</string>
