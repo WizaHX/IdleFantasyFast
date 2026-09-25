@@ -45,11 +45,11 @@
     <string name="item_runite_bar_desc">La barra de metal fundible más resistente.</string>
 
     <!-- ===== Gems ===== -->
-    <string name="item_sapphire_name">Sapphire</string> <!-- untranslated -->
+    <string name="item_sapphire_name">Zafiro</string>
     <string name="item_sapphire_desc">Una gema azul utilizada en la elaboración de joyas.</string>
-    <string name="item_emerald_name">Emerald</string> <!-- untranslated -->
+    <string name="item_emerald_name">Esmeralda</string>
     <string name="item_emerald_desc">Una gema verde de rareza moderada.</string>
-    <string name="item_ruby_name">Ruby</string> <!-- untranslated -->
+    <string name="item_ruby_name">Rubí</string>
     <string name="item_ruby_desc">Una gema roja. Rara y valiosa.</string>
     <string name="item_diamond_name">Diamante</string>
     <string name="item_diamond_desc">La gema más rara y valiosa.</string>
@@ -231,25 +231,25 @@
     <string name="item_oak_bow_desc">Un arco fiable fabricado en madera de roble.</string>
 
     <!-- ===== Magic weapons ===== -->
-    <string name="item_basic_staff_name">Basic Staff</string> <!-- untranslated -->
+    <string name="item_basic_staff_name">Bastón básico</string>
     <string name="item_basic_staff_desc">Un sencillo bastón mágico para aprendices de mago.</string>
-    <string name="item_apprentice_staff_name">Apprentice Staff</string> <!-- untranslated -->
+    <string name="item_apprentice_staff_name">Bastón de aprendiz</string>
     <string name="item_apprentice_staff_desc">Un equipo mejorado para el desarrollo de magos.</string>
-    <string name="item_staff_of_air_name">Staff of Air</string> <!-- untranslated -->
+    <string name="item_staff_of_air_name">Bastón de aire</string>
     <string name="item_staff_of_air_desc">Un bastón elemental imbuido con el poder del aire.</string>
-    <string name="item_staff_of_water_name">Staff of Water</string> <!-- untranslated -->
+    <string name="item_staff_of_water_name">Bastón de agua</string>
     <string name="item_staff_of_water_desc">Un bastón elemental imbuido con el poder del agua.</string>
-    <string name="item_staff_of_earth_name">Staff of Earth</string> <!-- untranslated -->
+    <string name="item_staff_of_earth_name">Bastón de tierra</string>
     <string name="item_staff_of_earth_desc">Un bastón elemental imbuido con el poder de la tierra.</string>
-    <string name="item_staff_of_fire_name">Staff of Fire</string> <!-- untranslated -->
+    <string name="item_staff_of_fire_name">Bastón de fuego</string>
     <string name="item_staff_of_fire_desc">Un bastón elemental imbuido con el poder del fuego.</string>
-    <string name="item_staff_of_mind_name">Staff of Mind</string> <!-- untranslated -->
+    <string name="item_staff_of_mind_name">Bastón de psíquico</string>
     <string name="item_staff_of_mind_desc">Un bastón imbuido de energía psíquica.</string>
-    <string name="item_staff_of_chaos_name">Staff of Chaos</string> <!-- untranslated -->
+    <string name="item_staff_of_chaos_name">Bastón del caos</string>
     <string name="item_staff_of_chaos_desc">Un bastón caótico que palpita con una energía mágica salvaje.</string>
-    <string name="item_staff_of_death_name">Staff of Death</string> <!-- untranslated -->
+    <string name="item_staff_of_death_name">Bastón de la muerte</string>
     <string name="item_staff_of_death_desc">Un bastón oscuro envuelto en el poder de la muerte.</string>
-    <string name="item_staff_of_blood_name">Staff of Blood</string> <!-- untranslated -->
+    <string name="item_staff_of_blood_name">Bastón de sangre</string>
     <string name="item_staff_of_blood_desc">Un poderoso bastón alimentado por magia de sangre.</string>
 
     <!-- ===== Armour — bronze ===== -->
@@ -315,8 +315,8 @@
     <!-- Slayer gear item names/descs (used by Shop + Slayer screen) -->
     <string name="item_slayer_helm_name">Casco de Slayer</string>
     <string name="item_slayer_helm_desc">Un casco resistente que usan los veteranos de Slayer.</string>
-    <string name="item_abyssal_whip_name">Abyssal Whip</string> <!-- untranslated -->
-    <string name="item_abyssal_whip_desc">A whip forged from abyssal energy. Excellent for strength training.</string> <!-- untranslated -->
+    <string name="item_abyssal_whip_name">Látigo Abisal</string>
+    <string name="item_abyssal_whip_desc">Un látigo forjado con energía abisal. Excelente para entrenar Fuerza.</string>
     <string name="item_slayer_platebody_name">Armadura de Slayer</string>
     <string name="item_slayer_platebody_desc">Armadura pesada grabada con runas de Slayer.</string>
     <string name="item_slayer_platelegs_name">Grebas de Slayer</string>
@@ -407,13 +407,13 @@
     <string name="item_silver_ring_desc">Un sencillo anillo de plata.</string>
     <string name="item_silver_necklace_name">Collar de plata</string>
     <string name="item_silver_necklace_desc">Un sencillo collar de plata.</string>
-    <string name="item_gold_ring_name">Gold Ring</string> <!-- untranslated -->
+    <string name="item_gold_ring_name">Anillo de oro</string>
     <string name="item_gold_ring_desc">Un sencillo anillo de oro.</string>
-    <string name="item_gold_necklace_name">Gold Necklace</string> <!-- untranslated -->
+    <string name="item_gold_necklace_name">Collar de oro</string>
     <string name="item_gold_necklace_desc">Un sencillo collar de oro.</string>
-    <string name="item_platinum_ring_name">Platinum Ring</string> <!-- untranslated -->
+    <string name="item_platinum_ring_name">Anillo de platino</string>
     <string name="item_platinum_ring_desc">Un elegante anillo de platino.</string>
-    <string name="item_platinum_necklace_name">Platinum Necklace</string> <!-- untranslated -->
+    <string name="item_platinum_necklace_name">Collar de platino</string>
     <string name="item_platinum_necklace_desc">Un elegante collar de platino.</string>
 
     <!-- Jewellery — sapphire -->
@@ -421,19 +421,19 @@
     <string name="item_silver_sapphire_ring_desc">Un anillo de plata engastado con un zafiro.</string>
     <string name="item_silver_sapphire_necklace_name">Collar de plata con zafiro</string>
     <string name="item_silver_sapphire_necklace_desc">Un collar de plata engastado con un zafiro.</string>
-    <string name="item_gold_sapphire_ring_name">Gold Sapphire Ring</string> <!-- untranslated -->
+    <string name="item_gold_sapphire_ring_name">Anillo de oro con zafiro</string>
     <string name="item_gold_sapphire_ring_desc">Un anillo de oro engastado con un zafiro.</string>
-    <string name="item_gold_sapphire_necklace_name">Gold Sapphire Necklace</string> <!-- untranslated -->
+    <string name="item_gold_sapphire_necklace_name">Collar de oro con zafiro</string>
     <string name="item_gold_sapphire_necklace_desc">Un collar de oro engastado con un zafiro.</string>
-    <string name="item_platinum_sapphire_ring_name">Platinum Sapphire Ring</string> <!-- untranslated -->
+    <string name="item_platinum_sapphire_ring_name">Anillo de platino con zafiro</string>
     <string name="item_platinum_sapphire_ring_desc">Un anillo de platino engastado con un zafiro.</string>
-    <string name="item_platinum_sapphire_necklace_name">Platinum Sapphire Necklace</string> <!-- untranslated -->
+    <string name="item_platinum_sapphire_necklace_name">Collar de platino con zafiro</string>
     <string name="item_platinum_sapphire_necklace_desc">Un collar de platino engastado con un zafiro.</string>
 
     <!-- Jewellery — emerald -->
-    <string name="item_gold_emerald_ring_name">Gold Emerald Ring</string> <!-- untranslated -->
+    <string name="item_gold_emerald_ring_name">Anillo de oro con esmeralda</string>
     <string name="item_gold_emerald_ring_desc">Un anillo de oro engastado con una esmeralda.</string>
-    <string name="item_gold_emerald_necklace_name">Gold Emerald Necklace</string> <!-- untranslated -->
+    <string name="item_gold_emerald_necklace_name">Collar de oro con esmeralda</string>
     <string name="item_gold_emerald_necklace_desc">Un collar de oro engastado con una esmeralda.</string>
     <string name="item_platinum_emerald_ring_name">Anillo de platino con esmeralda</string>
     <string name="item_platinum_emerald_ring_desc">Un anillo de platino engastado con una esmeralda.</string>
@@ -466,25 +466,25 @@
 
     <!-- Junk items -->
     <string name="item_bread_name">Pan</string>
-    <string name="item_leather_name">Leather</string> <!-- untranslated -->
-    <string name="item_flour_name">Flour</string> <!-- untranslated -->
-    <string name="item_cooked_trout_name">Cooked Trout</string> <!-- untranslated -->
-    <string name="item_thread_name">Thread</string> <!-- untranslated -->
-    <string name="item_ruby_ring_name">Ruby Ring</string> <!-- untranslated -->
-    <string name="item_diamond_ring_name">Diamond Ring</string> <!-- untranslated -->
-    <string name="item_diamond_necklace_name">Diamond Necklace</string> <!-- untranslated -->
-    <string name="item_ancient_treasure_name">Ancient Treasure</string> <!-- untranslated -->
-    <string name="item_seaweed_name">Seaweed</string> <!-- untranslated -->
-    <string name="item_old_boot_name">Old Boot</string> <!-- untranslated -->
-    <string name="item_pearl_name">Pearl</string> <!-- untranslated -->
-    <string name="item_black_pearl_name">Black Pearl</string> <!-- untranslated -->
-    <string name="item_nature_rune_name">Nature Rune</string> <!-- untranslated -->
-    <string name="item_herb_name">Herb</string> <!-- untranslated -->
+    <string name="item_leather_name">Cuero</string>
+    <string name="item_flour_name">Harina</string>
+    <string name="item_cooked_trout_name">Trucha Cocinada</string>
+    <string name="item_thread_name">Hilo</string>
+    <string name="item_ruby_ring_name">Anillo de rubí</string>
+    <string name="item_diamond_ring_name">Anillo de diamante</string>
+    <string name="item_diamond_necklace_name">Collar de diamante</string>
+    <string name="item_ancient_treasure_name">Tesoro Antiguo</string>
+    <string name="item_seaweed_name">Alga Marina</string>
+    <string name="item_old_boot_name">Bota Vieja</string>
+    <string name="item_pearl_name">Perla</string>
+    <string name="item_black_pearl_name">Perla Negra</string>
+    <string name="item_nature_rune_name">Runa de naturaleza</string>
+    <string name="item_herb_name">Hierba</string>
     <string name="item_mahogany_log_name">Tronco de caoba</string>
-    <string name="item_oyster_name">Oyster</string> <!-- untranslated -->
-    <string name="item_crab_name">Crab</string> <!-- untranslated -->
-    <string name="item_bird_nest_name">Bird Nest</string> <!-- untranslated -->
-    <string name="item_tree_seed_name">Tree Seed</string> <!-- untranslated -->
+    <string name="item_oyster_name">Ostra</string>
+    <string name="item_crab_name">Cangrejo</string>
+    <string name="item_bird_nest_name">Nido de Pájaro</string>
+    <string name="item_tree_seed_name">Semilla de Árbol</string>
     <string name="item_teak_log_name">Tronco de teca</string>
 
     <!-- ===== Miscellaneous drops ===== -->
@@ -502,11 +502,11 @@
     <string name="item_magic_ashes_desc">Restos quemados de troncos mágicos. Dispersa para obtener una cantidad considerable de XP de Oración.</string>
     <string name="item_redwood_ashes_name">Cenizas de secuoya</string>
     <string name="item_redwood_ashes_desc">Restos quemados de troncos de secuoya. Dispersarlos proporciona la mayor cantidad de XP de Oración que cualquier otra ceniza.</string>
-    <string name="item_bones_name">Bones</string> <!-- untranslated -->
+    <string name="item_bones_name">Huesos</string>
     <string name="item_bones_desc">Huesos de una criatura pequeña. Enterrar para obtener XP de Oración.</string>
-    <string name="item_big_bones_name">Big Bones</string> <!-- untranslated -->
+    <string name="item_big_bones_name">Huesos grandes</string>
     <string name="item_big_bones_desc">Huesos más grandes. Otorgan más XP de Oración al ser enterrados.</string>
-    <string name="item_giant_bones_name">Giant Bones</string> <!-- untranslated -->
+    <string name="item_giant_bones_name">Huesos gigantes</string>
     <string name="item_giant_bones_desc">Huesos enormes de enemigos poderosos. Otorga una cantidad significativa de XP de Oración.</string>
     <string name="item_dragon_bone_name">Huesos de dragón</string>
     <string name="item_dragon_bone_desc">Huesos de dragón antiguos. Otorgan la mayor cantidad de XP de Oración al ser enterrados.</string>
@@ -514,13 +514,13 @@
     <string name="item_dragon_scale_desc">Una escama resistente de un dragón verde. Rara y valiosa.</string>
     <string name="item_coins_name">Monedas</string>
     <string name="item_coins_desc">La moneda del reino. Gástala en la tienda.</string>
-    <string name="item_goblin_mail_name">Goblin Mail</string> <!-- untranslated -->
+    <string name="item_goblin_mail_name">Armadura de Goblin</string>
     <string name="item_goblin_mail_desc">Armadura maltrecha que sueltan los goblins. Se vende bien.</string>
-    <string name="item_imp_hide_name">Imp Hide</string> <!-- untranslated -->
+    <string name="item_imp_hide_name">Cuero de Imp</string>
     <string name="item_imp_hide_desc">Piel coriácea de un imp.</string>
-    <string name="item_spider_silk_name">Spider Silk</string> <!-- untranslated -->
+    <string name="item_spider_silk_name">Seda de araña</string>
     <string name="item_spider_silk_desc">Seda fina hilada por arañas gigantes. Valiosa para los artesanos.</string>
-    <string name="item_spider_fang_name">Spider Fang</string> <!-- untranslated -->
+    <string name="item_spider_fang_name">Colmillo de araña</string>
     <string name="item_spider_fang_desc">Un colmillo venenoso de una araña gigante.</string>
     <string name="item_cowhide_name">Cuero de vaca</string>
     <string name="item_cowhide_desc">Piel áspera de vaca. Se utiliza en la elaboración de artículos de cuero.</string>
@@ -528,21 +528,21 @@
     <string name="item_wool_desc">Lana suave de una oveja.</string>
     <string name="item_feather_name">Pluma</string>
     <string name="item_feather_desc">Una pluma utilizada para emplumar flechas.</string>
-    <string name="item_rotten_flesh_name">Rotten Flesh</string> <!-- untranslated -->
+    <string name="item_rotten_flesh_name">Carne podrida</string>
     <string name="item_rotten_flesh_desc">Carne en descomposición de una criatura no muerta. Huele fatal.</string>
-    <string name="item_lockpick_name">Lockpick</string> <!-- untranslated -->
+    <string name="item_lockpick_name">Ganzúa</string>
     <string name="item_lockpick_desc">Una ganzúa que dejaron caer unos pícaros.</string>
-    <string name="item_magic_bean_name">Magic Bean</string> <!-- untranslated -->
+    <string name="item_magic_bean_name">Haba mágica</string>
     <string name="item_magic_bean_desc">Una haba mágica con propiedades misteriosas.</string>
-    <string name="item_hellhound_fang_name">Hellhound Fang</string> <!-- untranslated -->
+    <string name="item_hellhound_fang_name">Colmillo de sabueso infernal</string>
     <string name="item_hellhound_fang_desc">Un colmillo chamuscado de un perro del infierno.</string>
-    <string name="item_demon_horn_name">Demon Horn</string> <!-- untranslated -->
+    <string name="item_demon_horn_name">Cuerno de demonio</string>
     <string name="item_demon_horn_desc">Un cuerno dentado arrancado de un demonio menor.</string>
-    <string name="item_troll_bone_name">Troll Bone</string> <!-- untranslated -->
+    <string name="item_troll_bone_name">Hueso de troll</string>
     <string name="item_troll_bone_desc">Un enorme y nudoso hueso de un trol de montaña.</string>
 
     <!-- ===== Runes ===== -->
-    <string name="item_air_rune_name">Air Rune</string> <!-- untranslated -->
+    <string name="item_air_rune_name">Runa de aire</string>
     <string name="item_air_rune_desc">Una runa imbuida con el poder del aire. Se utiliza en hechizos de aire.</string>
     <string name="item_water_rune_name">Runa de agua</string>
     <string name="item_water_rune_desc">Una runa imbuida con el poder del agua.</string>
@@ -573,12 +573,12 @@
     <string name="crop_dragon_fruit_name">Fruta del dragón</string>
     <string name="crop_golden_wheat_name">Trigo dorado</string>
     <string name="crop_spirit_herb_name">Hierba espiritual</string>
-    <string name="crop_spirit_herb_desc">A rare herb used in high-level herblore.</string> <!-- untranslated -->
+    <string name="crop_spirit_herb_desc">Una hierba rara usada en herboristería de alto nivel.</string>
     <string name="crop_celestial_bloom_name">Flor celestial</string>
-    <string name="crop_celestial_bloom_desc">An ethereal flower used in master potions.</string> <!-- untranslated -->
+    <string name="crop_celestial_bloom_desc">Una flor etérea usada en pociones maestras.</string>
     <string name="crop_starfruit_name">Carambola</string>
     <string name="crop_void_lotus_name">Loto del Vacío</string>
-    <string name="crop_void_lotus_desc">A mysterious lotus used in the rarest concoctions.</string> <!-- untranslated -->
+    <string name="crop_void_lotus_desc">Un loto misterioso usado en los brebajes más raros.</string>
 
     <!-- ===== Spells ===== -->
     <string name="spell_wind_strike_name">Golpe de viento</string>
@@ -663,12 +663,12 @@
     <string name="item_runite_grappling_hook_name">Garfio de escalada de Runite</string>
 
     <!-- ===== Carnival prizes ===== -->
-    <string name="item_tricksters_amulet_name">Trickster\'s Amulet</string> <!-- untranslated -->
-    <string name="item_tricksters_amulet_desc">A lucky charm worn by carnival performers. Grants a small combat edge.</string> <!-- untranslated -->
-    <string name="item_strongmans_sigil_name">Strongman\'s Sigil</string> <!-- untranslated -->
-    <string name="item_strongmans_sigil_desc">A heavy iron ring etched with the mark of the strongman champion. Boosts Strength.</string> <!-- untranslated -->
-    <string name="item_carnival_cape_name">Carnival Cape</string> <!-- untranslated -->
-    <string name="item_carnival_cape_desc" formatted="false">A vibrant cape worn by carnival champions. Grants 5% more tickets from Carnival sessions.</string> <!-- untranslated -->
+    <string name="item_tricksters_amulet_name">Amuleto del Tramposo</string>
+    <string name="item_tricksters_amulet_desc">Un amuleto de la suerte de los artistas de carnaval. Otorga una pequeña ventaja en combate.</string>
+    <string name="item_strongmans_sigil_name">Sigilo del Forzudo</string>
+    <string name="item_strongmans_sigil_desc">Un pesado anillo de hierro grabado con la marca del campeón forzudo. Potencia la Fuerza.</string>
+    <string name="item_carnival_cape_name">Capa de Carnaval</string>
+    <string name="item_carnival_cape_desc" formatted="false">Una capa vibrante de los campeones de carnaval. Otorga un 5% más de entradas de las sesiones de Carnaval.</string>
 
     <!-- Herblore potions -->
     <string name="item_attack_brew_name">Brebaje de Ataque</string>
@@ -741,41 +741,41 @@
 
     <!-- ===== Seed names ===== -->
     <string name="item_potato_seed_name">Semilla de papa</string>
-    <string name="item_potato_seed_desc">Plant to grow potatoes. Grows in 2h.\nRequires farming level 1.</string> <!-- untranslated -->
+    <string name="item_potato_seed_desc">Planta para cultivar patatas. Crece en 2h.\nRequiere nivel 1 de Agricultura.</string>
     <string name="item_onion_seed_name">Semilla de cebolla</string>
-    <string name="item_onion_seed_desc">Plant to grow onions. Grows in 3h.\nRequires farming level 5.</string> <!-- untranslated -->
+    <string name="item_onion_seed_desc">Planta para cultivar cebollas. Crece en 3h.\nRequiere nivel 5 de Agricultura.</string>
     <string name="item_cabbage_seed_name">Semilla de repollo</string>
-    <string name="item_cabbage_seed_desc">Plant to grow cabbage. Grows in 4h.\nRequires farming level 10.</string> <!-- untranslated -->
+    <string name="item_cabbage_seed_desc">Planta para cultivar col. Crece en 4h.\nRequiere nivel 10 de Agricultura.</string>
     <string name="item_carrot_seed_name">Semilla de zanahoria</string>
-    <string name="item_carrot_seed_desc">Plant to grow carrots. Grows in 5h.\nRequires farming level 15.</string> <!-- untranslated -->
+    <string name="item_carrot_seed_desc">Planta para cultivar zanahorias. Crece en 5h.\nRequiere nivel 15 de Agricultura.</string>
     <string name="item_tomato_seed_name">Semilla de tomate</string>
-    <string name="item_tomato_seed_desc">Plant to grow tomatoes. Grows in 6h.\nRequires farming level 20.</string> <!-- untranslated -->
+    <string name="item_tomato_seed_desc">Planta para cultivar tomates. Crece en 6h.\nRequiere nivel 20 de Agricultura.</string>
     <string name="item_corn_seed_name">Semilla de maíz</string>
-    <string name="item_corn_seed_desc">Plant to grow corn. Grows in 7h.\nRequires farming level 25.</string> <!-- untranslated -->
+    <string name="item_corn_seed_desc">Planta para cultivar maíz. Crece en 7h.\nRequiere nivel 25 de Agricultura.</string>
     <string name="item_pumpkin_seed_name">Semilla de calabaza</string>
-    <string name="item_pumpkin_seed_desc">Plant to grow pumpkins. Grows in 9h.\nRequires farming level 30.</string> <!-- untranslated -->
+    <string name="item_pumpkin_seed_desc">Planta para cultivar calabazas. Crece en 9h.\nRequiere nivel 30 de Agricultura.</string>
     <string name="item_watermelon_seed_name">Semilla de sandía</string>
-    <string name="item_watermelon_seed_desc">Plant to grow watermelons. Grows in 10h.\nRequires farming level 35.</string> <!-- untranslated -->
+    <string name="item_watermelon_seed_desc">Planta para cultivar sandías. Crece en 10h.\nRequiere nivel 35 de Agricultura.</string>
     <string name="item_strawberry_seed_name">Semilla de fresa</string>
-    <string name="item_strawberry_seed_desc">Plant to grow strawberries. Grows in 11h.\nRequires farming level 40.</string> <!-- untranslated -->
+    <string name="item_strawberry_seed_desc">Planta para cultivar fresas. Crece en 11h.\nRequiere nivel 40 de Agricultura.</string>
     <string name="item_magic_herb_seed_name">Semilla de hierba mágica</string>
-    <string name="item_magic_herb_seed_desc">Plant to grow magic herbs. Grows in 13h.\nRequires farming level 50.</string> <!-- untranslated -->
+    <string name="item_magic_herb_seed_desc">Planta para cultivar hierbas mágicas. Crece en 13h.\nRequiere nivel 50 de Agricultura.</string>
     <string name="item_dragon_fruit_seed_name">Semilla de fruta del dragón</string>
     <string name="item_dragon_fruit_seed_desc">Planta para cultivar fruta de dragón. Crece en 14h.\nRequiere nivel 55 de Agricultura.</string>
     <string name="item_golden_wheat_seed_name">Semilla de trigo dorado</string>
-    <string name="item_golden_wheat_seed_desc">Plant to grow golden wheat. Grows in 16h.\nRequires farming level 65.</string> <!-- untranslated -->
+    <string name="item_golden_wheat_seed_desc">Planta para cultivar trigo dorado. Crece en 16h.\nRequiere nivel 65 de Agricultura.</string>
     <string name="item_spirit_seed_name">Semilla de hierba espiritual</string>
-    <string name="item_spirit_seed_desc">Plant to grow spirit herbs. Grows in 19h.\nRequires farming level 75.</string> <!-- untranslated -->
+    <string name="item_spirit_seed_desc">Planta para cultivar hierbas espirituales. Crece en 19h.\nRequiere nivel 75 de Agricultura.</string>
     <string name="item_celestial_bloom_seed_name">Semilla de flor celestial</string>
-    <string name="item_celestial_bloom_seed_desc">Plant to grow celestial blooms. Grows in 21h.\nRequires farming level 85.</string> <!-- untranslated -->
+    <string name="item_celestial_bloom_seed_desc">Planta para cultivar flores celestiales. Crece en 21h.\nRequiere nivel 85 de Agricultura.</string>
     <string name="item_starfruit_seed_name">Semilla de carambola</string>
-    <string name="item_starfruit_seed_desc">Plant to grow starfruit. Grows in 23h.\nRequires farming level 95.</string> <!-- untranslated -->
+    <string name="item_starfruit_seed_desc">Planta para cultivar carambola. Crece en 23h.\nRequiere nivel 95 de Agricultura.</string>
     <string name="item_void_lotus_seed_name">Semilla de loto del vacío</string>
-    <string name="item_void_lotus_seed_desc">Plant to grow void lotus. Grows in 24h.\nRequires farming level 99.</string> <!-- untranslated -->
+    <string name="item_void_lotus_seed_desc">Planta para cultivar loto del vacío. Crece en 24h.\nRequiere nivel 99 de Agricultura.</string>
 
 
     <!-- Additional item/boss/food names (English placeholders) -->
-    <string name="item_abyssal_rod_name">Abyssal Fishing Rod</string> <!-- untranslated -->
+    <string name="item_abyssal_rod_name">Caña de Pescar Abisal</string>
     <string name="item_adamantite_arrow_tip_name">Puntas de flecha de adamantita</string>
     <string name="item_adamantite_boots_name">Botas de Adamantita</string>
     <string name="item_adamantite_chainbody_name">Cota de malla de Adamantita</string>
@@ -788,25 +788,25 @@
     <string name="item_adamantite_square_shield_name">Escudo cuadrado de Adamantita</string>
     <string name="item_agility_cape_name">Capa de Agilidad</string>
     <string name="item_agility_guild_cape_name">Capa del Gremio de Agilidad</string>
-    <string name="item_amulet_of_fury_name">Amulet Of Fury</string> <!-- untranslated -->
-    <string name="item_amulet_of_fury_desc">A powerful amulet granting bonuses to all combat styles. Requires Mercantile level 80 to purchase.</string> <!-- untranslated -->
-    <string name="item_amulet_of_strength_name">Amulet Of Strength</string> <!-- untranslated -->
-    <string name="item_amulet_of_strength_desc">Increases melee strength bonus. Requires Mercantile level 20 to purchase.</string> <!-- untranslated -->
-    <string name="item_amulet_of_the_kraken_name">Amulet Of The Kraken</string> <!-- untranslated -->
+    <string name="item_amulet_of_fury_name">Amuleto de Furia</string>
+    <string name="item_amulet_of_fury_desc">Un poderoso amuleto que otorga bonificaciones a todos los estilos de combate. Requiere nivel 80 de Mercantil para comprarlo.</string>
+    <string name="item_amulet_of_strength_name">Amuleto de Fuerza</string>
+    <string name="item_amulet_of_strength_desc">Aumenta la bonificación de fuerza cuerpo a cuerpo. Requiere nivel 20 de Mercantil para comprarlo.</string>
+    <string name="item_amulet_of_the_kraken_name">Amuleto del Kraken</string>
     <string name="item_arcane_grappling_hook_name">Garfio de Escalada Arcano</string>
-    <string name="item_arcane_staff_name">Arcane Staff</string> <!-- untranslated -->
-    <string name="item_archers_guild_cape_name">Archers Guild Cape</string> <!-- untranslated -->
-    <string name="item_archers_ring_name">Archers Ring</string> <!-- untranslated -->
-    <string name="item_archers_ring_desc">Increases ranged accuracy. Requires Mercantile level 60 to purchase.</string> <!-- untranslated -->
-    <string name="item_attack_cape_name">Attack Cape</string> <!-- untranslated -->
-    <string name="item_baby_kraken_name">Baby Kraken</string> <!-- untranslated -->
-    <string name="item_balrog_name">Gothic Ember, Ancient Flame of the Deep</string> <!-- untranslated -->
-    <string name="item_balrog_whip_name">Gothic Ember\'s Flaming Whip</string> <!-- untranslated -->
-    <string name="item_balrog_wings_name">Gothic Ember Wings</string> <!-- untranslated -->
+    <string name="item_arcane_staff_name">Báculo Arcano</string>
+    <string name="item_archers_guild_cape_name">Capa del Gremio de Arqueros</string>
+    <string name="item_archers_ring_name">Anillo de Arqueros</string>
+    <string name="item_archers_ring_desc">Aumenta la precisión a distancia. Requiere nivel 60 de Mercantil para comprarlo.</string>
+    <string name="item_attack_cape_name">Capa de Ataque</string>
+    <string name="item_baby_kraken_name">Bebé Kraken</string>
+    <string name="item_balrog_name">Brasa Gótica, Llama Ancestral de las Profundidades</string>
+    <string name="item_balrog_whip_name">Látigo Llameante de la Brasa Gótica</string>
+    <string name="item_balrog_wings_name">Alas de la Brasa Gótica</string>
     <string name="item_beef_name">Carne de res cocida</string>
-    <string name="item_berserker_ring_name">Berserker Ring</string> <!-- untranslated -->
-    <string name="item_berserker_ring_desc">Increases melee strength. Requires Mercantile level 60 to purchase.</string> <!-- untranslated -->
-    <string name="item_blessed_fishing_rod_name">Blessed Fishing Rod</string> <!-- untranslated -->
+    <string name="item_berserker_ring_name">Anillo de Berserker</string>
+    <string name="item_berserker_ring_desc">Aumenta la fuerza cuerpo a cuerpo. Requiere nivel 60 de Mercantil para comprarlo.</string>
+    <string name="item_blessed_fishing_rod_name">Caña de Pescar Bendecida</string>
     <string name="item_bronze_arrow_tip_name">Puntas de flecha de bronce</string>
     <string name="item_bronze_boots_name">Botas de Bronce</string>
     <string name="item_bronze_chainbody_name">Cota de malla de Bronce</string>
@@ -818,13 +818,13 @@
     <string name="item_bronze_square_shield_name">Escudo cuadrado de Bronce</string>
     <string name="item_chicken_name">Pollo cocido</string>
     <string name="item_construction_guild_cape_name">Capa del Gremio de Constructores</string>
-    <string name="item_cooking_cape_name">Cooking Cape</string> <!-- untranslated -->
-    <string name="item_cooking_guild_cape_name">Cooking Guild Cape</string> <!-- untranslated -->
-    <string name="item_crafting_cape_name">Crafting Cape</string> <!-- untranslated -->
-    <string name="item_crafting_guild_cape_name">Crafting Guild Cape</string> <!-- untranslated -->
+    <string name="item_cooking_cape_name">Capa de Cocina</string>
+    <string name="item_cooking_guild_cape_name">Capa del Gremio de Cocineros</string>
+    <string name="item_crafting_cape_name">Capa de Artesanía</string>
+    <string name="item_crafting_guild_cape_name">Capa del Gremio de Artesanía</string>
     <string name="item_deep_iron_pickaxe_name">Pico de Hierro Profundo</string>
-    <string name="item_defense_cape_name">Defense Cape</string> <!-- untranslated -->
-    <string name="item_demon_lord_name">Demon Lord</string> <!-- untranslated -->
+    <string name="item_defense_cape_name">Capa de Defensa</string>
+    <string name="item_demon_lord_name">Señor de los Demonios</string>
     <string name="item_divine_frying_pan_name">Sartén Divina</string>
     <string name="item_divine_grappling_hook_name">Garfio de Escalada Divino</string>
     <string name="item_divine_hammer_name">Martillo Divino</string>
@@ -853,21 +853,21 @@
     <string name="item_dwarven_sword_name">Espada Enana</string>
     <string name="item_dwarven_tinderbox_name">Yesquero Enano</string>
     <string name="item_dwarven_warhammer_name">Martillo de Guerra Enano</string>
-    <string name="item_ent_name">Ent</string> <!-- untranslated -->
-    <string name="item_farming_cape_name">Farming Cape</string> <!-- untranslated -->
-    <string name="item_farming_guild_cape_name">Farming Guild Cape</string> <!-- untranslated -->
-    <string name="item_firemaking_cape_name">Firemaking Cape</string> <!-- untranslated -->
-    <string name="item_firemaking_guild_cape_name">Firemaking Guild Cape</string> <!-- untranslated -->
-    <string name="item_fishing_cape_name">Fishing Cape</string> <!-- untranslated -->
-    <string name="item_fishing_guild_cape_name">Fishing Guild Cape</string> <!-- untranslated -->
-    <string name="item_flame_heart_amulet_name">Flame Heart Amulet</string> <!-- untranslated -->
-    <string name="item_fletching_cape_name">Fletching Cape</string> <!-- untranslated -->
-    <string name="item_fletching_guild_cape_name">Fletching Guild Cape</string> <!-- untranslated -->
+    <string name="item_ent_name">Ent</string>
+    <string name="item_farming_cape_name">Capa de Agricultura</string>
+    <string name="item_farming_guild_cape_name">Capa del Gremio de Granjeros</string>
+    <string name="item_firemaking_cape_name">Capa de Hacer Fuego</string>
+    <string name="item_firemaking_guild_cape_name">Capa del Gremio de Fogateros</string>
+    <string name="item_fishing_cape_name">Capa de Pesca</string>
+    <string name="item_fishing_guild_cape_name">Capa del Gremio de Pescadores</string>
+    <string name="item_flame_heart_amulet_name">Amuleto Corazón de Llama</string>
+    <string name="item_fletching_cape_name">Capa de Arquería</string>
+    <string name="item_fletching_guild_cape_name">Capa del Gremio de Flecheros</string>
     <string name="item_forge_pickaxe_name">Pico de Forja</string>
-    <string name="item_hellfire_staff_name">Hellfire Staff</string> <!-- untranslated -->
-    <string name="item_herblore_guild_cape_name">Herblore Guild Cape</string> <!-- untranslated -->
-    <string name="item_hp_cape_name">Hp Cape</string> <!-- untranslated -->
-    <string name="item_imp_pet_name">Imp Pet</string> <!-- untranslated -->
+    <string name="item_hellfire_staff_name">Báculo de Fuego Infernal</string>
+    <string name="item_herblore_guild_cape_name">Capa del Gremio de Herbolarios</string>
+    <string name="item_hp_cape_name">Capa de HP</string>
+    <string name="item_imp_pet_name">Mascota Imp</string>
     <string name="item_iron_arrow_tip_name">Puntas de flecha de hierro</string>
     <string name="item_iron_boots_name">Botas de Hierro</string>
     <string name="item_iron_chainbody_name">Cota de malla de Hierro</string>
@@ -878,16 +878,16 @@
     <string name="item_iron_plateskirt_name">Faldar de placas de Hierro</string>
     <string name="item_iron_square_shield_name">Escudo cuadrado de Hierro</string>
     <string name="item_ironwood_axe_name">Hacha de Madera Férrea</string>
-    <string name="item_king_black_dragon_name">King Black Dragon</string> <!-- untranslated -->
-    <string name="item_kraken_name">Kraken</string> <!-- untranslated -->
-    <string name="item_kraken_tentacle_name">Kraken Tentacle</string> <!-- untranslated -->
-    <string name="item_mages_guild_cape_name">Mages Guild Cape</string> <!-- untranslated -->
-    <string name="item_magic_cape_name">Magic Cape</string> <!-- untranslated -->
-    <string name="item_magic_longbow_name">Magic Longbow</string> <!-- untranslated -->
-    <string name="item_magic_shortbow_name">Magic Shortbow</string> <!-- untranslated -->
-    <string name="item_elven_shortbow_name">Elven Shortbow</string> <!-- untranslated -->
-    <string name="item_elven_longbow_name">Elven Longbow</string> <!-- untranslated -->
-    <string name="item_maple_shortbow_name">Maple Shortbow</string> <!-- untranslated -->
+    <string name="item_king_black_dragon_name">King Black Dragon</string>
+    <string name="item_kraken_name">Kraken</string>
+    <string name="item_kraken_tentacle_name">Tentáculo de Kraken</string>
+    <string name="item_mages_guild_cape_name">Capa del Gremio de Magos</string>
+    <string name="item_magic_cape_name">Capa de Magia</string>
+    <string name="item_magic_longbow_name">Arco largo mágico</string>
+    <string name="item_magic_shortbow_name">Arco corto mágico</string>
+    <string name="item_elven_shortbow_name">Arco corto élfico</string>
+    <string name="item_elven_longbow_name">Arco largo élfico</string>
+    <string name="item_maple_shortbow_name">Arco corto de arce</string>
     <string name="item_mercantile_guild_cape_name">Capa del Gremio Mercantil</string>
     <string name="item_mining_cape_name">Capa de Minería</string>
     <string name="item_mining_guild_cape_name">Capa del Gremio de Minería</string>
@@ -902,12 +902,12 @@
     <string name="item_mithril_plateskirt_name">Faldar de placas de Mithril</string>
     <string name="item_mithril_square_shield_name">Escudo cuadrado de Mithril</string>
     <string name="item_mutton_name">Cordero cocido</string>
-    <string name="item_necklace_of_anguish_name">Necklace Of Anguish</string> <!-- untranslated -->
-    <string name="item_necklace_of_anguish_desc">Provides exceptional ranged attack bonuses. Requires Mercantile level 99 to purchase.</string> <!-- untranslated -->
-    <string name="item_oak_shortbow_name">Oak Shortbow</string> <!-- untranslated -->
-    <string name="item_prayer_cape_name">Prayer Cape</string> <!-- untranslated -->
-    <string name="item_prayer_guild_cape_name">Prayer Guild Cape</string> <!-- untranslated -->
-    <string name="item_ranged_cape_name">Ranged Cape</string> <!-- untranslated -->
+    <string name="item_necklace_of_anguish_name">Collar de Angustia</string>
+    <string name="item_necklace_of_anguish_desc">Proporciona bonificaciones excepcionales de ataque a distancia. Requiere nivel 99 de Mercantil para comprarlo.</string>
+    <string name="item_oak_shortbow_name">Arco corto de roble</string>
+    <string name="item_prayer_cape_name">Capa de Plegarias</string>
+    <string name="item_prayer_guild_cape_name">Capa del Gremio de Plegarias</string>
+    <string name="item_ranged_cape_name">Capa de Combate a Distancia</string>
     <string name="item_rat_meat_name">Carne de rata</string>
     <string name="item_ring_of_dragons_might_name">Ring Of Dragons Might</string> <!-- untranslated -->
     <string name="item_ring_of_flame_name">Ring Of Flame</string> <!-- untranslated -->
@@ -995,27 +995,27 @@
     <string name="item_dwarven_warhammer_desc">Un martillo enano enorme que aplasta todo a su paso.</string>
     <string name="item_tower_sword_name">Espada de la Torre</string>
     <string name="item_tower_sword_desc">Una hoja que ha atravesado incontables pisos de la torre.</string>
-    <string name="item_balrog_whip_desc">A whip of pure flame, torn from the Gothic Ember itself. Burns with an eternal fire.</string> <!-- untranslated -->
+    <string name="item_balrog_whip_desc">Un látigo de llama pura, arrancado de la propia Brasa Gótica. Arde con fuego eterno.</string>
     <string name="item_divine_sword_name">Espada Divina</string>
     <string name="item_divine_sword_desc">Una hoja de pura luz divina, que solo empuñan los elegidos.</string>
     <string name="item_divine_greatblade_name">Espadón Divino</string>
     <string name="item_divine_greatblade_desc">Una hoja divina enorme que canaliza poder en bruto en cada golpe.</string>
     <string name="item_shortbow_desc">A shortbow crafted from regular logs.</string> <!-- untranslated -->
-    <string name="item_oak_shortbow_desc">A shortbow crafted from oak logs.</string> <!-- untranslated -->
+    <string name="item_oak_shortbow_desc">Un arco corto fabricado con troncos de roble.</string>
     <string name="item_willow_shortbow_desc">A shortbow crafted from willow logs.</string> <!-- untranslated -->
-    <string name="item_maple_shortbow_desc">A shortbow crafted from maple logs.</string> <!-- untranslated -->
+    <string name="item_maple_shortbow_desc">Un arco corto fabricado con troncos de arce.</string>
     <string name="item_yew_shortbow_desc">A shortbow crafted from yew logs.</string> <!-- untranslated -->
     <string name="item_yew_longbow_desc">A longbow crafted from yew logs.</string> <!-- untranslated -->
-    <string name="item_magic_shortbow_desc">A shortbow crafted from magic logs.</string> <!-- untranslated -->
-    <string name="item_magic_longbow_desc">A longbow crafted from magic logs.</string> <!-- untranslated -->
-    <string name="item_elven_shortbow_desc">A swift bow strung with elven silk. Only elven hands know the fletching.</string> <!-- untranslated -->
-    <string name="item_elven_longbow_desc">A tall elven warbow of layered redwood. Only elven hands know the fletching.</string> <!-- untranslated -->
+    <string name="item_magic_shortbow_desc">Un arco corto fabricado con troncos mágicos.</string>
+    <string name="item_magic_longbow_desc">Un arco largo fabricado con troncos mágicos.</string>
+    <string name="item_elven_shortbow_desc">Un arco veloz encordado con seda élfica. Solo manos élficas dominan su fabricación.</string>
+    <string name="item_elven_longbow_desc">Un arco de guerra élfico alto, de secuoya laminada. Solo manos élficas dominan su fabricación.</string>
     <string name="item_tower_crossbow_name">Ballesta de la Torre</string>
     <string name="item_tower_crossbow_desc">Una ballesta de precisión forjada con metal de la torre.</string>
-    <string name="item_arcane_staff_desc">A staff recovered from the Arcane Ruins, still humming with contained magical energy from the catastrophe that destroyed the spire above.</string> <!-- untranslated -->
-    <string name="item_hellfire_staff_desc">A staff wreathed in demonic flame, torn from the Demon Lord\'s grasp.</string> <!-- untranslated -->
-    <string name="item_void_staff_name">Void Staff</string> <!-- untranslated -->
-    <string name="item_void_staff_desc">A staff of pure void energy. Grants infinite runes for all spells.</string> <!-- untranslated -->
+    <string name="item_arcane_staff_desc">Un báculo recuperado de las Ruinas Arcanas, que aún zumba con energía mágica contenida de la catástrofe que destruyó el chapitel superior.</string>
+    <string name="item_hellfire_staff_desc">Un báculo envuelto en llama demoníaca, arrancado de las manos del Señor de los Demonios.</string>
+    <string name="item_void_staff_name">Báculo del Vacío</string>
+    <string name="item_void_staff_desc">Un báculo de pura energía del vacío. Otorga runas infinitas para todos los hechizos.</string>
     <string name="item_trident_of_the_seas_desc">A fearsome trident imbued with the power of the deep, taken from the Kraken\'s lair.</string> <!-- untranslated -->
     <string name="item_bronze_med_helmet_desc">Un casco mediano de bronce.</string>
     <string name="item_bronze_full_helmet_desc">Un casco completo de bronce.</string>
@@ -1077,7 +1077,7 @@
     <string name="item_tower_boots_desc">Botas forjadas en la forja más profunda de la torre.</string>
     <string name="item_tower_shield_name">Escudo de la Torre</string>
     <string name="item_tower_shield_desc">Un escudo enorme tallado en piedra de la torre.</string>
-    <string name="item_balrog_wings_desc">The mighty wings of the Gothic Ember, imbued with dark power. The ultimate armor.</string> <!-- untranslated -->
+    <string name="item_balrog_wings_desc">Las poderosas alas de la Brasa Gótica, imbuidas de poder oscuro. La armadura definitiva.</string>
     <string name="item_divine_helm_name">Casco Divino</string>
     <string name="item_divine_helm_desc">Un casco radiante bendecido por los dioses. Desvía golpes que derribarían a cualquier mortal.</string>
     <string name="item_divine_platebody_name">Armadura Divina</string>
@@ -1094,8 +1094,8 @@
     <string name="item_tower_amulet_name">Amuleto de la Torre</string>
     <string name="item_tower_amulet_desc">Un amuleto que palpita con el poder ancestral de la torre.</string>
     <string name="item_dragon_amulet_desc">Un poderoso amuleto forjado con escamas de dragón. Mejora todos los estilos de combate.</string>
-    <string name="item_flame_heart_amulet_desc">The crystallized heart of an ancient flame demon. Radiates immense power.</string> <!-- untranslated -->
-    <string name="item_amulet_of_the_kraken_desc">A dark amulet pulsing with the Kraken\'s magical energy.</string> <!-- untranslated -->
+    <string name="item_flame_heart_amulet_desc">El corazón cristalizado de un antiguo demonio de llamas. Irradia un poder inmenso.</string>
+    <string name="item_amulet_of_the_kraken_desc">Un amuleto oscuro que palpita con la energía mágica del Kraken.</string>
     <string name="item_silver_emerald_ring_desc">Un anillo de plata con una esmeralda. Mejora el combate a distancia.</string>
     <string name="item_silver_ruby_ring_desc">Un anillo de plata con un rubí. Mejora el cuerpo a cuerpo.</string>
     <string name="item_silver_diamond_ring_desc">Un anillo de plata con un diamante. Combate equilibrado.</string>
@@ -1104,40 +1104,40 @@
     <string name="item_ring_of_flame_desc">Forged in the fires of the deep earth. Those who wear it feel the Gothic Ember\'s strength.</string> <!-- untranslated -->
     <string name="item_ring_of_dragons_might_desc">A ring imbued with dragonfire. Greatly increases melee strength.</string> <!-- untranslated -->
     <string name="item_ring_of_the_seas_desc">A ring blessed by the deep sea. Enhances ranged precision and power.</string> <!-- untranslated -->
-    <string name="item_kraken_tentacle_desc">A coiling tentacle ring that channels the Kraken\'s arcane power.</string> <!-- untranslated -->
+    <string name="item_kraken_tentacle_desc">Un anillo tentacular en espiral que canaliza el poder arcano del Kraken.</string>
     <string name="item_tower_cape_name">Capa de la Torre</string>
     <string name="item_tower_cape_desc">Una capa fluida que irradia la energía de la torre.</string>
     <string name="item_mining_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Minería. Otorga un 10% más de mineral por sesión.</string>
     <string name="item_construction_guild_cape_desc" formatted="false">Otorgada por alcanzar el nivel 10 en el Gremio de Constructores. Otorga un 5% más de muebles por sesión.</string>
     <string name="item_mining_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Minería. Otorga un 5% más de mineral por sesión.</string>
-    <string name="item_fishing_cape_desc" formatted="false">Awarded for reaching level 99 Fishing. Grants 10% more fish per session.</string> <!-- untranslated -->
-    <string name="item_fishing_guild_cape_desc" formatted="false">Awarded for reaching Fishing Guild level 10. Grants 5% more fish per session.</string> <!-- untranslated -->
+    <string name="item_fishing_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Pesca. Otorga un 10% más de pescado por sesión.</string>
+    <string name="item_fishing_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Pescadores. Otorga un 5% más de pescado por sesión.</string>
     <string name="item_woodcutting_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Tala de Madera. Otorga un 10% más de troncos por sesión.</string>
     <string name="item_woodcutting_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Leñadores. Otorga un 5% más de troncos por sesión.</string>
-    <string name="item_farming_cape_desc" formatted="false">Awarded for reaching level 99 Farming. Grants 10% more harvest per session.</string> <!-- untranslated -->
-    <string name="item_farming_guild_cape_desc" formatted="false">Awarded for reaching Farming Guild level 10. Grants 5% more harvest per session.</string> <!-- untranslated -->
+    <string name="item_farming_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Agricultura. Otorga un 10% más de cosecha por sesión.</string>
+    <string name="item_farming_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Granjeros. Otorga un 5% más de cosecha por sesión.</string>
     <string name="item_thieving_cape_name">Thieving Cape</string> <!-- untranslated -->
     <string name="item_thieving_cape_desc" formatted="false">Awarded for reaching level 99 Thieving. Grants 10% more successful pickpockets per session.</string> <!-- untranslated -->
     <string name="item_thieving_guild_cape_desc" formatted="false">Awarded for reaching Thieves Guild level 10. Grants 5% more successful pickpockets per session.</string> <!-- untranslated -->
     <string name="item_smithing_cape_desc" formatted="false">Otorgada por alcanzar el nivel 99 en Herrería. Otorga un 10% más de objetos por sesión.</string>
     <string name="item_smithing_guild_cape_desc" formatted="false">Otorgada por alcanzar el nivel 10 en el Gremio de Herreros. Otorga un 5% más de objetos por sesión.</string>
-    <string name="item_cooking_cape_desc" formatted="false">Awarded for reaching level 99 Cooking. Grants 10% more food per session.</string> <!-- untranslated -->
-    <string name="item_cooking_guild_cape_desc" formatted="false">Awarded for reaching Cooking Guild level 10. Grants 5% more food per session.</string> <!-- untranslated -->
-    <string name="item_fletching_cape_desc" formatted="false">Awarded for reaching level 99 Fletching. Grants 10% more arrows per session.</string> <!-- untranslated -->
-    <string name="item_fletching_guild_cape_desc" formatted="false">Awarded for reaching Fletching Guild level 10. Grants 5% more arrows per session.</string> <!-- untranslated -->
-    <string name="item_crafting_cape_desc" formatted="false">Awarded for reaching level 99 Crafting. Grants 10% more items per session.</string> <!-- untranslated -->
-    <string name="item_crafting_guild_cape_desc" formatted="false">Awarded for reaching Crafting Guild level 10. Grants 5% more items per session.</string> <!-- untranslated -->
-    <string name="item_firemaking_cape_desc" formatted="false">Awarded for reaching level 99 Firemaking. Grants 10% more ashes per session.</string> <!-- untranslated -->
-    <string name="item_firemaking_guild_cape_desc" formatted="false">Awarded for reaching Firemaking Guild level 10. Grants 5% more ashes per session.</string> <!-- untranslated -->
+    <string name="item_cooking_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Cocina. Otorga un 10% más de comida por sesión.</string>
+    <string name="item_cooking_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Cocineros. Otorga un 5% más de comida por sesión.</string>
+    <string name="item_fletching_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Arquería. Otorga un 10% más de flechas por sesión.</string>
+    <string name="item_fletching_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Flecheros. Otorga un 5% más de flechas por sesión.</string>
+    <string name="item_crafting_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Artesanía. Otorga un 10% más de objetos por sesión.</string>
+    <string name="item_crafting_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Artesanía. Otorga un 5% más de objetos por sesión.</string>
+    <string name="item_firemaking_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Hacer Fuego. Otorga un 10% más de cenizas por sesión.</string>
+    <string name="item_firemaking_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Fogateros. Otorga un 5% más de cenizas por sesión.</string>
     <string name="item_runecrafting_cape_desc" formatted="false">Awarded for reaching level 99 Runecrafting. Grants 10% more runes per session.</string> <!-- untranslated -->
     <string name="item_runecrafting_guild_cape_desc" formatted="false">Awarded for reaching Runecrafting Guild level 10. Grants 5% more runes per session.</string> <!-- untranslated -->
-    <string name="item_herblore_cape_name">Herblore Cape</string> <!-- untranslated -->
-    <string name="item_herblore_cape_desc" formatted="false">Awarded for reaching level 99 Herblore. Grants 10% more potions per session.</string> <!-- untranslated -->
-    <string name="item_herblore_guild_cape_desc" formatted="false">Awarded for reaching Herblore Guild level 10. Grants 5% more potions per session.</string> <!-- untranslated -->
+    <string name="item_herblore_cape_name">Capa de Herboristería</string>
+    <string name="item_herblore_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Herboristería. Otorga un 10% más de pociones por sesión.</string>
+    <string name="item_herblore_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Herbolarios. Otorga un 5% más de pociones por sesión.</string>
     <string name="item_construction_cape_name">Capa de Construcción</string>
     <string name="item_construction_cape_desc" formatted="false">Otorgada por alcanzar el nivel 99 en Construcción. Otorga un 10% más de objetos por sesión.</string>
-    <string name="item_prayer_cape_desc" formatted="false">Awarded for reaching level 99 Prayer. Strengthens your active blessing by 10%.</string> <!-- untranslated -->
-    <string name="item_prayer_guild_cape_desc" formatted="false">Awarded for reaching Prayer Guild level 10. Strengthens your active blessing by 5%.</string> <!-- untranslated -->
+    <string name="item_prayer_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Plegarias. Fortalece tu bendición activa un 10%.</string>
+    <string name="item_prayer_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Plegarias. Fortalece tu bendición activa un 5%.</string>
     <string name="item_mercantile_cape_name">Capa de Mercantil</string>
     <string name="item_mercantile_cape_desc" formatted="false">Se otorga al alcanzar el nivel 99 de Mercantil. Otorga un 10% de mejora en los precios de tienda y en los retornos de comercio.</string>
     <string name="item_mercantile_guild_cape_desc" formatted="false">Se otorga al alcanzar el nivel 10 del Gremio de Mercaderes. Otorga un 5% de mejora en los precios de tienda y en los retornos de comercio.</string>
@@ -1145,25 +1145,25 @@
     <string name="item_agility_guild_cape_desc" formatted="false">Se otorga al alcanzar el nivel 10 del Gremio de Agilidad. Otorga un 5% más de XP por sesión.</string>
     <string name="item_slayer_cape_name">Capa de Slayer</string>
     <string name="item_slayer_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Slayer. Otorga un 10% más de puntos de Slayer.</string>
-    <string name="item_attack_cape_desc" formatted="false">Awarded for reaching level 99 Attack. Grants 10% bonus Attack XP.</string> <!-- untranslated -->
+    <string name="item_attack_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Ataque. Otorga un 10% más de XP de Ataque.</string>
     <string name="item_strength_cape_desc" formatted="false">Awarded for reaching level 99 Strength. Grants 10% bonus Strength XP.</string> <!-- untranslated -->
-    <string name="item_defense_cape_desc" formatted="false">Awarded for reaching level 99 Defense. Grants 10% bonus Defense XP.</string> <!-- untranslated -->
+    <string name="item_defense_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Defensa. Otorga un 10% más de XP de Defensa.</string>
     <string name="item_warriors_guild_cape_desc" formatted="false">Awarded for reaching Warriors Guild level 10. Grants 5% bonus Attack, Strength, and Defense XP.</string> <!-- untranslated -->
-    <string name="item_ranged_cape_desc" formatted="false">Awarded for reaching level 99 Ranged. Grants 10% bonus Ranged XP.</string> <!-- untranslated -->
-    <string name="item_archers_guild_cape_desc" formatted="false">Awarded for reaching Archers Guild level 10. Grants 5% bonus Ranged XP.</string> <!-- untranslated -->
-    <string name="item_magic_cape_desc" formatted="false">Awarded for reaching level 99 Magic. Grants 10% bonus Magic XP.</string> <!-- untranslated -->
-    <string name="item_mages_guild_cape_desc" formatted="false">Awarded for reaching Mages Guild level 10. Grants 5% bonus Magic XP.</string> <!-- untranslated -->
+    <string name="item_ranged_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Arquería. Otorga un 10% más de XP de Arquería.</string>
+    <string name="item_archers_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Arqueros. Otorga un 5% más de XP de Arquería.</string>
+    <string name="item_magic_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de Magia. Otorga un 10% más de XP de Magia.</string>
+    <string name="item_mages_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Magos. Otorga un 5% más de XP de Magia.</string>
     <string name="item_slayer_guild_cape_desc" formatted="false">Se otorga por alcanzar el nivel 10 del Gremio de Slayer. Otorga un 5% más de XP de Slayer.</string>
-    <string name="item_hp_cape_desc" formatted="false">Awarded for reaching level 99 HP. Grants 10% bonus Hitpoints XP.</string> <!-- untranslated -->
+    <string name="item_hp_cape_desc" formatted="false">Se otorga por alcanzar el nivel 99 de HP. Otorga un 10% más de XP de Vida.</string>
     <string name="item_deep_iron_pickaxe_desc">Forjado con mineral extraído de los pozos más profundos de la Mina Derrumbada. Golpea con una precisión asombrosa.</string>
     <string name="item_dwarven_pickaxe_desc">Un pico enano de obra maestra. La mejor herramienta de minería jamás fabricada.</string>
     <string name="item_forge_pickaxe_desc">Templado en las llamas de la propia Forja Antigua. El pico más raro y poderoso que existe.</string>
     <string name="item_ironwood_axe_desc">Tallada de los árboles de madera férrea que una vez se alzaron en las Ruinas del Bosque Antiguo. Excepcionalmente duradera.</string>
     <string name="item_dwarven_axe_desc">Un hacha enana legendaria. Corta cualquier árbol con facilidad.</string>
     <string name="item_sanctum_axe_desc">Forjada a la sombra del Santuario Corrupto. Su filo corta hasta los troncos mágicos con facilidad.</string>
-    <string name="item_blessed_fishing_rod_desc">Crafted from driftwood recovered from the Drowned Temple, blessed by ancient sea rites.</string> <!-- untranslated -->
+    <string name="item_blessed_fishing_rod_desc">Fabricada con madera a la deriva recuperada del Templo Sumergido, bendecida con antiguos ritos marinos.</string>
     <string name="item_dwarven_fishing_rod_desc">Una caña de pescar de factura enana. Prácticamente saca los peces del agua a pulso.</string>
-    <string name="item_abyssal_rod_desc">Woven from void-touched filament recovered from the Abyssal Ruins. Fish practically leap onto it.</string> <!-- untranslated -->
+    <string name="item_abyssal_rod_desc">Tejida con filamento tocado por el vacío recuperado de las Ruinas Abisales. Los peces casi saltan solos al anzuelo.</string>
     <string name="item_bronze_hoe_desc">Una azada básica para Agricultura.</string>
     <string name="item_iron_hoe_desc">Una azada de hierro. Aumenta el rendimiento de la cosecha.</string>
     <string name="item_steel_hoe_desc">Una azada de acero. Aumenta notablemente el rendimiento de la cosecha.</string>
@@ -1196,7 +1196,7 @@
     <string name="item_runite_grappling_hook_desc">Un garfio de escalada de runite para agilidad.</string>
     <string name="item_shadow_grappling_hook_desc">A grappling hook woven from shadow. Grips even where there\'s nothing to grip.</string> <!-- untranslated -->
     <string name="item_dwarven_grappling_hook_desc">Un garfio de escalada forjado por enanos. Nunca se suelta.</string>
-    <string name="item_arcane_grappling_hook_desc">A grappling hook humming with arcane energy. Pulls you across gaps in an instant.</string> <!-- untranslated -->
+    <string name="item_arcane_grappling_hook_desc">Un garfio de escalada que zumba con energía arcana. Te cruza los huecos en un instante.</string>
     <string name="item_divine_grappling_hook_desc">Un garfio de escalada tocado por la luz divina. Se afianza dondequiera que se lance.</string>
     <string name="item_bronze_frying_pan_desc">Una sartén de bronce para cocinar.</string>
     <string name="item_iron_frying_pan_desc">Una sartén de hierro para cocinar.</string>
@@ -1286,11 +1286,11 @@
     <string name="item_blood_blast_desc">Un hechizo de sangre poderoso que destroza a tu enemigo.</string>
     <string name="item_blood_wave_name">Ola de sangre</string>
     <string name="item_blood_wave_desc">Un hechizo de sangre devastador que arrasa a tu enemigo.</string>
-    <string name="item_spirit_herb_name">Spirit Herb</string> <!-- untranslated -->
-    <string name="item_spirit_herb_desc">A rare herb used in high-level herblore. Requires Mercantile level 20 to purchase.</string> <!-- untranslated -->
-    <string name="item_celestial_bloom_name">Celestial Bloom</string> <!-- untranslated -->
-    <string name="item_celestial_bloom_desc">An ethereal flower used in master potions. Requires Mercantile level 40 to purchase.</string> <!-- untranslated -->
-    <string name="item_void_lotus_name">Void Lotus</string> <!-- untranslated -->
-    <string name="item_void_lotus_desc">A mysterious lotus used in the rarest concoctions. Requires Mercantile level 60 to purchase.</string> <!-- untranslated -->
-    <string name="crop_magic_bean_name">Magic Bean</string> <!-- untranslated -->
+    <string name="item_spirit_herb_name">Hierba Espiritual</string>
+    <string name="item_spirit_herb_desc">Una hierba rara usada en herboristería de alto nivel. Requiere nivel 20 de Mercantil para comprarla.</string>
+    <string name="item_celestial_bloom_name">Flor Celestial</string>
+    <string name="item_celestial_bloom_desc">Una flor etérea usada en pociones maestras. Requiere nivel 40 de Mercantil para comprarla.</string>
+    <string name="item_void_lotus_name">Loto del Vacío</string>
+    <string name="item_void_lotus_desc">Un loto misterioso usado en los brebajes más raros. Requiere nivel 60 de Mercantil para comprarlo.</string>
+    <string name="crop_magic_bean_name">Haba mágica</string>
 </resources>
