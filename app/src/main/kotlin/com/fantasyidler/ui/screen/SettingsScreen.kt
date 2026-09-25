@@ -257,7 +257,7 @@ fun SettingsScreen(
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             // Overrides section
-            SectionHeader(title = stringResource(R.string.settings_overrides_header))
+            SectionHeader(title = "Overrides")
 
             var speedPercent by remember { mutableStateOf(viewModel.sessionSpeedReductionPercent?.toString() ?: "") }
             SettingsRow(
