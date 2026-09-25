@@ -256,6 +256,81 @@ fun SettingsScreen(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
+            // Overrides section
+            SectionHeader(title = stringResource(R.string.settings_overrides_header))
+
+            var speedPercent by remember { mutableStateOf(viewModel.sessionSpeedReductionPercent?.toString() ?: "") }
+            SettingsRow(
+                title = "Override speed reduction",
+                subtitle = "",
+                trailing = {
+                    OutlinedTextField(
+                        value = speedPercent,
+                        onValueChange = {
+                            val value = it.toFloatOrNull()
+                            if (it.isEmpty() || it == "." || (value != null && value in 0f..1f)) {
+                                speedPercent = it
+                                if (it.isEmpty() || value != null) {
+                                    viewModel.sessionSpeedReductionPercent = value
+                                }
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                        modifier = Modifier.width(150.dp),
+                        textStyle = MaterialTheme.typography.bodySmall,
+                        singleLine = true,
+                    )
+                },
+            )
+
+            var blessingBoost by remember { mutableStateOf(viewModel.blessingBoost.toString()) }
+            SettingsRow(
+                title = "Boost church blessing",
+                subtitle = "",
+                trailing = {
+                    OutlinedTextField(
+                        value = blessingBoost,
+                        onValueChange = {
+                            val value = it.toFloatOrNull()
+                            if (it.isEmpty() || it == "." || (value != null && value.isFinite() && value >= 0f)) {
+                                blessingBoost = it
+                                if (it.isEmpty() || value != null) {
+                                    viewModel.blessingBoost = value ?: 0f
+                                }
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                        modifier = Modifier.width(150.dp),
+                        textStyle = MaterialTheme.typography.bodySmall,
+                        singleLine = true,
+                    )
+                },
+            )
+
+            var bonusQueue by remember { mutableStateOf(viewModel.bonusQueue.toString()) }
+            SettingsRow(
+                title = "Add bonus queue",
+                subtitle = "",
+                trailing = {
+                    OutlinedTextField(
+                        value = bonusQueue,
+                        onValueChange = {
+                            val value = it.toIntOrNull()
+                            if (it.isEmpty() || (value != null && value >= 0)) {
+                                bonusQueue = it
+                                viewModel.bonusQueue = value ?: 0
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                        modifier = Modifier.width(150.dp),
+                        textStyle = MaterialTheme.typography.bodySmall,
+                        singleLine = true,
+                    )
+                },
+            )
+
+            HorizontalDivider()
+
             // Appearance section
             SectionHeader(title = stringResource(R.string.settings_appearance))
 
@@ -443,76 +518,6 @@ fun SettingsScreen(
             HorizontalDivider()
 
             SectionHeader(title = stringResource(R.string.settings_general_header))
-
-            var speedPercent by remember { mutableStateOf(viewModel.sessionSpeedReductionPercent?.toString() ?: "") }
-            SettingsRow(
-                title = "Override speed reduction",
-                subtitle = "",
-                trailing = {
-                    OutlinedTextField(
-                        value = speedPercent,
-                        onValueChange = {
-                            val value = it.toFloatOrNull()
-                            if (it.isEmpty() || it == "." || (value != null && value in 0f..1f)) {
-                                speedPercent = it
-                                if (it.isEmpty() || value != null) {
-                                    viewModel.sessionSpeedReductionPercent = value
-                                }
-                            }
-                        },
-                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
-                        modifier = Modifier.width(150.dp),
-                        textStyle = MaterialTheme.typography.bodySmall,
-                        singleLine = true,
-                    )
-                },
-            )
-
-            var blessingBoost by remember { mutableStateOf(viewModel.blessingBoost.toString()) }
-            SettingsRow(
-                title = "Boost church blessing",
-                subtitle = "",
-                trailing = {
-                    OutlinedTextField(
-                        value = blessingBoost,
-                        onValueChange = {
-                            val value = it.toFloatOrNull()
-                            if (it.isEmpty() || it == "." || (value != null && value.isFinite() && value >= 0f)) {
-                                blessingBoost = it
-                                if (it.isEmpty() || value != null) {
-                                    viewModel.blessingBoost = value ?: 0f
-                                }
-                            }
-                        },
-                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
-                        modifier = Modifier.width(150.dp),
-                        textStyle = MaterialTheme.typography.bodySmall,
-                        singleLine = true,
-                    )
-                },
-            )
-
-            var bonusQueue by remember { mutableStateOf(viewModel.bonusQueue.toString()) }
-            SettingsRow(
-                title = "Add bonus queue",
-                subtitle = "",
-                trailing = {
-                    OutlinedTextField(
-                        value = bonusQueue,
-                        onValueChange = {
-                            val value = it.toIntOrNull()
-                            if (it.isEmpty() || (value != null && value >= 0)) {
-                                bonusQueue = it
-                                viewModel.bonusQueue = value ?: 0
-                            }
-                        },
-                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-                        modifier = Modifier.width(150.dp),
-                        textStyle = MaterialTheme.typography.bodySmall,
-                        singleLine = true,
-                    )
-                },
-            )
 
             SettingsRow(
                 title    = stringResource(R.string.settings_tutorial_title),
