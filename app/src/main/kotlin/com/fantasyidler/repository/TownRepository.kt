@@ -187,7 +187,7 @@ class TownRepository @Inject constructor(
 
     /** Player session duration multiplier (e.g. 0.98 for 2% reduction). */
     fun playerSessionDurationMultiplier(flags: PlayerFlags): Float {
-        var reduction = 0.0f
+        var reduction = gameData.sessionSpeedReductionOverride ?: 0.0f
         flags.townBuildingTiers.forEach { buildingName, tier ->
             reduction += playerSessionSpeedReduction(buildingName, tier)
         }

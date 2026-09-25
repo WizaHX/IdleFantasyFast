@@ -62,12 +62,35 @@ class GameDataRepository @Inject constructor(
     @ApplicationContext private val context: Context,
     private val json: Json,
 ) {
-    var sessionSpeedReductionOverride: Float? = null
+    // App-wide overrides deliberately live outside player saves and exports.
+    private val overridePreferences = context.getSharedPreferences("gameplay_overrides", Context.MODE_PRIVATE)
+
+    var sessionSpeedReductionOverride: Float?
+        get() = if (overridePreferences.contains("session_speed_reduction")) {
+            overridePreferences.getFloat("session_speed_reduction", 0f)
+        } else null
+        set(value) {
+            overridePreferences.edit().apply {
+                if (value == null) remove("session_speed_reduction")
+                else putFloat("session_speed_reduction", value)
+            }.apply()
+        }
+
+    var blessingBoost: Float
+        get() = ChurchRepository.blessingBoost
+        set(value) {
+            overridePreferences.edit().putFloat("blessing_boost", value).apply()
+            ChurchRepository.blessingBoost = value
+        }
+
+    init {
+        ChurchRepository.blessingBoost = overridePreferences.getFloat("blessing_boost", 0f)
+    }
 
     fun playerSessionSpeedReduction(building: String, tier: Int): Float {
         val default = townBuildings[building]?.tiers?.getOrNull(tier - 1)?.bonuses
             ?.get("player_session_speed_reduction")?.toFloat() ?: return 0f
-        return sessionSpeedReductionOverride ?: default
+        return default
     }
 
     // ------------------------------------------------------------------ helpers

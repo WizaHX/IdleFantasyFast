@@ -61,8 +61,8 @@ class SettingsViewModel @Inject constructor(
         set(value) { gameData.sessionSpeedReductionOverride = value }
 
     var blessingBoost: Float
-        get() = com.fantasyidler.repository.ChurchRepository.blessingBoost
-        set(value) { com.fantasyidler.repository.ChurchRepository.blessingBoost = value }
+        get() = gameData.blessingBoost
+        set(value) { gameData.blessingBoost = value }
 
     val officialThemes: List<String> = themeRepo.getOfficialThemes()
 
