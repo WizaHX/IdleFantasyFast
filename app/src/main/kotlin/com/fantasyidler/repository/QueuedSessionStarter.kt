@@ -259,7 +259,7 @@ class QueuedSessionStarter @Inject constructor(
                 // sailed back to mainland. The offline path calls estimateDuration with
                 // a per-action sessionMs derived below, once we know which action we're on.
                 fun sessionMsForAction(a: QueuedAction): Long = if (a.isElderSession)
-                    SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1)
+                    SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1, gameData.sessionSpeedReductionOverride ?: 0f)
                 else SkillSimulator.sessionDurationMs(
                     levels[Skills.AGILITY] ?: 1,
                     boostRepo.sessionFloorReductionMin(flags),
@@ -409,7 +409,7 @@ class QueuedSessionStarter @Inject constructor(
         val floorReductionMin = if (isElder) 0.0 else boostRepo.sessionFloorReductionMin(flags)
         val chronosMult     = if (isElder) 1.0f else townRepo.playerSessionDurationMultiplier(flags)
         val effectiveSessionMs = if (isElder)
-            SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1)
+            SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1, gameData.sessionSpeedReductionOverride ?: 0f)
         else SkillSimulator.sessionDurationMs(agilityLevel, floorReductionMin, chronosMult)
         val equippedCapeData = equipped[EquipSlot.CAPE]?.let { gameData.equipment[it] }
         val attackCapeMult   = resolveCapeMultiplier("attack", equippedCapeData, inventory.keys, flags.townBuildingTiers, boostRepo.capeScalingBySkill(flags), gameData.equipment, flags.ironman)

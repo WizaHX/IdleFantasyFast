@@ -561,7 +561,7 @@ class CombatViewModel @Inject constructor(
                         skillName           = "combat",
                         activityKey         = dungeonKey,
                         skillDisplayName    = dungeonName,
-                        estimatedDurationMs = if (isIsle) SkillSimulator.elderSessionDurationMs(agility) else SkillSimulator.sessionDurationMs(agility, boostRepo.sessionFloorReductionMin(dungeonFlags), townRepo.playerSessionDurationMultiplier(dungeonFlags)),
+                        estimatedDurationMs = if (isIsle) SkillSimulator.elderSessionDurationMs(agility, gameData.sessionSpeedReductionOverride ?: 0f) else SkillSimulator.sessionDurationMs(agility, boostRepo.sessionFloorReductionMin(dungeonFlags), townRepo.playerSessionDurationMultiplier(dungeonFlags)),
                         estimatedXpGain     = previewXp,
                         equippedSnapshot    = player.equipped,
                         arrowsKey           = _extra.value.selectedArrowKey ?: dungeonFlags.equippedArrows,

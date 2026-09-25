@@ -239,7 +239,7 @@ class CraftingViewModel @Inject constructor(
             } else 1.0f
             val perItemMs = if (selectedRecipe != null) {
                 if (flags.onElderIsle) {
-                    SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1) / 60
+                    SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1, gameData.sessionSpeedReductionOverride ?: 0f) / 60
                 } else {
                     val agility = levels[Skills.AGILITY] ?: 1
                     (SkillSimulator.sessionDurationMs(agility, boostRepo.sessionFloorReductionMin(flags), townRepo.playerSessionDurationMultiplier(flags)) / 60 / selectedEff).toLong()
@@ -493,7 +493,7 @@ class CraftingViewModel @Inject constructor(
                 val isElder = flags.onElderIsle
                 val toolEff = if (isElder) 1.0f else craftToolEfficiency(recipe, json.decodeFromString(player.equipped), state.skillLevels, flags)
                 val perItemMs = if (isElder) {
-                    SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1) / 60
+                    SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1, gameData.sessionSpeedReductionOverride ?: 0f) / 60
                 } else {
                     val agility = state.skillLevels[Skills.AGILITY] ?: 1
                     (SkillSimulator.sessionDurationMs(agility, boostRepo.sessionFloorReductionMin(flags), townRepo.playerSessionDurationMultiplier(flags)) / 60 / toolEff).toLong()
@@ -578,7 +578,7 @@ class CraftingViewModel @Inject constructor(
             // by tool efficiency. On isle the ceiling drops to elder Agility only and tool
             // efficiency neutralises to 1.0 (mainland tools don't reach the isle).
             val perItemMs = if (isElder) {
-                SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1) / 60
+                SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1, gameData.sessionSpeedReductionOverride ?: 0f) / 60
             } else {
                 val agilityLevel = levels[Skills.AGILITY] ?: 1
                 (SkillSimulator.sessionDurationMs(agilityLevel, boostRepo.sessionFloorReductionMin(flags), townRepo.playerSessionDurationMultiplier(flags)) / 60 / efficiency).toLong()

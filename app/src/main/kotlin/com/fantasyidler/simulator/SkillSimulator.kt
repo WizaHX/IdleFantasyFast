@@ -428,10 +428,10 @@ object SkillSimulator {
      * — the isle explicitly walls off mainland duration bonuses so isle time-to-reward stays
      * predictable and elder Agility is the only lever.
      */
-    fun elderSessionDurationMs(elderAgilityLevel: Int): Long {
+    fun elderSessionDurationMs(elderAgilityLevel: Int, speedReduction: Float = 0f): Long {
         val fraction = (elderAgilityLevel - 1).coerceIn(0, 98) / 98.0
-        val minutes = 60.0 - 15.0 * fraction
-        return (minutes * 60_000.0).roundToLong().coerceAtLeast(45L * 60_000L)
+        val minutes = (60.0 - 15.0 * fraction) * (1f - speedReduction).coerceIn(0.001f, 1.0f)
+        return (minutes * 60_000.0).roundToLong().coerceAtLeast(60_000L)
     }
 
     /**

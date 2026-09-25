@@ -247,7 +247,7 @@ class SkillsViewModel @Inject constructor(
                 petBoosts             = listOf(Skills.MINING, Skills.WOODCUTTING, Skills.FISHING, Skills.AGILITY)
                     .associateWith { if (flags.ironman || flags.onElderIsle) 0 else petBoostFor(player.pets, it) },
                 sessionDurationMs     = if (flags.onElderIsle)
-                    SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1)
+                    SkillSimulator.elderSessionDurationMs(flags.elderSkillLevels[Skills.AGILITY] ?: 1, gameData.sessionSpeedReductionOverride ?: 0f)
                     else SkillSimulator.sessionDurationMs(levels[Skills.AGILITY] ?: 1, boostRepo.sessionFloorReductionMin(flags), townRepo.playerSessionDurationMultiplier(flags)),
                 firemakingPerLogMs    = gameData.logs.mapValues { (_, log) ->
                     val toolEff = gameData.toolEfficiency(equipped[EquipSlot.TINDERBOX], EquipSlot.TINDERBOX, log.levelRequired, skillLevels = levels, heirloomXp = flags.heirloomXp)
@@ -925,7 +925,7 @@ class SkillsViewModel @Inject constructor(
                     // a fresh state (this path bypasses QueuedSessionStarter for the live start).
                     val liveFlags: PlayerFlags = try { json.decodeFromString(playerRepo.getOrCreatePlayer().flags) } catch (_: Exception) { PlayerFlags() }
                     val liveDurationMs = if (liveFlags.onElderIsle)
-                        SkillSimulator.elderSessionDurationMs(liveFlags.elderSkillLevels[Skills.AGILITY] ?: 1)
+                        SkillSimulator.elderSessionDurationMs(liveFlags.elderSkillLevels[Skills.AGILITY] ?: 1, gameData.sessionSpeedReductionOverride ?: 0f)
                         else result.durationMs
                     sessionRepo.startSession(
                         skillName        = skillName,
@@ -1007,7 +1007,7 @@ class SkillsViewModel @Inject constructor(
                         activityKey         = activityKey,
                         skillDisplayName    = displayName,
                         estimatedXpGain     = estimatedXpGain,
-                        estimatedDurationMs = if (isIsle) SkillSimulator.elderSessionDurationMs(agility) else SkillSimulator.sessionDurationMs(agility, floorReductionMin, chronosMult),
+                        estimatedDurationMs = if (isIsle) SkillSimulator.elderSessionDurationMs(agility, gameData.sessionSpeedReductionOverride ?: 0f) else SkillSimulator.sessionDurationMs(agility, floorReductionMin, chronosMult),
                         xpBoostMultAtQueue  = xpQueueMult,
                         isElderSession      = isIsle,
                     )
