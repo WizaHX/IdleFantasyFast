@@ -204,7 +204,7 @@
     <!-- Translator note: %1$s = formatted XP amount, %2$d = target level number -->
     <string name="format_xp_to_next">%1$s XP para nivel %2$d</string>
     <!-- Translator note: %1$s = formatted XP amount remaining to reach the level cap (99) -->
-    <string name="xp_to_99">%1$s XP to 99</string>
+    <string name="xp_to_99">%1$s XP para 99</string>
     <!-- Translator note: %1$s = time string (e.g. "42m 10s") -->
     <string name="format_time_remaining">%1$s restante</string>
     <!-- Translator note: %1$s = relative time (e.g. "5m ago") -->
@@ -520,7 +520,7 @@
     <string name="guild_progress_dailies_and_quest">Completa %1$d/%2$d solicitudes diarias y misiones para avanzar</string>
     <string name="guild_progress_dailies_only">Completa %1$d/%2$d solicitudes diarias para avanzar</string>
     <string name="home_died_message">Moriste y perdiste la mayor parte de tus ganancias.</string>
-    <string name="home_xp_boost_was_active">2× All skills XP was active</string> <!-- untranslated -->
+    <string name="home_xp_boost_was_active">2× XP de todas las habilidades estuvo activa</string>
     <string name="home_xp_boost_active">2× All skills XP - %1$s</string> <!-- untranslated -->
     <string name="home_prestige_xp_boost_active">2× %1$s XP - %2$s</string> <!-- untranslated -->
     <string name="boosts_show_more">+%1$d bonus más (toca para ver)</string>
@@ -533,7 +533,7 @@
     <!-- Translator note: %1$s = player name or "Adventurer" -->
     <string name="home_adventurer">Aventurero</string>
     <!-- Translator note: %1$d = current queue size, %2$d = max queue size (base 3, +1 per Queue Master tier) -->
-    <string name="home_up_next">A continuación (%1$d/3)</string>
+    <string name="home_up_next">A continuación (%1$d/%2$d)</string>
     <!-- Translator note: %1$s = formatted duration string (e.g. "2h 15m") -->
     <string name="home_queue_ends_in">Queue ends in %1$s</string> <!-- untranslated -->
     <!-- Translator note: %1$d = item quantity (e.g. ×40) -->
@@ -989,7 +989,7 @@
     <string name="guild_quest_desc_kill">Derrota %1$d enemigos usando combate %2$s.</string>
     <string name="guild_quest_desc_prayer">Entierra %1$d huesos para el %2$s.</string>
     <string name="guild_quest_desc_sessions">Completa %1$d sesiones de %2$s para el %3$s.</string>
-    <string name="guild_quest_desc_trade">Complete %1$d trade routes for the %2$s.</string>
+    <string name="guild_quest_desc_trade">Completa %1$d rutas de %2$s para el %3$s.</string>
     <string name="guild_quest_desc_earn_coins">Gana %1$s monedas a través de rutas comerciales para el %2$s.</string>
     <string name="guild_quest_desc_pickpocket">Roba al %2$s %1$d veces para el %3$s.</string>
     <string name="guild_combat_warriors">cuerpo a cuerpo</string>
@@ -1058,7 +1058,7 @@
     <string name="church_effect_coins">+%1$d%% coin drops for %2$d hours</string> <!-- untranslated -->
     <string name="church_cost_bones">Costs %1$d bones</string> <!-- untranslated -->
     <string name="church_confirm_title">Activate Blessing?</string> <!-- untranslated -->
-    <string name="church_bones_available">You have %1$d bones</string>
+    <string name="church_bones_available">Tienes %1$d huesos (de todos los tipos), equivalentes a %2$d para las bendiciones (los huesos más grandes valen más)</string>
     <string name="church_not_enough_bones">Not enough bones (need %1$d)</string> <!-- untranslated -->
     <string name="church_already_active">A blessing is already active</string> <!-- untranslated -->
     <string name="church_confirm_deactivate_title">¿Desactivar bendición?</string>
@@ -1525,7 +1525,7 @@
     <string name="town_building_inn_name">Inn</string> <!-- untranslated -->
     <string name="town_building_guild_hall_name">Guild Hall</string> <!-- untranslated -->
     <string name="town_building_church_name">Iglesia</string>
-    <string name="town_building_current_tier">Nivel %1$d / 3</string>
+    <string name="town_building_current_tier">Nivel %1$d / %2$d</string>
     <string name="town_building_maxed_label">Totalmente Mejorado</string>
     <string name="town_upgrade_next_label">Siguiente Mejora</string>
     <string name="town_upgrade_constr_req">Construcción Nv. %1$d requerido</string>
@@ -1948,10 +1948,10 @@
     <string name="bonus_section_skills">Bonus de Habilidad</string>
     <string name="bonus_combat_stat_boost">Potencia estadísticas de combate</string>
     <string name="bonus_combined_xp">XP combinado</string>
-    <string name="bonus_yield">yield</string>
+    <string name="bonus_yield">+%1$d%% rendimiento</string>
     <string name="bonus_boost">+%1$d%% refuerzo</string>
     <string name="bonus_agility_prestige_detail">Por prestigio: las sesiones de %1$dm en el nivel %2$d pasan a %3$dm</string>
-    <string name="bonus_coin_return">coin return</string>
+    <string name="bonus_coin_return">+%1$d%% devolución de monedas</string>
     <string name="bonus_tower">Torre</string>
     <string name="bonus_builder_discount_detail" formatted="false">0,5% de descuento en mejoras de edificios por nivel</string>
     <string name="bonus_xp">+%1$d%% XP</string>
@@ -2008,7 +2008,7 @@
     <string name="monument_not_enough_coins">No hay suficientes monedas.</string>
     <string name="title_patron_of_the_realm_name">Mecenas del Reino</string>
     <string name="title_patron_of_the_realm_requirement">Completa el Gran Monumento</string>
-    <string name="title_isle_champion_name">Isle Champion</string> <!-- untranslated -->
+    <string name="title_isle_champion_name">Campeón de la Isla</string>
     <string name="title_isle_champion_requirement">Derrota al Último Elder en la Isla Elder</string>
     <string name="item_gilded_full_helmet_name">Yelmo completo dorado</string>
     <string name="item_gilded_platebody_name">Coraza dorada</string>

@@ -204,7 +204,7 @@
     <!-- Translator note: %1$s = formatted XP amount, %2$d = target level number -->
     <string name="format_xp_to_next">%1$s XP para nivel %2$d</string>
     <!-- Translator note: %1$s = formatted XP amount remaining to reach the level cap (99) -->
-    <string name="xp_to_99">%1$s XP to 99</string>
+    <string name="xp_to_99">%1$s XP para 99</string>
     <!-- Translator note: %1$s = time string (e.g. "42m 10s") -->
     <string name="format_time_remaining">%1$s restante</string>
     <!-- Translator note: %1$s = relative time (e.g. "5m ago") -->
@@ -520,7 +520,7 @@
     <string name="guild_progress_dailies_and_quest">Completa %1$d/%2$d solicitudes diarias y misiones para avanzar</string>
     <string name="guild_progress_dailies_only">Completa %1$d/%2$d solicitudes diarias para avanzar</string>
     <string name="home_died_message">Moriste y perdiste la mayor parte de tus ganancias.</string>
-    <string name="home_xp_boost_was_active">2× All skills XP was active</string> <!-- untranslated -->
+    <string name="home_xp_boost_was_active">2× XP de todas las habilidades estuvo activa</string>
     <string name="home_xp_boost_active">2× All skills XP - %1$s</string> <!-- untranslated -->
     <string name="home_prestige_xp_boost_active">2× %1$s XP - %2$s</string> <!-- untranslated -->
     <string name="boosts_show_more">+%1$d bonus más (toca para ver)</string>
@@ -2008,7 +2008,7 @@
     <string name="monument_not_enough_coins">No hay suficientes monedas.</string>
     <string name="title_patron_of_the_realm_name">Mecenas del Reino</string>
     <string name="title_patron_of_the_realm_requirement">Completa el Gran Monumento</string>
-    <string name="title_isle_champion_name">Isle Champion</string> <!-- untranslated -->
+    <string name="title_isle_champion_name">Campeón de la Isla</string>
     <string name="title_isle_champion_requirement">Derrota al Último Elder en la Isla Elder</string>
     <string name="item_gilded_full_helmet_name">Yelmo completo dorado</string>
     <string name="item_gilded_platebody_name">Coraza dorada</string>
