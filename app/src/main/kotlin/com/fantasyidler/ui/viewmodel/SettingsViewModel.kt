@@ -64,6 +64,10 @@ class SettingsViewModel @Inject constructor(
         get() = gameData.blessingBoost
         set(value) { gameData.blessingBoost = value }
 
+    var bonusQueue: Int
+        get() = gameData.bonusQueue
+        set(value) { gameData.bonusQueue = value }
+
     val officialThemes: List<String> = themeRepo.getOfficialThemes()
 
     val customThemes: StateFlow<List<CustomTheme>> = themeRepo.observeCustomThemes()

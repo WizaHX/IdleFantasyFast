@@ -83,6 +83,10 @@ class GameDataRepository @Inject constructor(
             ChurchRepository.blessingBoost = value
         }
 
+    var bonusQueue: Int
+        get() = overridePreferences.getInt("bonus_queue", 0)
+        set(value) { overridePreferences.edit().putInt("bonus_queue", value).apply() }
+
     init {
         ChurchRepository.blessingBoost = overridePreferences.getFloat("blessing_boost", 0f)
     }

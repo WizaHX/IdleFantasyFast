@@ -492,6 +492,28 @@ fun SettingsScreen(
                 },
             )
 
+            var bonusQueue by remember { mutableStateOf(viewModel.bonusQueue.toString()) }
+            SettingsRow(
+                title = "Add bonus queue",
+                subtitle = "",
+                trailing = {
+                    OutlinedTextField(
+                        value = bonusQueue,
+                        onValueChange = {
+                            val value = it.toIntOrNull()
+                            if (it.isEmpty() || (value != null && value >= 0)) {
+                                bonusQueue = it
+                                viewModel.bonusQueue = value ?: 0
+                            }
+                        },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                        modifier = Modifier.width(150.dp),
+                        textStyle = MaterialTheme.typography.bodySmall,
+                        singleLine = true,
+                    )
+                },
+            )
+
             SettingsRow(
                 title    = stringResource(R.string.settings_tutorial_title),
                 subtitle = stringResource(R.string.settings_tutorial_desc),
