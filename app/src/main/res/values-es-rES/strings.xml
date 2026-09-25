@@ -196,7 +196,6 @@
     <string name="label_daily_dig">Excavación diaria</string>
     <string name="label_dig_depth">Profundidad del agujero</string>
     <string name="label_version">Versión</string>
-    <string name="label_open_source" translatable="false">Open Source</string>
 
 
     <!-- ===== Format strings — all use positional args for Weblate ===== -->
@@ -326,7 +325,7 @@
     <string name="settings_recent_activity">Registro de actividad reciente</string>
     <string name="settings_recent_activity_desc">Mostrar el botón de Actividad Reciente en el encabezado de la pantalla de inicio</string>
     <string name="settings_journal_button">Botón de Diario</string>
-    <string name="settings_journal_button_desc">Show a floating Journal button on the home screen for jotting down notes</string>
+    <string name="settings_journal_button_desc">Show a Journal button in the home screen\'s top bar for jotting down notes</string> <!-- untranslated -->
     <string name="settings_seasonal_events">Eventos de Temporada</string>
     <string name="settings_seasonal_events_desc">Muestra el banner del Evento de Temporada activo en la pantalla de inicio</string>
     <string name="settings_collapsible_town_grid">Cuadrícula de Ciudad Colapsable</string>
@@ -452,26 +451,6 @@
     <string name="theme_editor_saved_ok">Tema guardado y aplicado</string>
     <string name="theme_editor_exported_ok">Tema exportado</string>
     <string name="settings_language_desc">Sobrescribir el idioma de la aplicación</string>
-    <string name="settings_lang_english" translatable="false">English</string>
-    <string name="settings_lang_deutsch" translatable="false">Deutsch</string>
-    <string name="settings_lang_français" translatable="false">Français</string>
-    <string name="settings_lang_dutch" translatable="false">Nederlands</string>
-    <string name="settings_lang_español" translatable="false">Español</string>
-    <string name="settings_lang_español_españa" translatable="false">Español (España)</string>
-    <string name="settings_lang_turkish" translatable="false">Türkçe</string>
-    <string name="settings_lang_italiano" translatable="false">Italiano</string>
-    <string name="settings_lang_russian" translatable="false">Русский</string>
-    <string name="settings_lang_indonesian" translatable="false">Bahasa Indonesia</string>
-    <string name="settings_lang_portugues_brasil" translatable="false">Português (Brasil)</string>
-    <string name="settings_lang_japanese" translatable="false">日本語</string>
-    <string name="settings_lang_irish" translatable="false">Gaeilge</string>
-    <string name="settings_lang_czech" translatable="false">Čeština</string>
-    <string name="settings_lang_chinese_simplified" translatable="false">中文（简体）</string>
-    <string name="settings_lang_polish" translatable="false">Polski</string>
-    <string name="settings_lang_lithuanian" translatable="false">Lietuvių</string>
-    <string name="settings_lang_hebrew" translatable="false">עברית</string>
-    <string name="settings_lang_arabic" translatable="false">العربية</string>
-    <string name="settings_lang_catalan" translatable="false">Català</string>
 
 
 
@@ -501,14 +480,11 @@
     <string name="settings_import_desc">Restaura tu progreso desde un archivo.</string>
     <string name="settings_import_btn">Importar</string>
     <string name="settings_source_code">Código fuente</string>
-    <string name="settings_source_url" translatable="false">github.com/tristinbaker/IdleFantasy</string>
 
     <string name="settings_source_open">Abrir</string>
     <string name="settings_wiki">Wiki</string>
-    <string name="settings_wiki_url" translatable="false">idlefantasy.tristinbaker.xyz</string>
 
     <string name="settings_discord">Discord</string>
-    <string name="settings_discord_url" translatable="false">discord.gg/vRxtXsBwQU</string>
 
     <string name="settings_exported_ok">Partida exportada.</string>
     <string name="settings_imported_ok">Partida importada correctamente.</string>
@@ -538,7 +514,7 @@
     <string name="guild_not_unlocked">Aún no desbloqueado</string>
     <string name="guild_dailies_done_today">Diarias completadas hoy</string>
     <string name="guild_dailies_remaining_today">%1$d restantes hoy</string>
-    <string name="guild_do_dailies_hint">Do dailies to increase your reputation</string>
+    <string name="guild_do_dailies_hint">Do dailies to advance to the next rank</string> <!-- untranslated -->
     <string name="guild_quest_gate_blocked">Completa misiones para avanzar de rango.</string>
     <string name="guild_quest_required">Se requiere una misión para avanzar</string>
     <string name="guild_progress_dailies_and_quest">Completa %1$d/%2$d solicitudes diarias y misiones para avanzar</string>
@@ -900,9 +876,9 @@
     <string name="worker_journeyman">Oficial</string>
     <string name="worker_master">Maestro</string>
     <string name="inn_long_laborer_desc">Un trabajo por contratación, despedido al recoger. 8h de recolección, eficiencia 0,5x, cantidad de fabricación ilimitada. Es lento, pero hace de todo.</string>
-    <string name="inn_apprentice_desc">8h gathering, 1x efficiency. Crafting, prayer, and runecrafting capped at 480 items per session.</string>
-    <string name="inn_journeyman_desc">6h gathering, 1.25x efficiency. Crafting, prayer, and runecrafting capped at 360 items per session.</string>
-    <string name="inn_master_desc">4h gathering, 2x efficiency. Crafting, prayer, and runecrafting capped at 240 items per session.</string>
+    <string name="inn_apprentice_desc">One job per hire, dismissed after collecting. 8h gathering, 1x efficiency. Crafting, prayer, and runecrafting capped at 480 items per session.</string> <!-- untranslated -->
+    <string name="inn_journeyman_desc">One job per hire, dismissed after collecting. 6h gathering, 1.5x efficiency. Crafting, prayer, and runecrafting capped at 540 items per session.</string> <!-- untranslated -->
+    <string name="inn_master_desc">One job per hire, dismissed after collecting. 4h gathering, 2.5x efficiency. Crafting, prayer, and runecrafting capped at 600 items per session.</string> <!-- untranslated -->
     <string name="inn_gathering_note">Recolección: horas de sesión x multiplicador de eficiencia aplicado al botín y la XP</string>
     <string name="inn_crafting_note">Artesanía, plegarias y creación de runas: cantidad limitada por nivel; el Peón no tiene límite</string>
     <string name="worker_skills_title">Trabajador: %1$s</string>
@@ -959,7 +935,7 @@
     <string name="achievement_combat_50_desc">Alcanza el nivel de combate 50</string>
     <string name="achievement_combat_75_name">Élite</string>
     <string name="achievement_combat_75_desc">Alcanza el nivel de combate 75</string>
-    <string name="achievement_combat_99_name">Max Combat</string>
+    <string name="achievement_combat_99_name">Hero</string> <!-- untranslated -->
     <string name="achievement_combat_99_desc">Alcanza el nivel de combate 99</string>
     <string name="achievement_combat_113_name">Máximo Combate</string>
     <string name="achievement_combat_113_desc">Alcanza el nivel máximo de combate de 113</string>
@@ -989,7 +965,7 @@
     <string name="inn_food_purchased">Comida comprada.</string>
     <string name="inn_buy_qty">Cuandidad</string>
     <string name="inn_buy_total">Total: %1$s</string>
-    <string name="inn_card_desc">Workers and daily food</string>
+    <string name="inn_card_desc">Hire workers and stock food</string> <!-- untranslated -->
     <string name="worker_no_active_session">El trabajador está libre: sin sesiones en cola</string>
     <string name="worker_add_sessions">Añadir Sesiones</string>
     <string name="inn_worker_tier">trabajador %1$s</string>
@@ -997,7 +973,7 @@
 
     <!-- Guild Hall -->
     <string name="guild_hall_title">Sede del Gremio</string>
-    <string name="guild_hall_desc">Guilds and rep rewards</string>
+    <string name="guild_hall_desc">Join guilds and complete daily requests to rank up</string> <!-- untranslated -->
     <string name="guild_hall_intro">Los gremios te recompensan por actividades que ya haces. Completa misiones y solicitudes diarias para ganar materiales de otras habilidades, monedas y XP, para que los especialistas puedan acceder a recursos de habilidades que no entrenan.</string>
     <string name="guild_level_label">Nivel %1$d</string>
     <string name="guild_level_max">Nivel 10 (Máx.)</string>
@@ -1005,7 +981,7 @@
     <string name="guild_tab_dailies">Solicitudes diarias</string>
     <string name="guild_daily_resets_in">Se reinicia todos los días a las %1$s</string>
     <string name="guild_locked_hint">Requiere nivel de gremio %1$d</string>
-    <string name="guild_no_dailies">Complete guild quests to earn reputation and unlock daily requests.</string>
+    <string name="guild_no_dailies">Complete guild quests to unlock daily requests.</string> <!-- untranslated -->
     <string name="guild_dailies_all_done">Todas las solicitudes diarias de hoy están completas. ¡Vuelve mañana!</string>
     <string name="guild_contribute_inventory">Contribuir desde el inventario (%1$d disponibles)</string>
     <string name="guild_go_to_skill">Ir a la habilidad</string>
@@ -1020,7 +996,7 @@
     <string name="guild_combat_archers">a distancia</string>
     <string name="guild_combat_mages">mágico</string>
     <string name="guild_rep_label">%1$d / %2$d rep</string>
-    <string name="guild_quest_complete">Quest complete: %1$s</string>
+    <string name="guild_quest_complete">Quest complete: %1$s!</string> <!-- untranslated -->
     <string name="guild_daily_complete">¡Recompensa diaria reclamada!</string>
     <string name="guild_name_mining">Gremio de Mineros</string>
     <string name="guild_name_fishing">Gremio de Pescadores</string>
@@ -1064,7 +1040,7 @@
 
     <!-- Church -->
     <string name="church_title">Iglesia</string>
-    <string name="church_desc">Prayer blessings</string>
+    <string name="church_desc">Blessings for XP, defense, and coins</string> <!-- untranslated -->
     <string name="church_no_active_blessing">Sin bendición activa: visita la Iglesia para rezar.</string>
     <string name="church_active_label">Bendición Activa</string>
     <string name="church_expires_in">Vence en %1$s</string>
@@ -1394,7 +1370,7 @@
     <string name="slayer_requires">Requiere: %1$s</string>
     <string name="slayer_add_dungeon_to_queue">Añadir Mazmorra a la Cola</string>
     <string name="slayer_queue_added">Añadido a la cola: %1$s.</string>
-    <string name="slayer_queue_full">Queue is full (3/3).</string>
+    <string name="slayer_queue_full">Queue is full.</string> <!-- untranslated -->
     <string name="slayer_foretell_title">Predecir Tareas Futuras</string>
     <string name="slayer_foretell_desc">Asigna por adelantado próximas tareas de Slayer pagando huesos. Se asignan solas cuando completes la tarea actual.</string>
     <string name="slayer_foretell_queue_empty">Sin tareas en cola.</string>
@@ -1802,11 +1778,11 @@
     <string name="carnival_active_appraisal_desc">¿Qué objeto vale más en el mercado?</string>
     <string name="carnival_appraisal_which">¿Cuál vale más?</string>
     <string name="carnival_play">Jugar</string>
-    <string name="carnival_cooldown">Ready in %1$dh %2$dm</string>
+    <string name="carnival_cooldown">Ready in %1$dm %2$ds</string> <!-- untranslated -->
     <string name="carnival_ticket_cost">%1$d entradas</string>
     <string name="carnival_redeem">Canjear</string>
     <string name="carnival_queue_added">Añadido a la cola: %1$s.</string>
-    <string name="carnival_queue_full">Queue is full (3/3).</string>
+    <string name="carnival_queue_full">Queue is full.</string> <!-- untranslated -->
     <string name="carnival_ring_won">¡Diana! +%1$d entradas</string>
     <string name="carnival_ring_missed">¡Fallo en el objetivo!</string>
     <string name="carnival_hammer_perfect">¡Golpe perfecto! +%1$d entradas</string>
@@ -1848,14 +1824,14 @@
     <string name="farming_bean_note_1">Un pequeño brote ha empujado a través de la tierra.</string>
     <string name="farming_bean_note_2">El tallo crece a un ritmo sobrenatural.</string>
     <string name="farming_bean_note_3">Las hojas son enormes — como nada que hayas visto antes.</string>
-    <string name="farming_bean_note_4">Clouds have begun to gather around the upper stalk...</string>
+    <string name="farming_bean_note_4">Clouds have begun to gather around the upper stalk…</string> <!-- untranslated -->
     <string name="farming_bean_note_5">Sonidos extraños se filtran desde algún lugar muy arriba.</string>
     <string name="farming_bean_note_6">Retumbo distante. Algo se agita en las alturas.</string>
     <string name="farming_bean_note_7">La planta de frijol tiembla. Algo aguarda en la cima.</string>
     <string name="farming_bean_note_8">Casi ahí. El aire se enrarece. Casi puedes ver la cima.</string>
     <string name="farming_bean_ready">La planta llega más allá de las nubes. ¿Listo para trepar?</string>
     <string name="farming_bean_climb">Trepar</string>
-    <string name="farming_bean_climbed">You have climbed the beanstalk. Something awaits...</string>
+    <string name="farming_bean_climbed">You have climbed the beanstalk. A serpent\'s hiss catches your attention…</string> <!-- untranslated -->
     <string name="farming_bean_climbed_title">¡Tallo Escalado!</string>
     <string name="farming_bean_unlock_hint">Mazmorra nueva desbloqueada: %1$s. Búscala en Combate, en la lista de Mazmorras.</string>
     <string name="farming_bean_cleared">La Haba Mágica volvió a tu inventario.</string>
@@ -1960,7 +1936,7 @@
     <string name="pet_found_title">¡Nueva mascota!</string>
     <string name="home_congratulations_received">¡Felicidades! Has recibido: %1$s</string>
     <!-- Translator note: shown when a session's rewards were voided (e.g. a level requirement changed mid-session) and any materials it consumed were refunded -->
-    <string name="home_session_voided">Session Voided — Materials Refunded</string>
+    <string name="home_session_voided">XP forfeited (prestige). All other rewards granted.</string> <!-- untranslated -->
     <string name="home_not_enough_coins_repeat">No hay suficientes monedas para repetir %1$s.</string>
     <string name="home_not_enough_materials_repeat">No hay suficientes materiales para repetir %1$s.</string>
     <string name="combat_no_food_title">Sin comida equipada</string>
@@ -1982,10 +1958,10 @@
     <string name="bonus_coin_drops">+%1$d%% de monedas</string>
     <string name="bonus_hp">+%1$d HP</string>
     <string name="snackbar_added_to_queue">Añadido a la cola: %1$s.</string>
-    <string name="snackbar_queue_full">Queue is full (3/3).</string>
+    <string name="snackbar_queue_full">Queue is full.</string> <!-- untranslated -->
     <string name="combat_start_failed">No se pudo iniciar: %1$s</string>
     <string name="skill_session_voided_prestige">Tu nivel de %1$s ya no cumple con el requisito de esta sesión (probablemente por prestigiar) — sus recompensas fueron anuladas y los materiales usados fueron reembolsados.</string>
-    <string name="combat_session_voided_prestige">Your combat level no longer meets this encounter\'s requirement (likely from prestiging) — its rewards were voided.</string>
+    <string name="combat_session_voided_prestige">Your level dropped after prestiging, so this session\'s XP was forfeited. All other rewards were granted.</string> <!-- untranslated -->
     <string name="combat_select_spell">Elige un hechizo antes de entrar.</string>
     <string name="combat_spell_level_required">Necesitas Magia %1$d para %2$s.</string>
     <string name="guild_daily_reward_claimed">¡Recompensa diaria reclamada!</string>
@@ -2037,8 +2013,8 @@
     <string name="item_gilded_full_helmet_name">Yelmo completo dorado</string>
     <string name="item_gilded_platebody_name">Coraza dorada</string>
     <string name="item_gilded_kiteshield_name">Escudo cometa dorado</string>
-    <string name="boss_coin_cap_remaining">Full coin drops left today: %1$d</string>
-    <string name="boss_coin_cap_spent">Coin drops are reduced until tomorrow</string>
+    <string name="boss_coin_cap_remaining">Full coin drops left today for this boss: %1$d</string> <!-- untranslated -->
+    <string name="boss_coin_cap_spent">This boss\'s coin drops are reduced until tomorrow</string> <!-- untranslated -->
     <string name="bestiary_coin_cap_label">Tras %1$d muertes/día</string>
     <string name="session_note_boss_coin_cap">Botín de monedas reducido (límite diario de este jefe)</string>
     <string name="guild_daily_button">Diarias del gremio</string>
@@ -2300,14 +2276,12 @@
     <string name="settings_credit_banners_title">Estandartes de temporada</string>
     <string name="settings_credit_banners_subtitle">Arte de Wenrexa</string>
     <string name="settings_credit_skill_icons_title">Iconos de Habilidades</string>
-    <string name="settings_credit_skill_icons_subtitle" translatable="false">Shikashi\'s Fantasy Icons Pack</string>
 
     <string name="settings_credit_characters_title">Sprites de Personajes</string>
     <string name="settings_credit_characters_subtitle">Arte de Pixylac</string>
     <string name="settings_credit_bosses_title">Sprites de Jefes</string>
     <string name="settings_credit_bosses_subtitle">Arte de Meg</string>
     <string name="settings_credit_house_title">Interiores de Casas</string>
-    <string name="settings_credit_house_subtitle" translatable="false">Rogue Adventure Interior Tileset by Elv Games (modified)</string>
 
     <string name="title_seasonal_champion_of">Campeón de %1$s</string>
     <string name="title_seasonal_requirement">Completa el Evento de Temporada %1$s</string>

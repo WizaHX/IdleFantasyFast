@@ -196,7 +196,6 @@
     <string name="label_daily_dig">Excavación diaria</string>
     <string name="label_dig_depth">Profundidad del agujero</string>
     <string name="label_version">Versión</string>
-    <string name="label_open_source" translatable="false">Open Source</string>
 
 
     <!-- ===== Format strings — all use positional args for Weblate ===== -->
@@ -452,26 +451,6 @@
     <string name="theme_editor_saved_ok">Tema guardado y aplicado</string>
     <string name="theme_editor_exported_ok">Tema exportado.</string>
     <string name="settings_language_desc">Cambia el idioma de la aplicación.</string>
-    <string name="settings_lang_english" translatable="false">English</string>
-    <string name="settings_lang_deutsch" translatable="false">Deutsch</string>
-    <string name="settings_lang_français" translatable="false">Français</string>
-    <string name="settings_lang_dutch" translatable="false">Nederlands</string>
-    <string name="settings_lang_español" translatable="false">Español</string>
-    <string name="settings_lang_español_españa" translatable="false">Español (España)</string>
-    <string name="settings_lang_turkish" translatable="false">Türkçe</string>
-    <string name="settings_lang_italiano" translatable="false">Italiano</string>
-    <string name="settings_lang_russian" translatable="false">Русский</string>
-    <string name="settings_lang_indonesian" translatable="false">Bahasa Indonesia</string>
-    <string name="settings_lang_portugues_brasil" translatable="false">Português (Brasil)</string>
-    <string name="settings_lang_japanese" translatable="false">日本語</string>
-    <string name="settings_lang_irish" translatable="false">Gaeilge</string>
-    <string name="settings_lang_czech" translatable="false">Čeština</string>
-    <string name="settings_lang_chinese_simplified" translatable="false">中文（简体）</string>
-    <string name="settings_lang_polish" translatable="false">Polski</string>
-    <string name="settings_lang_lithuanian" translatable="false">Lietuvių</string>
-    <string name="settings_lang_hebrew" translatable="false">עברית</string>
-    <string name="settings_lang_arabic" translatable="false">العربية</string>
-    <string name="settings_lang_catalan" translatable="false">Català</string>
 
 
 
@@ -501,14 +480,11 @@
     <string name="settings_import_desc">Restaura tu progreso desde un archivo.</string>
     <string name="settings_import_btn">Importar</string>
     <string name="settings_source_code">Código fuente</string>
-    <string name="settings_source_url" translatable="false">github.com/tristinbaker/IdleFantasy</string>
 
     <string name="settings_source_open">Abrir</string>
     <string name="settings_wiki">Wiki</string>
-    <string name="settings_wiki_url" translatable="false">idlefantasy.tristinbaker.xyz</string>
 
     <string name="settings_discord">Discord</string>
-    <string name="settings_discord_url" translatable="false">discord.gg/vRxtXsBwQU</string>
 
     <string name="settings_exported_ok">Partida exportada.</string>
     <string name="settings_imported_ok">Partida importada correctamente.</string>
@@ -989,7 +965,7 @@
     <string name="inn_food_purchased">Comida comprada.</string>
     <string name="inn_buy_qty">Cuandidad</string>
     <string name="inn_buy_total">Total: %1$s</string>
-    <string name="inn_card_desc">Workers and daily food</string>
+    <string name="inn_card_desc">Hire workers and stock food</string> <!-- untranslated -->
     <string name="worker_no_active_session">El trabajador está libre: sin sesiones en cola</string>
     <string name="worker_add_sessions">Añadir Sesiones</string>
     <string name="inn_worker_tier">trabajador %1$s</string>
@@ -1020,7 +996,7 @@
     <string name="guild_combat_archers">a distancia</string>
     <string name="guild_combat_mages">mágico</string>
     <string name="guild_rep_label">%1$d / %2$d diarias</string>
-    <string name="guild_quest_complete">Quest complete: %1$s</string>
+    <string name="guild_quest_complete">Quest complete: %1$s!</string> <!-- untranslated -->
     <string name="guild_daily_complete">¡Recompensa diaria reclamada!</string>
     <string name="guild_name_mining">Gremio de Mineros</string>
     <string name="guild_name_fishing">Gremio de Pescadores</string>
@@ -1064,7 +1040,7 @@
 
     <!-- Church -->
     <string name="church_title">Iglesia</string>
-    <string name="church_desc">Prayer blessings</string>
+    <string name="church_desc">Blessings for XP, defense, and coins</string> <!-- untranslated -->
     <string name="church_no_active_blessing">Sin bendición activa: visita la Iglesia para rezar.</string>
     <string name="church_active_label">Bendición Activa</string>
     <string name="church_expires_in">Vence en %1$s</string>
@@ -2300,14 +2276,12 @@
     <string name="settings_credit_banners_title">Estandartes de temporada</string>
     <string name="settings_credit_banners_subtitle">Arte de Wenrexa</string>
     <string name="settings_credit_skill_icons_title">Iconos de Habilidades</string>
-    <string name="settings_credit_skill_icons_subtitle" translatable="false">Shikashi\'s Fantasy Icons Pack</string>
 
     <string name="settings_credit_characters_title">Sprites de Personajes</string>
     <string name="settings_credit_characters_subtitle">Arte de Pixylac</string>
     <string name="settings_credit_bosses_title">Sprites de Jefes</string>
     <string name="settings_credit_bosses_subtitle">Arte de Meg</string>
     <string name="settings_credit_house_title">Interiores de Casas</string>
-    <string name="settings_credit_house_subtitle" translatable="false">Rogue Adventure Interior Tileset by Elv Games (modified)</string>
 
     <string name="title_seasonal_champion_of">Campeón de %1$s</string>
     <string name="title_seasonal_requirement">Completa el Evento de Temporada %1$s</string>
