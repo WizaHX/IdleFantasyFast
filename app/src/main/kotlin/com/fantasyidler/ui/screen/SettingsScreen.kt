@@ -404,6 +404,17 @@ fun SettingsScreen(
                     )
                 }
             )
+            val showMonumentTouchIndicator by viewModel.showMonumentTouchIndicator.collectAsState()
+            SettingsRow(
+                title    = stringResource(R.string.settings_monument_touch_indicator),
+                subtitle = stringResource(R.string.settings_monument_touch_indicator_desc),
+                trailing = {
+                    Switch(
+                        checked         = showMonumentTouchIndicator,
+                        onCheckedChange = { viewModel.setShowMonumentTouchIndicator(it) },
+                    )
+                }
+            )
             val showPrestigeNotifications by viewModel.showPrestigeNotifications.collectAsState()
             SettingsRow(
                 title    = stringResource(R.string.settings_prestige_notifications),
@@ -839,6 +850,7 @@ private fun LanguageSection() {
         "he"     to stringResource(R.string.settings_lang_hebrew),
         "ar"     to stringResource(R.string.settings_lang_arabic),
         "ca"     to stringResource(R.string.settings_lang_catalan),
+        "uk"     to stringResource(R.string.settings_lang_ukrainian),
         "system" to stringResource(R.string.settings_lang_system),
     )
     val selectedLabel =

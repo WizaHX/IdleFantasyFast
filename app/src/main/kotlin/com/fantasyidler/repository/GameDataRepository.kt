@@ -234,6 +234,12 @@ class GameDataRepository @Inject constructor(
     val equipment: Map<String, EquipmentData> by lazy {
         asset("data/equipment.json")
     }
+    
+    // ------------------------------------------------------------------ items
+
+    val itemsJson: Map<String, List<String>> by lazy {
+        asset("data/items.json")
+    }
 
     // ------------------------------------------------------------------ recipes
 
@@ -423,6 +429,8 @@ class GameDataRepository @Inject constructor(
             addAll(crops.values.map { it.id })
             // Marketplace items not in equipment.json
             addAll(marketplace.values.flatMap { it.items.keys })
+            // All elder materials
+            addAll(itemsJson["elder_materials"].orEmpty())
         }
     }
 }
