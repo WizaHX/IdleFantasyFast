@@ -364,7 +364,16 @@ class SlayerViewModel @Inject constructor(
                     foretelledDungeonKey(task, state, flags)?.let { add(it) }
                 }
             }.let { keys ->
-                if (boostRepo.slayerMultiTaskActive(flags)) keys.distinct() else keys
+                if (boostRepo.slayerMultiTaskActive(flags)) {
+                    val existingDungeons = flags.sessionQueue
+                        .filter { it.skillName == "combat" }
+                        .map { it.activityKey }
+                        .toMutableSet()
+                    sessionRepo.getActiveSession()
+                        ?.takeIf { it.skillName == "combat" && !it.completed }
+                        ?.let { existingDungeons.add(it.activityKey) }
+                    keys.distinct().filterNot { it in existingDungeons }
+                } else keys
             }
             if (dungeonKeys.isEmpty()) return@launch
             if (state.slayerEquippedWeapons.size > 1) {
