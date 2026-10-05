@@ -102,6 +102,8 @@ data class SkillsUiState(
     val sessionDurationMs: Long = 0L,
     /** Actual per-log burn duration, tinderbox tier bonus applied. Keyed by log key. */
     val firemakingPerLogMs: Map<String, Long> = emptyMap(),
+    /** Lockpick efficiency per thieving NPC, including the tool-tier bonus over that NPC. */
+    val thievingNpcEfficiency: Map<String, Float> = emptyMap(),
     val skillPrestige: Map<String, Int> = emptyMap(),
     /** Skills at 99+ where another prestige still earns points or an XP tier. */
     val prestigeReadySkills: Set<String> = emptySet(),
@@ -263,6 +265,10 @@ class SkillsViewModel @Inject constructor(
                 firemakingPerLogMs    = gameData.logs.mapValues { (_, log) ->
                     val toolEff = gameData.toolEfficiency(equipped[EquipSlot.TINDERBOX], EquipSlot.TINDERBOX, log.levelRequired, skillLevels = levels, heirloomXp = flags.heirloomXp)
                     (SkillSimulator.sessionDurationMs(levels[Skills.AGILITY] ?: 1, boostRepo.sessionFloorReductionMin(flags), townRepo.playerSessionDurationMultiplier(flags)) / 60L / toolEff).toLong()
+                },
+                thievingNpcEfficiency = gameData.thievingNpcs.mapValues { (_, npc) ->
+                    if (flags.onElderIsle) 1.0f
+                    else gameData.toolEfficiency(equipped[EquipSlot.LOCKPICK], EquipSlot.LOCKPICK, npc.levelRequired, skillLevels = levels, heirloomXp = flags.heirloomXp)
                 },
                 skillPrestige         = if (flags.onElderIsle) emptyMap() else flags.skillPrestige,
                 prestigeReadySkills   = if (flags.onElderIsle) emptySet() else Skills.ALL.filterTo(mutableSetOf()) {
@@ -833,11 +839,8 @@ class SkillsViewModel @Inject constructor(
                 val thievingLevel = levels[Skills.THIEVING] ?: 1
                 val equipped: Map<String, String?> = json.decodeFromString(player.equipped)
                 val lockpickEff = gameData.toolEfficiency(equipped[EquipSlot.LOCKPICK], EquipSlot.LOCKPICK, npc.levelRequired, skillLevels = levels, heirloomXp = thievingFlags.heirloomXp)
-                val successChance = (0.40 + (thievingLevel - npc.levelRequired) * 0.02 * lockpickEff +
-                    boostRepo.thievingSuccessBonus(thievingFlags)).coerceIn(0.10, 0.98)
                 val petBoostPct = petBoostFor(player.pets, Skills.THIEVING, thievingFlags.ironman)
-                val petBoostedXp = if (petBoostPct > 0) (npc.baseXp * (1.0 + petBoostPct / 100.0)).toInt() else npc.baseXp
-                val expectedXp = 60.0 * (successChance / (2.0 - successChance)) * petBoostedXp
+                val expectedXp = ThievingSimulator.expectedSessionXp(npc, thievingLevel, lockpickEff, boostRepo.thievingSuccessBonus(thievingFlags), petBoostPct)
                 val xpQueueMult = predictionXpMult(thievingFlags.ironman, thievingFlags.onElderIsle, (if (thievingFlags.xpBoostExpiresAt > System.currentTimeMillis()) 2.0 else 1.0) * ChurchRepository.xpMultiplier(thievingFlags, blessingPrayerCapeMult(player, thievingFlags, gameData), gameData.blessings))
                 val prestigeMult = 1.0 + boostRepo.prestigeXpPct(Skills.THIEVING, thievingFlags) / 100.0
                 val estimatedXpGain = (expectedXp * xpQueueMult * prestigeMult).toLong()

@@ -520,7 +520,7 @@ fun SkillActivitySheet(
                         isQueueFull = state.queueSize >= state.maxQueueSize,
                         sessionDurationMs = state.sessionDurationMs,
                         context = context,
-                        efficiency = state.thievingEfficiency,
+                        npcEfficiency = state.thievingNpcEfficiency,
                         petBoostPct = state.petBoostBySkill[Skills.THIEVING] ?: 0,
                         xpBonusMult = state.xpMultBySkill[Skills.THIEVING]?.toFloat() ?: state.xpBonusMult,
                         successBonus = state.thievingSuccessBonus,
